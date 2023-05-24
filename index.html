@@ -4,47 +4,144 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD230 - Avril Escalante</title>
-    <meta name="description" content="Assignment portal for Avril Escalante in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <title>Sonora Chamber of Commerce</title>
+
     
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link href = "styles/small.css" rel = "stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-    <script defer src="scripts/dates.js"></script>
+    <link href="styles/normalize.css" rel="stylesheet">  
+    <link href = "styles/base.css" rel = "stylesheet">
+    <link href = "styles/medium.css" rel = "stylesheet">
+    <link href = "styles/large.css" rel = "stylesheet">
+    <link href ="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    
+
+    <script defer src="./scripts/dates.js"></script>
+    <script defer src="./scripts/currentDate.js"></script>
+    <script defer src="./scripts/ham.js"></script>
+    <script defer src="./scripts/meet.js"></script>
+    <link rel="icon" href="./favicon.ico">
+
 </head>
 
 <body>
-    <header>
-        <img src="images/avril_escalante.jpg" alt="Avril Escalante">
-        <h1> Erika Avril Escalante </h1>
-    </header>
 
-    <main>
-        <h2>WDD 230: Assignment Portal </h2>
+  <div id="banner">
+    <h2>
+     🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m!
+    </h2>
+  </div>
 
-        <ul>
-            <li> &#9753; Lesson 01: <a></a></li>
-            <li> &#9753; Lesson 02: <a href="./lesson2/design-principles.html"> Design Principles</a> </li>
-            <li> &#9753; Lesson 03: <a href="./lesson3/index.html"> Chamber of Commerce - Website Plan </a> </li>
-            <li> &#9753; Lesson 04: <a href = "./chamber/index.html"> Chamber Home Page </a> </li>
-            <li> &#9753; Lesson 05: <a href = "bom/bom.html"> BOM: Top 25 </a> </li>
-            <li> &#9753; Lesson 05: <a href = "./chamber/index.html"> Chamber Home Page Continued</a> </li>
-            <li> &#9753; Lesson 06: <a></a> </li>
-            <li> &#9753; Lesson 08: <a></a> </li>
-            <li> &#9753; Lesson 09: <a></a> </li>
-            <li> &#9753; Lesson 10: <a></a> </li>
-            <li> &#9753; Lesson 11: <a></a> </li>
+  <header>
+    <section class="headings">
+      <picture class="header-logo">
+         <a href="/2wdd230/chamber/index.html">
+         <img src="./images/sun_logo.png" width="50" alt="Sonora Chamber of Commerce"></a>
+      </picture>
+
+    <a href="index.html">
+    <h1>Sonora Chamber of Commerce</h1>
+        
+    </a>
+
+        <a class= "social" href="https://www.facebook.com/" >
+        <img src="./images/facebook.png" alt="Facebook"></a>
+         <a class= "social" href="https://www.LinkedIn.com/" >
+        <img  src="./images/linkedin.png" alt="LinkedIn"></a>
+
+    </section>
+
+    <nav>
+
+          <ul class="menu">
+            <li><a class="hamBtn" href="#">Menu</a></li>
+            <li><a class="menu1" href="./index.html">Home</a></li>
+            <li><a class="menu1" href="./discover.html">Discover</a></li>
+            <li><a class="menu1" href="./join.html">Join</a></li>
+            <li><a class="menu1" href="./contact-us.html">Contact</a></li>
+         </ul>
+    </nav>  
+
+    <span class="date"></span>
 
 
-
-        </ul>
-    </main>
-
-    <footer>
-        &copy; <span id="copyrightyear"></span> | Avril Escalante | México | <a href="https://www.byui.edu/online">BYU-I Online Learning</a> |<br>
-        <span id="lastModified"></span>  
-    </footer>
-
+   </header>
+      
    
+<main>
+      <section class="herodiv">
+          
+        <div class="heroimg"> 
+
+        <picture>
+            
+            <img src="./images/catedral.webp" alt="Welcome to Sonora!">
+                
+        </picture>
+
+        <div class="herotxt">
+            <h3>Welcome to Sonora!</h3>
+        </div>
+    </section>
+
+    <section class="event">
+        <h3>Event</h3>
+          
+    </section>
+
+    <section class="weather">
+        <h3>Weather</h3>
+    </section>
+    
+    <section class="join">
+        <h3>Join</h3> 
+    </section>
+
+    <section class="news">
+      <h3>News Release</h3>
+
+    </section>
+
+    <section class="spotlight">
+
+      <div class="spotlight-1">
+        <h3>Spotlight 1</h3>
+      </div>
+      
+      <div class="spotlight-2">
+        <h3>Spotlight 2</h3>
+      </div>
+
+      <div class="spotlight-3">
+          <h3>Spotlight 3</h3>
+      </div>
+
+  </section>
+
+  
+  
+</main>
+
+  <footer>
+      <div class="logo">
+          <picture>
+              <img src="./images/sun_logo.png" width="80" alt="Logo">
+          </picture> 
+      </div>
+
+      <div class="contact-info">
+   
+          <p> <strong> Sonora Chamber of Commerce</strong> <br>
+          Hidalgo # 123, Colonia Centenario, Hermosillo, Sonora, México. <br>
+          info@camarasonora.org<br>
+          662 260 7540<br>
+         <a href="">Location map<br></a> 
+       </div>
+
+       <div class="data">
+            &copy; <span id="year"></span> | Sonora Chamber of Commerce | Avril Escalante | WDD 230
+        Project | Last Modified: <span id="lastmod"></span>
+
+       </div>
+                   
+  </footer>
 </body>
 </html>
