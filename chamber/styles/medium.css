@@ -6,18 +6,31 @@
 
 	/* Horizontal Menu Examples */
 	/* Flex *********************/
-  	nav ul { display: flex; }
-		  nav ul li { flex: 1 1 auto; } 
+
+  	nav ul {
+		 display: flex; 
+		}
+	
+	nav ul li {
+		flex: 1 1 auto;
+		background-color: #606762;
+		
+	 } 
  
 	
 	nav a {
-		font-size: 1rem;
+		font-size: 1.5rem;
 	}
 
 	nav a:hover {
 		/* 	background-color: #bbb;
 	color: #36454f; */
 		--d: 75%;
+	}
+
+	.social {
+		max-width: none;
+    margin: 2rem 0.3rem 0 0.3rem;
 	}
 
 	main{

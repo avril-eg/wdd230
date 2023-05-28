@@ -1,8 +1,11 @@
-// Store the selected elements that we are going to use. 
-const mainnav = document.querySelector('.menu')
-const hambutton = document.querySelector('.hamBtn');
 
-// Add a simple arrow function that listens for the <li> hamburger button click event.
-// When clicked, the <ul class="navigation">'s class list toggle'
-hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
+function toggleMenu() {
+    document.getElementById("primaryNav").classList.toggle("open");
+    document.getElementById("hambBtn").classList.toggle("open");
+}
+
+const x = document.getElementById("hambBtn");
+x.onclick = toggleMenu;
+
+
 

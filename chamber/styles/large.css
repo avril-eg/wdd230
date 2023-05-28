@@ -1,4 +1,50 @@
 @media only screen and (min-width: 55em) {
+   /*---------- HEADER ----------*/
+      
+.chamber-logo img {
+    max-width: 80%;
+    }
+      
+nav:nth-child(2) {
+    position: absolute;
+    top: 2.5rem;
+    right: 0;
+    }
+      
+nav button {
+    display: none;
+    }
+      
+
+      
+nav ul li a {
+    text-align: center;
+    background-color: transparent;
+    padding: 1rem;
+    }
+      
+nav ul#primaryNav {
+    display: flex;
+    position: absolute;
+    right: 35rem;
+    top: 1rem;
+    }
+      
+nav ul.open {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+        }
+      
+nav ul li a {
+    border-bottom: none;
+        }
+      
+nav ul li a:hover {
+    background-color: transparent;
+    color: #606762;
+    }
+      
     
 main{
     grid: repeat (3, auto)/ repeat (4, 1fr);

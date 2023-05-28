@@ -31,55 +31,50 @@
   </div>
 
   <header>
-    <section class="headings">
-      <picture class="header-logo">
-         <a href="/2wdd230/chamber/index.html">
-         <img src="./images/sun_logo.png" width="50" alt="Sonora Chamber of Commerce"></a>
-      </picture>
+    <picture class="chamber-logo">
+      <a href="/2wdd230/chamber/index.html">
+      <img src="./images/sun_logo.webp" width="150" alt="Sonora Chamber of Commerce"></a>
+    </picture>
 
-    <a href="index.html">
-    <h1>Sonora Chamber of Commerce</h1>
+    <h1>Sonora <br>
+    Chamber of Commerce</h1>
         
-    </a>
 
-        <a class= "social" href="https://www.facebook.com/" >
+        
+    <a class= "social" href="https://www.facebook.com/" >
         <img src="./images/facebook.png" alt="Facebook"></a>
          <a class= "social" href="https://www.LinkedIn.com/" >
         <img  src="./images/linkedin.png" alt="LinkedIn"></a>
 
-    </section>
-
     <nav>
-
-          <ul class="menu">
-            <li><a class="hamBtn" href="#">Menu</a></li>
-            <li><a class="menu1" href="./index.html">Home</a></li>
-            <li><a class="menu1" href="./discover.html">Discover</a></li>
-            <li><a class="menu1" href="./join.html">Join</a></li>
-            <li><a class="menu1" href="./contact-us.html">Contact</a></li>
+       <button id="hambBtn"><span>&#9776;</span><span>X</span></button>
+        <ul id="primaryNav">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./discover.html">Discover</a></li>
+            <li><a href="./join.html">Join</a></li>
+            <li><a href="./contact-us.html">Contact</a></li>
          </ul>
     </nav>  
 
-    <span class="date"></span>
+    <span id="date"></span>
 
 
-   </header>
+  </header>
       
    
 <main>
       <section class="herodiv">
-          
-        <div class="heroimg"> 
 
-        <picture>
-            
-            <img src="./images/catedral.webp" alt="Welcome to Sonora!">
-                
-        </picture>
+          <figure class="heroimg">
+            <img src="images/wdd230-org.png" alt="Week 6 Image"
+              sizes="(max-width: 37.5px) 576px, (min-width: 37.5em) 1151px, 1620px"
+              srcset="
+                images/wdd230-200.png 576w,
+                images/wdd230-400.png 1151w,
+                images/wdd230-600.png 1620w">
+          </figure>
 
-        <div class="herotxt">
             <h3>Welcome to Sonora!</h3>
-        </div>
     </section>
 
     <section class="event">
@@ -89,6 +84,17 @@
 
     <section class="weather">
         <h3>Weather</h3>
+
+        <picture>
+          <img>
+        </picture>
+
+        <p id="temperature"><span id="celsius">21</span> ºC</p>
+        <p id="cloudy">Cloudy</p>
+        <p class="weather-data">Wind Speed:</p>
+        <p class="weather-info"><span id="speed">23</span> km/h</p>
+        <p class="weather-data">Wind Chill:</p>
+        <p class="weather-info"  id="windchill"></p>
     </section>
     
     <section class="join">
