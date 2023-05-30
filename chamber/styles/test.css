@@ -105,3 +105,9 @@ nav {
 }
 
 
+// Join us message based on day of the week
+if (d.getDay() == 0 || d.getDay() == 2) {
+    document.getElementById("banner").style.display = "block";
+  }
+
+
