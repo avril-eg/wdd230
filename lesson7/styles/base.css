@@ -1,0 +1,31 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #e9bbdeb5;
+  }
+
+h1 {
+    font-size: 2.5rem;
+    color: #bc596c;
+    text-align: center;
+    }
+    
+.pictures {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 300px;
+    }
+
+img {
+    padding: .5rem;
+    filter: blur(0px);
+    background-color: #ef7c92;
+    transition: filter 0.60s;
+    box-shadow: 0 0 10px rgb(36, 37, 37);
+    }  
