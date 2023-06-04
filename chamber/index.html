@@ -18,17 +18,18 @@
     <script defer src="./scripts/currentDate.js"></script>
     <script defer src="./scripts/ham.js"></script>
     <script defer src="./scripts/banner.js"></script>
+    <script defer src="./scripts/windchill.js"></script>
     <link rel="icon" href="./favicon.ico">
 
 </head>
 
 <body>
 
-  <div id="banner">
-    <h2>
+  <section id="banner">
+    <h3>
      🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m!
     </h2>
-  </div>
+  </section>
 
   <header>
     <picture class="chamber-logo">
@@ -43,7 +44,7 @@
         
     <a class= "social" href="https://www.facebook.com/" >
         <img src="./images/facebook.png" alt="Facebook"></a>
-         <a class= "social" href="https://www.LinkedIn.com/" >
+    <a class= "social" href="https://www.LinkedIn.com/" >
         <img  src="./images/linkedin.png" alt="LinkedIn"></a>
 
     <nav>
@@ -60,41 +61,46 @@
 
 
   </header>
-      
-   
+
 <main>
       <section class="herodiv">
 
-          <figure class="heroimg">
-            <img src="images/wdd230-org.png" alt="Week 6 Image"
-              sizes="(max-width: 37.5px) 576px, (min-width: 37.5em) 1151px, 1620px"
-              srcset="
-                images/wdd230-200.png 576w,
-                images/wdd230-400.png 1151w,
-                images/wdd230-600.png 1620w">
-          </figure>
+          <picture class="heroimg">
+            <source srcset="./images/wdd230-400.png" media="(min-width: 37.5em) and (max-width: 59.99em)">
+            <source srcset="./images/wdd230-600.png" media="(min-width: 60em)">
+            <img src="./images/wdd230-200.png" alt="Week 6 Image">
+          </picture>
+            
 
             <h3>Welcome to Sonora!</h3>
     </section>
 
     <section class="event">
-        <h3>Event</h3>
+        <h3>Fiestas del Pitic 2023</h3>
+        <picture>
+          <img src="./images/fiestas_pitic.webp" alt="Fiestas del Pitic" />
+        </picture>
+        <p>Through the official portal of the Fiestas del Pitic you can consult the complete
+         program with the dates, times and settings where the different artistic presentations will take place.</p>
           
     </section>
-
+    
     <section class="weather">
         <h3>Weather</h3>
 
         <picture>
-          <img>
+          <img src="" alt="" id="weather-icon" />
         </picture>
 
-        <p id="temperature"><span id="celsius">21</span> ºC</p>
-        <p id="cloudy">Cloudy</p>
-        <p class="weather-data">Wind Speed:</p>
-        <p class="weather-info"><span id="speed">23</span> km/h</p>
-        <p class="weather-data">Wind Chill:</p>
-        <p class="weather-info"  id="windchill"></p>
+        <h4><span id="temperature">10</span>&#176;C</h4>
+        <h4 id="condition"></h4>
+      </div>
+      <div class="climate">
+        <p>Wind Speed:</p>
+        <p><span id="windSpeed">40</span> km/h</p>
+        <p>Wind Chill:</p>
+        <p id="windChill">N/A</p>
+      </div>
     </section>
     
     <section class="join">
