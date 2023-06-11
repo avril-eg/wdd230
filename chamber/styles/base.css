@@ -295,4 +295,17 @@ footer{
 
   }
 
+  .join-form {
+	margin: 0 auto;
+	padding: .7rem;
+  }
+
+  fieldset {
+	padding: 2 rem;
+  }
+
+  .membership {
+	padding: 1.5 rem;
+  }
+
   
