@@ -7,11 +7,11 @@
     <title>Sonora Chamber of Commerce</title>
 
     
-    <link href="styles/normalize.css" rel="stylesheet">  
+    <link href = "styles/normalize.css" rel="stylesheet">  
     <link href = "styles/base.css" rel = "stylesheet">
     <link href = "styles/medium.css" rel = "stylesheet">
     <link href = "styles/large.css" rel = "stylesheet">
-    <link href ="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href = "https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     
 
     <script defer src="./scripts/dates.js"></script>
@@ -86,22 +86,20 @@
     </section>
     
     <section class="weather">
-        <h3>Weather</h3>
+      <h2>Weather</h2>
 
-        <picture>
-          <img src="" alt="" id="weather-icon" />
-        </picture>
+      <figure class="weather-image">
+        <img id="weather-icon" src="" alt="">
+        <figcaption></figcaption>
+      </figure>  
 
-        <h4><span id="temperature">10</span>&#176;C</h4>
-        <h4 id="condition"></h4>
-      </div>
-      <div class="climate">
-        <p>Wind Speed:</p>
-        <p><span id="windSpeed">40</span> km/h</p>
-        <p>Wind Chill:</p>
-        <p id="windChill">N/A</p>
-      </div>
-    </section>
+      <span id="temp"></span>
+      <p class="windspeed">Wind Speed:</p>
+      <p class="windchill">Wind Chill:</p>
+      <span id="windspeedresult"></span>
+      <span id="windchillresult"></span>
+   
+  </section>
     
     <section class="join">
         <h3>Join</h3> 
