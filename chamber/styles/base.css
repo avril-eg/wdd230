@@ -4,212 +4,248 @@
 	box-sizing: border-box;
 }
 
-body {
-	/*font-size: 16px;*/
-	font-family: 'Merriweather Sans', sans-serif;
-	background-color: #979881;
+header,
+nav,
+main,
+footer {
+	max-width: 1600px;
+	margin: 0 auto;
 }
 
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: #303036;
+	height: auto;
+    line-height: 1.5;
+    font-size: 0.875rem;
+}
 #banner {
 	text-align: center;
     display: none;
-	background-color: antiquewhite;
+	background-color: #30bced;
 	font-size: 1rem;
-	color: #000;
-	box-shadow: 1px -1px 10px 1px #00000087;
-	margin-top: 15px;
-	padding: 1rem;
+	color: #fffaff;
+	box-shadow: 1px -1px 10px 1px black;
+	margin: 1rem 0 1rem 0;
+	padding: .5rem;
 
 }
 
-/*Header*/
+header, footer {
+	background-color: #ff6347;
+	color: #303036;
+	padding: 1rem;
+}
 
 header {
 	position: relative;
-    padding: 1rem;		
+    padding: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
-h1, h2, h3 {
-    color: #9d583f;	
+.logo-container {
+	display: flex;
+	align-items: center;
+}
+  
+header .logo {
+	max-width: 4rem;
+	margin-right: 1rem;
 }
 
-h1 {
-	text-align:center;
-	font-size: 1.5rem;
-}
-
-
-.chamber-logo {
-	max-width: 50%;
+header h1, footer h2 { 
 	margin: 0;
+	line-height: 1.5rem; 
 }
 
-.social img {
+header div h1 span:nth-child(3), footer div span:nth-child(3) {
+    font-size: 1rem;
+}
+
+header .social-container img {
 	max-width: 3rem;
-	margin: 0px 0.1rem;
-	padding: .5rem;
 }
+ 
+header nav {
+	width: 100%;
+	display: none;
+}  
 
-nav a {
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+  
+nav ul li a {
+	color: #303036;
 	text-decoration: none;
-  }
-  
-nav button {
-	min-width: 3rem;
-	background: transparent;
-	border: none;
-	font-size: 2rem;
-	color: #9d583f;
-	float: right;
-	margin-left: -1rem;
-  }
-  
-nav:nth-child(2) {
-	position: absolute;
-	top: 2.5rem;
-	right: 0;
-  }
-  
-#hambBtn span:nth-child(1) {
 	display: block;
-  }
+	padding: 1rem;
+	text-align: center;
+}
   
-#hambBtn span:nth-child(2) {
-	display: none;
+#hambBtn {
+	width: 100%;
+	font-size: 1.5rem;
+	padding: .5rem;
+	border: solid #7EA1C4 ;
+	border-radius: 5px;
+	margin-top: 0px;
+	margin-bottom: 5px;
+	background-color: transparent;
+	color: #303036;
+	border: none;
+	display: visible;
   }
 
-#hambBtn.open span:nth-child(1) {
-	display: none;
-  }
   
 #hambBtn.open span:nth-child(2) {
 	display: block;
-  }
+  }  
   
-nav ul {
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-	display: none;
-	width: 200px;
+#date {
+	padding: .7rem;
 	text-align: center;
-	font-size: 1.5rem;
+	color: #30bced;
+	font-weight: bolder;
   }
   
-nav ul.open {
-	display: block;
-	position: absolute;
-	top: 3.5rem;
-	right: 0;
-	z-index: 1;
-  }
-  
-nav ul li a {
-	display: block;
-	padding: 0.8rem 2vw;
-	text-decoration: none;
-	color: #f3e6d6;	;
-	background-color: #606762;
-	
-  }
-  
-nav ul li a:hover {
-	background-color: #9d583f;
-  }
-
-
-.chamber-logo, .social {
-	justify-self: center;
-	align-self: center;
-	
-}
-
-#date{
-	display: block;
-    margin: 0.5rem;
-	padding: 0.75rem;
-	justify-self: center;
-	align-self: center;
-	font-size: 13px;
-	width:90%;
-	text-align: center;
-	color: #3f5b55;
-	font-style: italic;	
-	
-}
 
 /*Here starts the main config*/
 
- main {
+main .home {
 	display: grid;
 	grid-template-columns: 1fr;
 	font-size: 0.8rem;
 }
 
-.herodiv {
-	padding: .5rem;
+.home section {
+	margin: .5rem;
+	padding: 4rem;
+	box-shadow: 0 2px 15px #303036;
+	background-color: #fffaff;
+}
+
+.home .hero {
 	position: relative;
-	opacity: 0.8;
-}
-
-.herodiv h3 {
-	position: absolute;
-	top: 1rem;
-	right: .5rem;
-	padding: .5rem;	
-	font-size: 1.2rem;
-    
-}
-
-.heroimg {
+  }
+  
+.home .hero img {
 	width: 100%;
-	
-}
-
-.heroimg img {
-	max-width: 100%;
+	height: 100%;
 	padding: .3rem;
 	align-items: center;
 	justify-content: center;
-	
+	overflow: hidden;
+	position: absolute;
+	object-fit: cover;
+	top: 0;
+	left: 0;
+  }
+ 
+.home .hero h1 {
+	color: #fffaff;
+	text-shadow: 1px 1px 2px #616161;
 	
 	
 }
 
+.hero h1 {
+	max-width: 100%;
+  	position: relative;
+  	margin: auto;
+	padding-bottom: 3rem;
+  	text-align: left;
+  	color: #fff;
+  	text-shadow: rgb(31, 32, 33) 1px 0 10px;
+  	font-size: 2rem;
+}
 
-.herotext h3{
-	display: inline;
+.hero a {
 	position: absolute;
-	top: 20px;
-	left: 20px;
-	color: #0c295e;
+	right: .7rem;
+    bottom: 2rem;
+	box-shadow: 0px 10px 14px -7px #303036;
+  	background-color:#303036;
+	border-radius:10px;
+	display:inline-block;
+	cursor:pointer;
+	color:#30bced;
+	font-size:1.2rem;
+	font-weight:bold;
+	padding:1rem 1rem;
+	text-decoration:none;  
+}
 
+ 
+  
+.weather, .news, .event, .spotlight, .join {
+	
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #fcfdeb;
+	color: #ff6347;
+	font-size: 1.5rem;
+	text-align: center;
+	text-shadow: 1px 1px 2px #616161;
+	flex-direction: column;
+}
 
+.event img {
+	margin: 0 auto;
+	max-width: 70%;
+}
+.event p {
+	
+	color: #050401;
+	text-shadow: none;
 
 }
-.button-hero {
-	position: absolute;
-	bottom: 50px;
-	right: 30px;
+  
+.weather div {
+	display: flex;
+	align-items: center;
+	font-size: 2rem;
+	padding: 0 1rem;
+}
+  
+.weather p, .weather h2 {
+	margin: .5rem;
+	color: #050401;
+	text-shadow: none;
+}
+ 
+.news img {
+	margin: 0 auto;
+	width: 350px;
+	
+}
+
+.join a {
+	justify-content: center;
+	box-shadow: 0px 10px 14px -7px #303036;
+  	background-color: #303036;
 	border-radius: 10px;
-	padding: 10px;
-	border: none;
-    background-color: #742b08;
-    color: whitesmoke;
-    border-radius: 0.75rem;
-    padding: .75rem 1.5rem;
-    margin: 0 0 2rem 27%;
-    width: 96%;
-    max-width: 10rem;
-	
+	cursor: pointer;
+	color:#30bced;
+	font-size: 1.2rem;
+	font-weight: bold;
+	padding: 1rem;
+	text-decoration:none;  
 }
 
-
-
-
-
-
-.spolight{
+.join p {
+	padding: .7rem;
+	color: #303036;
+}
+ 
+.spotlight{
 	grid-row: 5/6;
 	display:flex;
 	flex-grow: 2;
@@ -221,11 +257,19 @@ nav ul li a:hover {
 	
 }
 
-.event img {
-	max-width: 40%;
-}
-.spotlight-1 {
+.spotlight p {
+	color: #303036;
+	font-size: 1rem;
 
+}
+.spotlight img {
+	max-width: 6rem;
+	margin: 0 auto;
+	
+
+}
+
+.spotlight-1 {
 	display: flex;
 	flex-flow: column;
 	gap: 3px;
@@ -240,72 +284,67 @@ nav ul li a:hover {
 	
 }
 
-main section{
-	margin: .5rem;
-	padding: 4rem;
-	box-shadow: 0 2px 15px #6B7AA1;
-	background-color:#f7f5f1;
-
-}
-
 .spotlight-1, .spotlight-2{
-	padding: 1rem;
+	padding: .5rem;
 	width: 100%;
-	background-color: #4c6f677c;
+	background-color: #fffaff;
+	color: #30bced;
+	
 }
+
 section .spotlight-3{
 	display: none;
 }
-header,
-nav,
-main,
+  
+.spotlight div img {
+	max-width: 6rem;
+	margin: 0 auto;
+}
+  
+.spotlight div:nth-child(3) {
+	display: none;
+}
+  
+.last-visit p {
+	color: #fffaff;
+}
+
+/*Here starts the footer config*/  
 footer {
-	max-width: 1600px;
-	margin: 0 auto;
-	
-}
-
-/*Here starts the footer config*/
-
-
-footer{
-
-	align-content: center;
-	justify-content: center;
 	text-align: center;
-	padding: 3rem;
-	
-	
+	padding: 1rem 0
 }
-
-
-
-.title-footer{
-	font-size: 16px;
+  
+footer .logo-container {
+	display: flex;
+	flex-direction: column;
 }
-
-.line {
-	background-color: black;
-	margin: 5px;
-  }
-
-  .sonora-pictures{
-	max-width: 50%;
+  
+footer .logo {
+	max-width: 8rem;
+	margin: 1rem 0;
+}
+  
+.logo-container p {
+	margin:0
+}
+  
+footer p {
+	max-width: 20rem;
+	margin: 1rem auto;
+}
+  
+footer .contact-info p {
 	margin: 0 auto;
+}
+  
+.contact-info p:nth-child(2) {
+	font-weight: bold;
+}
+  
+ 
+  
 
-  }
-
-  .join-form {
-	margin: 0 auto;
-	padding: .7rem;
-  }
-
-  fieldset {
-	padding: 2 rem;
-  }
-
-  .membership {
-	padding: 1.5 rem;
-  }
-
+  
+  
   

@@ -11,8 +11,8 @@
     <link href = "styles/base.css" rel = "stylesheet">
     <link href = "styles/medium.css" rel = "stylesheet">
     <link href = "styles/large.css" rel = "stylesheet">
-    <link href = "https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
     <script defer src="./scripts/dates.js"></script>
     <script defer src="./scripts/currentDate.js"></script>
@@ -22,57 +22,63 @@
     <link rel="icon" href="./favicon.ico">
 
 </head>
-
 <body>
 
   <section id="banner">
     <h3>
      🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m!
-    </h2>
+    </h3>
   </section>
 
   <header>
-    <picture class="chamber-logo">
-      <a href="/2wdd230/chamber/index.html">
-      <img src="./images/sun_logo.webp" width="150" alt="Sonora Chamber of Commerce"></a>
-    </picture>
+    <div class="logo-container">
+      <a href="./index.html">
+      <img class="logo" src="./images/sun_logo.webp" alt="Sonora Chamber of Commerce">
+      </a>
+    <div>
+      <h1>
+      <span>Sonora</span><br>
+      <span>Chamber of Commerce</span>
+      </h1>
+    </div>
+    </div>
 
-    <h1>Sonora <br>
-    Chamber of Commerce</h1>
+    <nav id="primaryNav">
+      <ul> 
         
+        <button id="hambBtn">&#9776;<span>X</span></button>
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="./discover.html">Discover</a></li>
+        <li><a href="./directory.html">Directory</a></li>
+        <li><a href="./join.html">Join</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
 
-        
-    <a class= "social" href="https://www.facebook.com/" >
-        <img src="./images/facebook.png" alt="Facebook"></a>
-    <a class= "social" href="https://www.LinkedIn.com/" >
-        <img  src="./images/linkedin.png" alt="LinkedIn"></a>
-
-    <nav>
-       <button id="hambBtn"><span>&#9776;</span><span>X</span></button>
-        <ul id="primaryNav">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./discover.html">Discover</a></li>
-            <li><a href="./join.html">Join</a></li>
-            <li><a href="./contact-us.html">Contact</a></li>
-         </ul>
-    </nav>  
-
-    <span id="date"></span>
-
-
+    <div class="social-container">
+      <a href="#"><img src="./images/circle_facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="./images/circle_linkedin.png" alt="LinkedIn"></a>
+    </div>
+    
+    
   </header>
+  <span id="date"></span>
+    
 
-<main>
-      <section class="herodiv">
+       
 
-          <picture class="heroimg">
-            <source srcset="./images/wdd230-400.png" media="(min-width: 37.5em) and (max-width: 59.99em)">
-            <source srcset="./images/wdd230-600.png" media="(min-width: 60em)">
-            <img src="./images/wdd230-200.png" alt="Week 6 Image">
-          </picture>
+<main class="home">
+      <section class="hero">
+        <picture>
+          <source media="(max-width: 799px)" srcset="./images/sonora-heroimg-200.png">
+          <source media="(max-width: 1279px)" srcset="./images/sonora-heroimg-400.png">
+          <source media="(min-width: 1280px)" srcset="./images/sonora-heroimg-600.png">
+          <img src="./images/artesanias.png" alt="Sonora - Cactus">
+      </picture>
+
+      <h1>Sonora Chamber of Commerce</h1>
+      <a href="./discover.html">Welcome to Sonora!</a>
             
-
-            <h3>Welcome to Sonora!</h3>
     </section>
 
     <section class="event">
@@ -85,7 +91,10 @@
           
     </section>
     
-    <section class="weather">
+
+    
+
+   <section class="weather">
       <h2>Weather</h2>
 
       <figure class="weather-image">
@@ -102,26 +111,57 @@
   </section>
     
     <section class="join">
-        <h3>Join</h3> 
+      <a href="./join.html">
+        <h3>Join Us!</h3>
+    </a>
+    <div>
+        <p>
+            Discover how to join the chamber of commerce and how it will benefits your organization!
+        </p>
+    </div> 
     </section>
 
     <section class="news">
-      <h3>News Release</h3>
+      <h3>Regional Museum of Sonora inaugurates exhibition "Usos y Costumbres en México"</h3>
+
+      <picture>
+        <img src="./images/usos_costumbres.png" alt="Museo Regional de Sonora" />
+      </picture>
 
     </section>
 
     <section class="spotlight">
 
       <div class="spotlight-1">
-        <h3>Spotlight 1</h3>
+        <h3>3&3 Grill</h3>
+
+          <picture>
+            <img src="./images/33_logo.png" alt="3&3 Grill" />
+          </picture>
+
+          <p>Calle 3 esq. con Avenida 3 Col. Bugambilias, Hermosillo, Mexico, 83140 <br>
+           Reservaciones al: 662 267 2295</p>
       </div>
       
       <div class="spotlight-2">
-        <h3>Spotlight 2</h3>
+        <h3> La Cura Hermosillo</h3>
+        <picture>
+          <img src="./images/la_cura_logo.png" alt="La Cura | Cocina de Mar" />
+        </picture>
+
+        <p>Calle 3 esq. con Avenida 3 Col. Bugambilias, Hermosillo, Mexico, 83140 <br>
+          Reservaciones al: 662 275 3912</p>
+
       </div>
 
       <div class="spotlight-3">
-          <h3>Spotlight 3</h3>
+        <h3> Sal de Jade</h3>
+        <picture>
+          <img src="./images/sal_jade.png" alt="La Cura | Sal de Jade" />
+        </picture>
+
+        <p>Av Luis Donaldo Colosio Murrieta 312, Hermosillo, Mexico, 83250 <br>
+          Reservaciones al: 662 109 8583</p>
       </div>
 
   </section>
@@ -130,19 +170,24 @@
   
 </main>
 
+<div class="last-visit">
+  <p>Last visit: <span id="visit_count">2</span> days ago.</p>
+</div>
+
   <footer>
-      <div class="logo">
-          <picture>
-              <img src="./images/sun_logo.png" width="80" alt="Logo">
-          </picture> 
-      </div>
+    <div class="logo-container">
+      <img class="logo" src="./images/sun_logo.png" alt="Chamber of Commerce">
+      <div>
+          <h2>
+              <span>Sonora</span><br>
+              <span>Chamber of Commerce</span>
+          </h2>
 
       <div class="contact-info">
    
-          <p> <strong> Sonora Chamber of Commerce</strong> <br>
-          Hidalgo # 123, Colonia Centenario, Hermosillo, Sonora, México. <br>
+          <p>Hidalgo # 123, Colonia Centenario, Hermosillo, Sonora, México. <br>
           info@camarasonora.org<br>
-          662 260 7540<br>
+          662 260 7540</p>
          <a href="">Location map<br></a> 
        </div>
 
