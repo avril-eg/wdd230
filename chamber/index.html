@@ -14,11 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
-    <script defer src="./scripts/dates.js"></script>
-    <script defer src="./scripts/currentDate.js"></script>
-    <script defer src="./scripts/ham.js"></script>
-    <script defer src="./scripts/banner.js"></script>
-    <script defer src="./scripts/windchill.js"></script>
+  
     <link rel="icon" href="./favicon.ico">
 
 </head>
@@ -43,11 +39,11 @@
     </div>
     </div>
 
-    <nav id="primaryNav">
-      <ul> 
-        
-        <button id="hambBtn">&#9776;<span>X</span></button>
-        <li class="active"><a href="#">Home</a></li>
+    <nav>
+      
+      <ul id="primaryNav">
+        <li><a href="#">Menu</a></li>
+        <li class="active"><a href="./index.html">Home</a></li>
         <li><a href="./discover.html">Discover</a></li>
         <li><a href="./directory.html">Directory</a></li>
         <li><a href="./join.html">Join</a></li>
@@ -59,7 +55,8 @@
       <a href="#"><img src="./images/circle_facebook.png" alt="Facebook"></a>
       <a href="#"><img src="./images/circle_linkedin.png" alt="LinkedIn"></a>
     </div>
-    
+
+    <button id="hambBtn"><span>&#9776;</span><span>X</span></button>
     
   </header>
   <span id="date"></span>
@@ -70,10 +67,10 @@
 <main class="home">
       <section class="hero">
         <picture>
-          <source media="(max-width: 799px)" srcset="./images/sonora-heroimg-200.png">
-          <source media="(max-width: 1279px)" srcset="./images/sonora-heroimg-400.png">
-          <source media="(min-width: 1280px)" srcset="./images/sonora-heroimg-600.png">
-          <img src="./images/artesanias.png" alt="Sonora - Cactus">
+          <source srcset="./images/sonora-heroimg-600.png" media="(min-width: 37.5em) and (max-width: 59.99em)">
+          <source srcset="./images/sonora-heroimg-950.webp" media="(min-width: 60em)">
+          <img src="./images/sonora-heroimg-200.png" alt="Sonora - Cactus">
+          
       </picture>
 
       <h1>Sonora Chamber of Commerce</h1>
@@ -171,7 +168,7 @@
 </main>
 
 <div class="last-visit">
-  <p>Last visit: <span id="visit_count">2</span> days ago.</p>
+  <p>Last visit: <span id="visit_count"></span> days ago.</p>
 </div>
 
   <footer>
@@ -198,5 +195,12 @@
        </div>
                    
   </footer>
+
+  <script defer src="./scripts/dates.js"></script>
+  <script defer src="./scripts/currentDate.js"></script>
+  <script defer src="./scripts/ham.js"></script>
+  <script defer src="./scripts/banner.js"></script>
+  <script defer src="./scripts/windchill.js"></script>
+
 </body>
 </html>

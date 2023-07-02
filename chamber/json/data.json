@@ -1,0 +1,60 @@
+{
+  "directory": [
+    {
+      "name": "Coyotas Doña María",
+      "address": "Sufragio Efectivo No. 37, Col. Villa Seris 83280, Hermosillo, Sonora, México.",
+      "phone": "(662) 250-5883",
+      "website": "https://www.coyotasdoamaria.com/",
+      "logo": "",
+      "membershiplevel": "silver"
+      },
+      {
+        "name": "Sal de Jade",
+        "address": "Av. Luis Donaldo Colosio Murrieta 312, Los Arcos 83250 Hermosillo, Son.",
+        "phone": "(662) 109 8583",
+        "website": "https://saldejade.mx/",
+        "logo": "images/sal_jade.jpg",
+        "membershiplevel": "silver"
+      },
+      {
+        "name": "3&3 Grill",
+        "address": "Calle 3 esq. con Avenida 3 Col. Bugambilias, Hermosillo, Mexico, 83140",
+        "phone": "(662) 275 3912",
+        "website": "https://www.instagram.com/3y3grill/?hl=es",
+        "logo": "images/33_logo.png",
+        "membershiplevel": "silver"
+      },
+      {
+        "name": "La Cura",
+        "address": "Av Veracruz 77, Centro, 83000 Hermosillo, Son.",
+        "phone": "(662) 310 7625",
+        "website": "https://www.instagram.com/lacurahmo/?hl=es-la",
+        "logo": "images/la_cura_logo.png",
+        "membershiplevel": "silver"
+      },
+      {
+        "name": "Ferretería Pipeso",
+        "address": "Blvd. Quiroga #19 Sur, 83214 Hermosillo, Son.",
+        "phone": "(662) 254 1743",
+        "website": "https://www.pipesohermosillo.com/",
+        "logo": "",
+        "membershiplevel": "silver"
+      },
+      {
+
+        "name": "Coyotas Malu",
+        "address": "Revolución 21 A, Villa de Seris. Hermosillo, Sonora.",
+        "phone": "662 250-9735",
+        "website": "coyotasmalu.com.mx",
+        "logo": "",
+        "membershiplevel": "silver"
+      },
+
+   
+   
+      
+      
+    ]
+  }
+
+

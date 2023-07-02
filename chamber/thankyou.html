@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonora Chamber of Commerce</title>
+
+    
+    <link href = "styles/normalize.css" rel="stylesheet">  
+    <link href = "styles/base.css" rel = "stylesheet">
+    <link href = "styles/medium.css" rel = "stylesheet">
+    <link href = "styles/large.css" rel = "stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <script defer src="./scripts/dates.js"></script>
+    <script defer src="./scripts/currentDate.js"></script>
+    <script defer src="./scripts/ham.js"></script>
+    <script defer src="./scripts/banner.js"></script>
+    <script defer src="./scripts/windchill.js"></script>
+    <link rel="icon" href="./favicon.ico">
+
+</head>
+<body>
+
+  <section id="banner">
+    <h3>
+     🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m!
+    </h3>
+  </section>
+
+  <header>
+    <div class="logo-container">
+      <a href="./index.html">
+      <img class="logo" src="./images/sun_logo.webp" alt="Sonora Chamber of Commerce">
+      </a>
+    <div>
+      <h1>
+      <span>Sonora</span><br>
+      <span>Chamber of Commerce</span>
+      </h1>
+    </div>
+    </div>
+
+    <nav id="primaryNav">
+      <ul> 
+        
+        <button id="hambBtn">&#9776;<span>X</span></button>
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="./discover.html">Discover</a></li>
+        <li><a href="./directory.html">Directory</a></li>
+        <li><a href="./join.html">Join</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="social-container">
+      <a href="#"><img src="./images/circle_facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="./images/circle_linkedin.png" alt="LinkedIn"></a>
+    </div>
+    
+    
+  </header>
+  <span id="date"></span>
+    
+
+<main class="thank_you">
+    <div class="flex p-1">
+        <div>
+            <img src="./images/check-mark.svg" alt="Check Mark">
+        </div>
+        <h1>Thank you for your request to the Chamber!</h1>
+        <p>We will reply to you as soon as we receive your request</p>
+        <a href="./join.html">BACK</a>
+    </div>
+</main>
+
+<div class="stats flex justify-between white">
+    <p class="px-1" id="current">test</p>
+    <p class="px-1">Last visit: <span id="visit_count">2</span> days ago.</p>
+</div>
+
+<footer>
+    <div class="logo-container">
+      <img class="logo" src="./images/sun_logo.png" alt="Chamber of Commerce">
+      <div>
+          <h2>
+              <span>Sonora</span><br>
+              <span>Chamber of Commerce</span>
+          </h2>
+
+      <div class="contact-info">
+   
+          <p>Hidalgo # 123, Colonia Centenario, Hermosillo, Sonora, México. <br>
+          info@camarasonora.org<br>
+          662 260 7540</p>
+         <a href="">Location map<br></a> 
+       </div>
+
+       <div class="data">
+            &copy; <span id="year"></span> | Sonora Chamber of Commerce | Avril Escalante | WDD 230
+        Project | Last Modified: <span id="lastmod"></span>
+
+       </div>
+                   
+  </footer>
+</body>
+</html>

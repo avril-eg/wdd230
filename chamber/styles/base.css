@@ -87,7 +87,11 @@ nav ul li a {
 	padding: 1rem;
 	text-align: center;
 }
-  
+
+nav li:first-child {
+	display: none;
+}
+
 #hambBtn {
 	width: 100%;
 	font-size: 1.5rem;
@@ -99,14 +103,22 @@ nav ul li a {
 	background-color: transparent;
 	color: #303036;
 	border: none;
-	display: visible;
+	display: block;
   }
 
   
 #hambBtn.open span:nth-child(2) {
 	display: block;
   }  
-  
+
+.responsive li {
+    display: block;
+}
+
+.responsive a.hamBtn::before {
+    content: "❌ ";
+}
+
 #date {
 	padding: .7rem;
 	text-align: center;
@@ -342,6 +354,74 @@ footer .contact-info p {
 	font-weight: bold;
 }
   
+
+.join-banner h1 {
+	max-width: 100%;
+  	position: absolute;
+  	margin: auto;
+	padding: .5rem;
+  	text-align: center;
+  	font-size: 2rem;
+	color: #fffaff;
+	
+}
+
+
+.join-form {
+	background-color: #fffaff;
+	margin: 0 auto;
+	padding: 2rem;
+	border-radius: 2rem;
+}
+
+.discover {
+	margin: 0 auto;
+	justify-items: center;
+}
+
+.discover h2 {
+    font-size: 2.5rem;
+    color: #30bced;
+    text-align: center;
+    }
+.sonora-pictures {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 300px;
+    }
+
+.discover img {
+    padding: .5rem;
+    filter: blur(0px);
+    background-color: #ff6347;
+    transition: filter 0.60s;
+    box-shadow: 0 0 10px rgb(36, 37, 37);
+    } 
+
+.sonora-pictures p{
+	color: #fffaff;
+	display: inline-flex;
+	font-size: 1rem;
+    width: 100%;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.submit-button {
+
+	justify-content: center;
+	box-shadow: 0px 10px 14px -7px #303036;
+  	background-color: #303036;
+	border-radius: 10px;
+	cursor: pointer;
+	color:#30bced;
+	font-size: 1.2rem;
+	font-weight: bold;
+	padding: 1rem;
+	text-decoration:none;  
+}
+}
  
   
 

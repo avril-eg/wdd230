@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonora Chamber of Commerce</title>
+
+    
+    <link href = "styles/normalize.css" rel="stylesheet">  
+    <link href = "styles/base.css" rel = "stylesheet">
+    <link href = "styles/medium.css" rel = "stylesheet">
+    <link href = "styles/large.css" rel = "stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <script defer src="./scripts/dates.js"></script>
+    <script defer src="./scripts/currentDate.js"></script>
+    <script defer src="./scripts/ham.js"></script>
+    <script defer src="./scripts/banner.js"></script>
+    <script defer src="./scripts/windchill.js"></script>
+    <link rel="icon" href="./favicon.ico">
+
+</head>
+<body>
+
+  <section id="banner">
+    <h3>
+     🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m!
+    </h3>
+  </section>
+
+  <header>
+    <div class="logo-container">
+      <a href="./index.html">
+      <img class="logo" src="./images/sun_logo.webp" alt="Sonora Chamber of Commerce">
+      </a>
+    <div>
+      <h1>
+      <span>Sonora</span><br>
+      <span>Chamber of Commerce</span>
+      </h1>
+    </div>
+    </div>
+
+    <nav id="primaryNav">
+      <ul> 
+        
+        <button id="hambBtn">&#9776;<span>X</span></button>
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="./discover.html">Discover</a></li>
+        <li><a href="./directory.html">Directory</a></li>
+        <li><a href="./join.html">Join</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="social-container">
+      <a href="#"><img src="./images/circle_facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="./images/circle_linkedin.png" alt="LinkedIn"></a>
+    </div>
+    
+    
+  </header>
+  <span id="date"></span>
+    
+ <main>
+    <div class="contact_us">
+        <h1>CONTACT US</h1>
+    </div>
+
+    <form action="./thankyou.html" name="contact">
+    
+    <div>
+      <label for="first_name">First name:</label>
+      <input  type="text" id="fname" name="fname" placeholder="John" required>
+      <label for="last_name">Last name:</label>
+      <input type="text" id="lname" name="lname" placeholder="Doe" required>
+      <label for="email">Email:</label>
+      <input class="w-full input_style" type="text" id="email" name="email"
+             placeholder="email@me.io" pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" required>
+      <label for="phone_number">Cell Phone Number:</label>
+      <input type="text" id="pnumber" name="pnumber" placeholder="(123) 321-4561" required>
+      <label for="message">Message:</label>
+      <textarea  id="message" name="message" placeholder="Your message ..."></textarea>
+    </div>
+
+    <div>
+      <input class="btn" type="submit" value="SUBMIT">
+    </div>
+
+      <div>
+      <h2>SONORA CHAMBER OF COMMERCE</h2>
+                
+      <p>You can also send us a mail or give us a call for any questions or concerns you may have.</p>
+                
+      <p>Hidalgo # 123, Colonia Centenario, Hermosillo, Sonora, México. <br>
+        info@camarasonora.org<br>
+        662 260 7540</p>
+            
+            </div>
+            <picture>
+                <img src="./images/chamber_map.png" alt="Chamber Map" />
+              </picture>
+        </div>
+    </form>
+
+ </main>
+
+
+<div class="last-visit">
+  <p>Last visit: <span id="visit_count"></span> days ago.</p>
+</div>
+
+  <footer>
+    <div class="logo-container">
+      <img class="logo" src="./images/sun_logo.png" alt="Chamber of Commerce">
+      <div>
+          <h2>
+              <span>Sonora</span><br>
+              <span>Chamber of Commerce</span>
+          </h2>
+
+      <div class="contact-info">
+   
+          <p>Hidalgo # 123, Colonia Centenario, Hermosillo, Sonora, México. <br>
+          info@camarasonora.org<br>
+          662 260 7540</p>
+         <a href="">Location map<br></a> 
+       </div>
+
+       <div class="data">
+            &copy; <span id="year"></span> | Sonora Chamber of Commerce | Avril Escalante | WDD 230
+        Project | Last Modified: <span id="lastmod"></span>
+
+       </div>
+                   
+  </footer>
+</body>
+</html>

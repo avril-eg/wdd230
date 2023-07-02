@@ -5,7 +5,7 @@
 	}
      
        
- nav button {
+ #hambBtn {
      display: none;
      }
        
@@ -16,7 +16,7 @@
      padding: 1rem;
      }
        
-     
+
  nav ul.open {
      border-top: none;
      border-left: none;
@@ -81,4 +81,8 @@
     color: #ff6347;
   }
  
+  .discover {
+	margin: 0 auto;
+}
+
  }
