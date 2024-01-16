@@ -4,67 +4,98 @@
 
 body {
     font-family: "Open Sans", sans-serif;
-     /* display: flex;
-    flex-direction: column; */
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    color: #FFFFFF;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    margin: 0;
-    background-color: #FFFFFF;
-    
-
 }
+
 h1{
     color: #FFFFFF;
-}
-main {
-    display: grid;
-    grid-template: auto;
+    padding: .5rem;
+    font-size: 3rem;
 }
 
-header, footer {
-    background-color: #E5BB89;
+header, 
+footer {
+    background-color: #CCC5B7;
+    border-radius: .5rem;
 }
 
 
 a {
     text-decoration: none;
-    /* make the links not to be underlined */
 }
 
 p {
-    
+    color: black;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;  
 }
 
 header {
-    margin-top: 10px;
+    margin: 10px 0 10px 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
+    font-size: 20px;
 }
 
 header img {
-    margin-right: 10px;
+    margin: 1rem;
+    border-radius: .5rem;
 }
 
 nav {
     text-align: center;
+    background-color: #6F5D44;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 nav a {
-    display: block;
-    background-color: #CCC5B7;
-    color: white;
+    padding: .5rem;
+    color: #FFFFFF;
+    font-size: 1.75rem;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+ul,
+li,
+a{
+    list-style-type: none;
+}
+
+nav a:hover{
+    color: #CCC5B7;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+    color: black;
+}
+
+main a {
+    color: black;
 }
 
 h3 {
     background-color: #6F5D44;
     color: white;
-}
-
-li {
-    list-style-type: none;
+    border-radius: .5rem .5rem 0 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem;
 }
 
 main {
@@ -74,10 +105,32 @@ main {
     margin: 0 auto;
 }
 
+main hr {
+    border: none; 
+    height: 2px; 
+    background-color: #6F5D44; 
+    margin-bottom: 10px; 
+    margin-top: 0;
+}
+.card{
+    border: 1px solid #6F5D44;
+    border-radius: .5rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
 footer {
     width: 100%;
     margin-top: auto;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
+
+
+
 
 
