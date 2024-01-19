@@ -7,14 +7,14 @@ body {
     max-width: 800px;
     margin: 0 auto;
     font-size: 1.5rem;
-    color: #FFFFFF;
+    color: #534949;
     align-items: center;
     justify-content: center;
     height: 100vh;
 }
 
 h1{
-    color: #FFFFFF;
+    color: #534949;
     padding: .5rem;
     font-size: 3rem;
 }
@@ -74,7 +74,7 @@ nav {
     color: white;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    
 }
 
 nav ul {
@@ -83,7 +83,7 @@ nav ul {
 nav a {
     padding: .5rem;
     color: #FFFFFF;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     text-decoration: none;
     list-style-type: none;
 }
