@@ -2,11 +2,7 @@
     header, nav, main, footer {
         max-width: 992px;
     }
-    
-    h1 {
-        color: #534949
-    }
-    
+  
     #menu {
         display: none;
     }
