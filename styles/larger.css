@@ -3,6 +3,10 @@
         max-width: 992px;
     }
     
+    h1 {
+        color: #534949
+    }
+    
     #menu {
         display: none;
     }
@@ -16,8 +20,7 @@
 		flex: 1 1 100%;
 	}
 
-  
-    h1 {
-        grid-column: 1 / 4;
+    h2{
+        font-size: 1.5rem;
     }
 }
