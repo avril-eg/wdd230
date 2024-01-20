@@ -7,22 +7,18 @@ body {
     max-width: 800px;
     margin: 0 auto;
     font-size: 1.5rem;
-    color: #534949;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    background-color: #f2ebf5;
 }
 
 h1{
-    color: #534949;
+    color: #297C4F;
     padding: .5rem;
     font-size: 3rem;
 }
 
 header, 
 footer {
-    background-color: #CCC5B7;
-    border-radius: .5rem;
+    background-color: #D3E7BB;  
 }
 
 
@@ -38,7 +34,7 @@ p {
 }
 
 header {
-    margin: 10px 0 10px 0;
+    margin: 10px 0 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,30 +43,11 @@ header {
 
 header img {
     margin: 1rem;
-    border-radius: .5rem;
-}
-
-#menu {
-	font-size: 1.5rem;
-	border: 1px solid rgba(0,0,0,.3);
-	padding: 3px 7px 6px;
-	background-color: #eee;
-	color: #000;
-    position: relative;
-    left: 5%;
-}
-
-#menu::before {
-	content: "☰";
-}
-
-#menu.open::before {
-	content: "X";
 }
 
 nav {
     text-align: center;
-    background-color: #6F5D44;
+    background-color: #297C4F;
     color: white;
     display: flex;
     flex-direction: column;
@@ -89,14 +66,6 @@ nav a {
 }
 
 
-.open li {
-	display: block;
-	width: 100%;
-}
-.open li a {
-	display: block;
-}
-
 .active {
 	color: yellow;
 }
@@ -108,7 +77,7 @@ a{
 }
 
 nav a:hover{
-    color: #CCC5B7;
+    color: #D3E7BB;
 }
 
 h2{
@@ -123,7 +92,7 @@ main a {
 }
 
 h3 {
-    background-color: #6F5D44;
+    background-color: #297C4F;
     color: white;
     border-radius: .5rem .5rem 0 0;
     display: flex;
@@ -142,12 +111,14 @@ main {
 main hr {
     border: none; 
     height: 2px; 
-    background-color: #6F5D44; 
+    background-color: #d9acb4; 
     margin-bottom: 10px; 
     margin-top: 0;
-}
+} 
+    
+  
 .card{
-    border: 1px solid #6F5D44;
+    
     border-radius: .5rem;
     padding: 0;
     display: flex;
@@ -164,6 +135,9 @@ footer {
     justify-content: flex-start;
 }
 
+footer p {
+    color: #297C4F;
+}
 
 
 
