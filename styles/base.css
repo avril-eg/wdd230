@@ -25,7 +25,7 @@ a {
 }
 
 p {
-    color: #23262A;
+    color: #3D424A;
     padding: .3rem; 
     justify-content: center;
 }
@@ -50,24 +50,23 @@ nav {
 
 nav ul {
     list-style-type: none;
+    margin: 0;
+    padding: 1rem 0 1rem 0;
 }
 
 nav a {
     display: block;
     text-align: center;
-    padding: 1rem;
     color: #FFFFFF;
-    text-decoration: none;
-    
+    text-decoration: none;  
 }
+
 
 .active {
 	color: #f2ebf5;
 }
 
-ul,
-li,
-a{
+section ul{
     list-style-type: none;
     text-align: left;
 }
@@ -80,10 +79,9 @@ h2{
     border-bottom: solid #297C4F;
     border-bottom-width: 2px;
     font-size: 16px;
-    display: flex;
-    justify-content: center;
-    margin: 20px; 
-    color: #3D424A;   
+    margin: 0 auto; 
+    color: #3D424A; 
+    padding: 1rem;  
 }
 
 main a {

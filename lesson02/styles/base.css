@@ -14,20 +14,20 @@ header,
 footer {
     background-color: #D3E7BB;  
     margin: 10px 0 0 0;
-    display: flex;
+    text-align: center;
     justify-content: center;
     align-items: center;
     padding: 10px;  
 }
 
 h1{
-    color: #297C4F;
+    color: #3D424A;
     font-size: 3rem;   
 }
 
 h2{
-    font-size: 16px;
-
+    font-size: 2rem;
+    color: #3D424A;
     margin: 20px;    
 }
 
