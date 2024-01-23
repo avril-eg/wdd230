@@ -72,7 +72,7 @@ section ul{
 }
 
 nav a:hover{
-    color: #D3E7BB;
+    text-decoration: overline;
 }
    
 h2{
