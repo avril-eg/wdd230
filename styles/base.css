@@ -42,10 +42,47 @@ header img {
     margin: 1.2rem;
 }
 
+#menu {
+	display: block;
+	font-size: 2rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	background-color: #eee;
+	color: #297C4F;
+}
+
+#menu::before {
+	content: "≡";
+}
+
 nav {
     background-color: #297C4F;
     margin: 0 auto;
     color: white;   
+}
+
+.navigation {
+	list-style: none;
+	margin: 0 auto;
+	max-width: 760px;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "X";
 }
 
 nav ul {
@@ -63,7 +100,7 @@ nav a {
 
 
 .active {
-	color: #f2ebf5;
+	color: #c594d9;
 }
 
 section ul{
