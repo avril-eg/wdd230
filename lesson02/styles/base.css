@@ -37,25 +37,32 @@ main {
     
 }
 
-
-
 h3 {
     background-color: #297C4F;
     color: white;
     border-radius: .5rem .5rem 0 0;
-    justify-content: center;
+    text-align: center;
     margin: 0;
-    padding: 1rem;
+    padding: .5rem;
 }
 
 img {
     max-width: 80%;
+    margin: 2.5rem;
+    padding: .5rem;
+    
+    
 }
 
 .card{
-    margin: 20px;
-    border-bottom: 20px;
+    margin: .5rem;
+    border-bottom: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: .5rem;
-    padding: 1rem;
+    padding: .5rem;
+}
+
+.card p {
+    color: #3D424A;
+    padding: .5rem .5rem 0 .2rem;
 }
