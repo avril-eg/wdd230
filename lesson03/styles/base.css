@@ -62,31 +62,27 @@ th{
     text-align: center;
     padding: .5rem;
 }
+
 .secondary {
     background-color: #D13133;
     color: #fff;
     text-align: center;
     padding: .5rem;
 }
+
 .accent1 {
     background-color: #767575;
     color: #EFEFEF;
     text-align: center;
     padding: .5rem;
 }
+
 .accent2{
     background-color: #CAEBF2;
     color: #767575;
     text-align: center;
     padding: .5rem;
 }
-
-img {
-    max-width: 50%;
-    box-shadow: 0 0 5px;
-    margin: 0 auto;
-    
-  }
 
 .card{
     margin: 20px;
@@ -95,13 +91,15 @@ img {
     border-radius: .5rem;
 }
 
+ img {
+    justify-content: center;
+}
+
 .active {
 	color: #767575;
 }  
 
-footer p,
-footer a:hover,
-footer a:focus{
+footer p {
     color: #d13133;
     padding: .5rem;
 }
