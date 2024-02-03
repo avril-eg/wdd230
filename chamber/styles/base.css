@@ -95,6 +95,14 @@ nav a:hover{
     text-decoration: overline;
 }
 
+main img {
+    max-width: 900px;
+}
+
+.herodiv {
+    background-color: #D13133;
+    color: #FFFFFF;
+}
 
 h2 {
     font-style: italic;
@@ -103,8 +111,8 @@ h2 {
 
 h3 {
     padding: .5rem;
-	color: #767575;
-    background-color: #CAEBF2;
+	
+   
     border-radius: .5rem .5rem 0 0;
     justify-content: center;
     margin: 0;
