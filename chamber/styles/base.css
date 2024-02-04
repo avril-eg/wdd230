@@ -9,18 +9,24 @@ body {
     margin: 0 auto;
     font-size: 1.2rem;
 	font-family: 'Raleway', sans-serif;
+    
 }
 
 header,
 footer {
-    display: block;
-    text-align: center;
+    display: flex;
+    
     box-shadow: 0 10px 10px 0 #777;
     background-color: #EFEFEF;
     color: #d13133;
-	padding: .75rem;	
+	padding: 1rem;
+    align-items: center;
+    justify-content: center;	
 }
 
+header img {
+    border-radius: 1.2rem 0 1.2rem 0;
+}
 h1 {
     padding: .7rem;
 }   
@@ -99,36 +105,33 @@ main {
 	font-size: 0.8rem;
 }
 
-main section{
+section{
 	margin: .5rem;
 	padding: 4rem;
 	box-shadow: 0 2px 15px #6B7AA1;
 	background-color:#f7f5f1;
 
 }
-main img {
-    max-width: 900px;
+
+img {
+    height: auto;
+    max-width: 100%;
 }
 
 .herodiv {
     padding: 0%;
 	position: relative;
 	opacity: 0.8;
-    background-color: #D13133;
-    color: #FFFFFF;
+    color: #323015;
 }
 
-
-
 h2 {
-    font-style: italic;
     font-size: 1.5rem;
 }
 
 h3 {
     padding: .5rem;
 	color: #767575;   
-    border-radius: .5rem .5rem 0 0;
     justify-content: center;
     margin: 0;
     padding: 1rem;
@@ -146,11 +149,12 @@ p {
    }
 
 
-.card{
+.spotlight{
     margin: 20px;
     border-bottom: 20px;
     box-shadow: 0 4px 8px rgba(61, 66, 74, 0.2);
     border-radius: .5rem;
+    background-color: #f5f9a4;
 }
 
  img {
