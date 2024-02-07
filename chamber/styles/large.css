@@ -16,10 +16,16 @@
     #menu {
         display: none;
     }
-
+   
     main{
-        grid-template-columns: 1fr 1fr 1fr;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto  auto auto;
+        gap: 10px;
 
+    }
+    .herodiv {
+        grid-column: 1/4;
     }
 
     .event {
@@ -30,5 +36,11 @@
         grid-column: 3/4;
     }
 
- 
+    .spotlight {
+        display: flex;       
+        justify-content: space-around; 
+        align-items: flex-start; 
+        border: none;
+    }
+
 }
