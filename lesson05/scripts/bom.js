@@ -8,9 +8,9 @@ button.addEventListener("click", function () {
     const listItem = document.createElement("li");
     const listButton = document.createElement("button");
     listItem.textContent = inputText;
-    listButton.textContent = "❎";
-    listItem.appendChild(listButton);
-    list.appendChild(listItem);
+    listButton.textContent = "❌";
+    listItem.append(listButton);
+    list.append(listItem);
     listButton.addEventListener("click", function () {
       list.removeChild(listItem);
     });
