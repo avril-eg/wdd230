@@ -3,18 +3,19 @@ const button = document.querySelector('button');
 const list = document.querySelector('#list')
 
 button.addEventListener("click", function () {
-    let inputText = input.value;
-  
-    const listItem = document.createElement("li");
-    const listButton = document.createElement("button");
-    listItem.textContent = inputText;
+  if (input.value !=='') {
+    let listItem = document.createElement("li");
+    let listButton = document.createElement("button");
+    listItem.textContent = input.value;
     listButton.textContent = "❌";
+    list.appendChild(listItem);
     listItem.append(listButton);
-    list.append(listItem);
+       
     listButton.addEventListener("click", function () {
       list.removeChild(listItem);
     });
   
     input.focus();
     input.value = "";
-  });
+  }}
+  );
