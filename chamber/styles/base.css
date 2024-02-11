@@ -198,7 +198,7 @@ section img {
 
 h3 {
     padding: .5rem;
-	color: #767575;   
+	color: #4b4747;   
     justify-content: center;
     margin: 0;
     padding: 1rem;
@@ -211,7 +211,7 @@ h4 {
 }
 
 p {
-    color: #323015;
+    color: #4b4747;
     padding: 1rem;
    }
 
@@ -221,7 +221,7 @@ p {
     border-bottom: 20px;
     box-shadow: 0 4px 8px rgba(61, 66, 74, 0.2);
     border-radius: .5rem;
-    background-color: #f5f9a4;
+    background-color: #ebecd8;
 }
 
 
