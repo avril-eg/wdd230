@@ -121,6 +121,28 @@ h2{
     padding: 1rem;  
 }
 
+.responsive-image {
+    max-width: 800px;
+    margin-top: 1rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.temple {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    font-size: 2rem;
+    padding: 1rem;
+    opacity: .8;
+    border-radius: .5rem;
+    z-index: 1;
+}
+
 main a {
     color: #3D424A;
 }
