@@ -4,7 +4,7 @@
 
 body {
     font-family: "Open Sans", sans-serif;
-    max-width: 800px;
+    max-width: 960px;
     margin: 0 auto;
     font-size: 1.2rem;
     background-color: #f2ebf5;
@@ -121,8 +121,9 @@ h2{
     padding: 1rem;  
 }
 
-.responsive-image {
-    max-width: 800px;
+.hero{
+    width:100%;
+    height: auto;
     margin-top: 1rem;
     position: relative;
     display: flex;
@@ -130,9 +131,7 @@ h2{
     align-items: center;
 }
 
-
-
-.temple {
+.banner {
     position: absolute;
     top: 1.5rem;
     right: 2rem;
@@ -172,7 +171,7 @@ main {
 }
 
 .card ul li{
-    margin: 1rem 0;
+    margin: .7rem 0;
 }
 
 iframe {
