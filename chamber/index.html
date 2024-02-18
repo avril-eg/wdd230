@@ -60,7 +60,10 @@
     <main>
         <div class="hero">
             <picture>
-                <img src="images/sonora-cactus-organ-pipe.jpg" alt="Sonora cactus">
+                <source srcset="images/hero-image-small.webp" media="(max-width: 450px)">
+                <source srcset="images/hero-image-medium.webp" media="(max-width: 750px)">
+                <source srcset="images/hero-image-large.webp" media="(max-width: 1000px)">
+                <img src="images/hero-image-large.webp" alt="Responsive Hero Image">
             </picture>
 
             <button id="join">Join the Chamber</button>
