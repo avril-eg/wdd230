@@ -1,10 +1,14 @@
-body {
-   background-color: rgb(119, 180, 196);
-  }
-
+body{
+    font-family: "Fredoka", sans-serif;
+    background-image: linear-gradient(
+        to bottom right,
+        #FDC639, #FF7C60
+    );
+}
+    
 h1 {
     font-size: 2.5rem;
-    color: whitesmoke;
+    color: rgb(8, 7, 7);
     text-align: center;
     }
     
@@ -14,12 +18,7 @@ main {
     display: flex;
     flex-direction: column;
 }
-.pictures {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    width: 300px;
-    }
+
 
 img {
     width: 100%;
@@ -29,3 +28,10 @@ img {
     box-shadow: 0 0 10px rgb(36, 37, 37);
     }   
       
+footer {
+    margin: 0 auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
