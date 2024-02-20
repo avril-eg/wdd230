@@ -1,6 +1,5 @@
 body {
-    font-family: 'Noto Sans', sans-serif;
-    background-color: rgb(119, 180, 196);
+   background-color: rgb(119, 180, 196);
   }
 
 h1 {
@@ -9,6 +8,12 @@ h1 {
     text-align: center;
     }
     
+main {
+    margin: 0 auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
 .pictures {
     display: flex;
     flex-direction: column;
@@ -17,6 +22,7 @@ h1 {
     }
 
 img {
+    width: 100%;
     padding: .5rem;
     filter: blur(0px);
     transition: filter 0.60s;
