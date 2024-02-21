@@ -39,10 +39,15 @@
     }
 
     .spotlight {
-        display: flex;       
-        justify-content: space-around; 
-        align-items: flex-start; 
+        
         border: none;
     }
 
+    footer p {
+        display: flex;
+
+    }
+    
+    
+   
 }

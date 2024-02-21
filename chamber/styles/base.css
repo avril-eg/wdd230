@@ -55,8 +55,7 @@ body.dark {background-color: #292c35;} /* #9b59b6 */
 
 
 
-header,
-footer {
+header {
     display: flex;
     box-shadow: 0 10px 10px 0 #777;
     background-color: #EFEFEF;
@@ -229,7 +228,13 @@ p {
 	color: #f5f9a4;
 }  
 
-footer p {
-    color: #d13133;
-    padding: .5rem;
+footer p{
+        display: flex;
+        box-shadow: 0 10px 10px 0 #777;
+        background-color: #EFEFEF;
+        color: #d13133;
+        padding: .5rem;
+        text-align: center;
+        align-items: center;
+        justify-content: center;	
 }
