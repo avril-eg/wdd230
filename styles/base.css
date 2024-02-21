@@ -40,6 +40,7 @@ header {
 
 header img {
     margin: 1.2rem;
+    border-radius: 10%;
 }
 
 #menu {
