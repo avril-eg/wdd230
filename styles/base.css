@@ -170,7 +170,7 @@ main {
     margin: 0 auto;
 }
  
-.card{
+.card-1, .card-2{
     margin: 20px;
     border-bottom: 20px;
     box-shadow: 0 4px 8px rgba(61, 66, 74, 0.2);
@@ -207,6 +207,13 @@ footer {
 
 footer p {
     color: #3D424A;
+}
+
+footer img {
+    width: 10%;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0;
 }
 
 
