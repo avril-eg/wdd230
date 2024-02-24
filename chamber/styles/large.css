@@ -47,7 +47,43 @@
         display: flex;
 
     }
+
+    #discover-main {
+        background-color: #747474;
+        display: grid;
+        grid-template-columns: 250px auto;
+        grid-column-gap: 10px;
+        padding: .5rem;
+        
+      }
     
+      #discover-main h2 {
+        text-align: center;
+        color: rgb(0, 0, 0);
+      }
+    
+      .discover-section {
+        grid-column: 1/2;
+    
+      }
+
+
+     .discover-section br.appear {
+    display: inline;
+  }
+
+  #discover-img {
+    grid-column: 2/3;
+    grid-row: 1/8;
+  }
+
+  #discover-img img {
+    transform: scale(1);
+  }
+
+  #discover-img img:hover {
+    transform: scale(1);
+  }
     
    
 }
