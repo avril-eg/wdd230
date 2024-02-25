@@ -181,7 +181,9 @@ h2 {
 }
 
 section img {
-    display: block;
+    width:100%;
+    height: auto;
+   
     margin: auto;
     padding: .7rem;
 }

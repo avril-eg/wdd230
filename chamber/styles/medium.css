@@ -1,0 +1,11 @@
+@media screen and (min-width: 700px) {
+
+    footer hr {
+        grid-column: 1 / 3; 
+        width: 98%; 
+        border: none;
+        height: 1px;
+        background-color: white;
+        margin: .5rem; 
+    }
+}
