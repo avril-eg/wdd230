@@ -1,0 +1,63 @@
+:root {
+    --color-blue: #007BFF;
+    --color-red: red;
+    --color-darkred:  darkred;
+    --color-coral: lightcoral;
+    --color-greenb: green;
+    --color-darkGreen: #297C4F;
+    --color-lightGreen: lightgreen;
+    --color-white: white;
+    --color-black: black;
+}
+
+main, h2 {
+    color: var(--color-black);
+}
+
+label, input{
+    display: block;
+    margin: .5rem;
+    padding: .75rem .25rem;
+}
+
+.errorMessage {
+    color: --var(--color-red);
+    display: none;
+}
+
+input:required{
+    border-left: 6px --var(--color-red); ;
+    color: var(--color-darkred);
+    background-color: var(--color-coral);
+}
+
+input:required:valid{
+    border-left: 6px solid var(--color-green);
+    color: var(--color-darkGreen);
+    background-color: var(--color-lightGreen);
+}
+
+input:focus {
+    border: 2px solid var(--color-blue); 
+    outline: none; 
+}
+
+.submitBtn{
+    margin: 1.5rem 2rem;
+    padding: .5rem;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    transform: scale(1.25);
+    transition: transfrom 0.3s ease;
+}
+
+input:placeholder-shown {
+    background-color: #eef; 
+}
+
+#rangevalue{
+    margin: 1rem;
+}
