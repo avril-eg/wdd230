@@ -85,6 +85,22 @@
   #discover-img img:hover {
     transform: scale(1);
   }
+
+ .join-form {
+    display: grid;
+    grid-template-columns: 250px auto;
+    grid-column-gap: .5rem;
+    padding: .5rem;
+    
+  }
+
+  .info {
+    grid-column: 1/2;
+  }
+
+  #memberships {
+    grid-column: 2/3;
+  }
     
    
 }
