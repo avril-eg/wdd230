@@ -43,7 +43,6 @@
         <a href="https://www.linkedin.com/"><img src="./images/linkedin.png" alt="linkedin" width="40"></a>
     </div>
 
-    <nav>
         <a id="menu" href="#"></a>
         <nav>
             <ul class="navigation">
@@ -54,9 +53,94 @@
             </ul>
         </nav>
 
-
-</nav>
     <main>
+        <div class="join-form">
+
+        <form method="get" action="thanks.html">
+            <h2> Join Hermosillo Chamber of Commerce</h2>
+
+            <fieldset>
+                <legend> Personal Information</legend>
+                      
+                  <label>First Name* <input type="text" name="fname" id="first-name" required></label>
+                  <label>Last Name* <input type="text" name="lname" id="last-name" required></label>
+                  <label>Title/Position* <input type="text" name="position" id="tposition" pattern="[A-Za-z0-9\- ]{7,}" title="Title must be at least 7 characters and only contain alphanumeric characters, hyphens, and spaces."></label>
+                  <label>Email* <input type="email" name="email" id="email" placeholder="someone@gmail.com" required></label>
+                  <label>Phone Number* <input type="tel" name="mobileNumber" id="mobile" required></label>
+                  <label>Business/Organization's Name*<input type="text" name="bname" id="bname" required></label>
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Membership Level</legend>
+                    <label class="radio"><input type="radio" name="membership" value="np" checked>NP Membership</label>
+                    <label class="radio"><input type="radio" name="membership" value="bronze">Bronze Membership</label>
+                    <label class="radio"><input type="radio" name="membership" value="silver">Silver Membership</label>
+                    <label class="radio"><input type="radio" name="membership" value="gold">Gold Membership</label>
+           </fieldset>
+
+            <fieldset>
+                <legend>Business/Organization's Description</legend>
+                    <label for="business-description">Description: </label>
+                    <textarea name="business-description" id="business-description" rows="4" cols="50"
+                        title="Enter a brief description of your business/organization."></textarea>
+            </fieldset> 
+        </div>
+
+            <input type="hidden" name="timestamp" id="timestamp">
+            <input type="submit" id="submit" value="Join Us!" class="submitButton">
+        </form>
+
+        <div id="info">
+            <section>
+                <h2>Memberships Information</h2>
+            </section>
+
+            <section>
+                <h3>NP Membership</h3>
+                <p class="price">non profit organizations and there is no fee.</p>
+                <ul class="benefits-list">
+                    <li>Stay informed with monthly newsletters.</li>
+                    <li>Access to our online business resources.</li>
+                    <li>Network with community members at open events.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Bronze Membership</h3>
+                <p class="price">$100 Annually</p>
+                <ul class="benefits-list">
+                    <li>All Complimentary Membership benefits.</li>
+                    <li>Exclusive 25% discount on workshops and seminars.</li>
+                    <li>Enhanced business visibility with advertising opportunities.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Silver Membership</h3>
+                <p class="price">$500 Annually</p>
+                <ul class="benefits-list">
+                    <li>All Bronze Partnership benefits plus:</li>
+                    <li>35% discount on specialized business seminars.</li>
+                    <li>Complimentary admission to exclusive networking luncheons.</li>
+                    <li>Priority invitations to chamber-hosted learning events.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Gold Membership</h3>
+                <p class="price">$1,000 Annually</p>
+                <ul class="benefits-list">
+                    <li>All Silver Partnership benefits plus:</li>
+                    <li>45% discount on premium business seminars and workshops.</li>
+                    <li>Prominent advertising placements and spotlight features.</li>
+                    <li>Opportunities for main stage presentations at events.</li>
+                </ul>
+            </section>
+        </div>
+
+        </form>
        
        
     </main>
