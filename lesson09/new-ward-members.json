@@ -1,0 +1,30 @@
+{
+    "wardInformation": {
+    "familyName": "Rivera",
+    "moveInDate": "2011-08-01",
+    "numberOfPeople": 4,
+    "visitedByBishopric": true,
+    "familyMembers": [
+      {
+        "name": "Jonatan Rivera",
+        "gender": "Male",
+        "birthdate": "1980-11-21"
+      },
+      {
+        "name": "Avril Escalante de Rivera",
+        "gender": "Female",
+        "birthdate": "1980-10-26"
+      },
+      {
+        "name": "Josue Rivera",
+        "gender": "Male",
+        "birthdate": "2006-10-11"
+      },
+      {
+        "name": "Emilia Rivera",
+        "gender": "Female",
+        "birthdate": "2009-11-14"
+      }
+    ]
+    }
+  }
