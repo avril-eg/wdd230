@@ -1,39 +1,48 @@
 const url = 'https://brotherblazzard.github.io/canvas-content/latter-day-prophets.json';
+const cards = document.querySelector('#cards');
 
-fetch(url)
-  .then(function (response) {
-    return response.json();
-  })
+async function getProphetData() {
+    const response = await fetch(url);
+    const data = await response.json();
+    // console.table(data.prophets);
+    displayProphets(data.prophets);
 
-  .then(function (jsonObject) {
+    getProphetData();
 
-    //console.table(jsonObject); for temporary checking for valid response and data parsing
-    
-    const prophets = jsonObject['prophets'];
-   
-   // for (let i = 0; i < prophets.length; i++ ) { 
-      
-    prophets.forEach(prophet => {
-        const card = document.createElement('section');
-        const h2 = document.createElement('h2');
-        const birthDate = document.createElement('p');
-        const birthPlace = document.createElement('p');
-        const image = document.createElement('img');
-        const fullname = `${prophet.name} ${prophet.lastname}`;
+    const displayProphets = (prophets) => {
+        prophets.forEach(prophet => {
+            let card = document.createElement('section');
+            let fullName = document.createElement('h2');
+            let birthDate = document.createElement("p");
+            let portrait = document.createElement('img');
 
-        h2.textContent = fullname;
-        birthDate.textContent = `Date of Birth: ${prophet.birthdate}`;
-        birthPlace.textContent =`Place of Birth: ${prophet.birthplace}`;
-        image.setAttribute('src', prophet.imageurl);
-        image.setAttribute('alt', `${fullname} - ${prophet.order}`);
-
-     
-        card.appendChild(h2);
-        card.appendChild(birthDate);
-        card.appendChild(birthPlace);
-        card.appendChild(image);
-
-      document.querySelector('#cards').appendChild(card);
+            fullName.textContent = `${prophet.name} ${prophet.lastname}`;
+            birthDate.innerHTML = `Date of Birth: ${prophet.birthdate} <br>Place of Birth: ${prophet.birthplace}`;
             
-    })
-  });
+            portrait.setAttribute('src', prophet.imageurl);
+            portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname}`);
+            portrait.setAttribute('loading', 'lazy');
+            portrait.setAttribute('width', '340');
+            portrait.setAttribute('height', '440');
+
+                   
+            
+            
+
+            card.appendChild(fullName);
+            card.appendChild(birthDate);
+            card.appendChild(portrait);
+
+            cards.appendChild(card);
+});
+}
+  }
+
+
+
+
+  
+
+  
+    
+  
