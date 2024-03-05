@@ -1,0 +1,131 @@
+{
+    "lessons": [
+      { 
+        "lesson": "01",
+        "links": [
+          {
+            "url":"lesson01/holygrail.html",
+            "title":"Holy Layout"
+          },
+          {
+            "url":"https://codepen.io/avril_eg/pen/gOELmVa",
+            "title":"JS Pen"
+          }
+        ]
+    },
+    {
+        "lesson": "02",
+        "links": [
+          {
+            "url":"lesson02/media-query.html",
+            "title":"Media Query"
+          },
+          {
+            "url":"lesson02/design-principles.html",
+            "title":"Design Principles Document"
+          }
+        ]
+    },
+    {
+        "lesson": "03",
+        "links": [
+          {
+            "url":"images/CSS-combinators.png",
+            "title":"CSS Combinators"
+          },
+          {
+            "url":"https://codepen.io/avril_eg/pen/KKEvzOM",
+            "title":"CSS Pseudo-Elements"
+          },
+        {
+            "url":"https://codepen.io/avril_eg/pen/rNRzLrK",
+            "title":"Responsive 'Hamburger' Menu"
+        }
+    ]
+    },
+    {
+        "lesson": "04",
+        "links": [
+          {
+            "url":"https://codepen.io/avril_eg/pen/OJqzwGY",
+            "title":"CSS Pseudo-Classes"
+          }
+    ]
+    },
+    {
+        "lesson": "05",
+        "links": [
+          {
+            "url":"lesson05/bom.html",
+            "title":"BOM - Favorite Chapters"
+          }
+    ]
+    },
+    {
+        "lesson": "06",
+        "links": [
+          {
+            "url":"lesson06/images/landscape.webp",
+            "title":"WebP"
+          },
+          {
+            "url":"lesson06/responsive-images.html",
+            "title":"Responsive Images"
+          }
+    ]
+    },
+    {
+        "lesson": "07",
+        "links": [
+          {
+            "url":"lesson07/lazyload.html",
+            "title":"Lazy Load"
+          },
+          {
+            "url":"lesson07/bom-copy.html",
+            "title":"BOM - Local Storage"
+          }
+    ]
+    },
+    {
+        "lesson": "08",
+        "links": [
+          {
+            "url":"lesson08/tablebuild.html",
+            "title":"Table Build"
+          },
+          {
+            "url":"lesson08/Form-start/index.html",
+            "title":"Building a Form"
+          }
+    ]
+    },
+    {
+        "lesson": "09",
+        "links": [
+          {
+            "url":"lesson09/new-ward-members.json",
+            "title":"JSON File"
+          },
+          {
+            "url":"lesson09/prophets.html",
+            "title":"Latter-day Prophets"
+          }
+    ]
+    },
+    {
+        "lesson": "10",
+        "links": [
+          {
+            "url":"",
+            "title":""
+          },
+          {
+            "url":"",
+            "title":""
+          }
+    ]
+    }
+
+        ]
+    }
