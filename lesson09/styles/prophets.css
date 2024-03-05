@@ -25,7 +25,7 @@ section {
 }
 
 
-.cards {
+#cards {
        display: grid;
        grid-template-columns: 1fr;
        grid-gap: 2px;     
@@ -62,7 +62,7 @@ img {
 /*Media query section */
 @media (min-width: 37.5em) and (max-width: 59.9em) {
    
-    .cards{
+    #cards{
         grid-template-columns: 1fr 1fr;
         padding: 30px;
   }
@@ -75,7 +75,7 @@ img {
         padding: 1rem;
     }
     
-    .cards{
+    #cards{
         grid-template-columns: 1fr 1fr 1fr 1fr;
     } 
 
