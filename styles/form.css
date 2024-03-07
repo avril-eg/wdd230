@@ -1,17 +1,139 @@
 :root {
-    --color-blue: #007BFF;
-    --color-red: red;
-    --color-darkred:  darkred;
-    --color-coral: lightcoral;
-    --color-greenb: green;
-    --color-darkGreen: #297C4F;
-    --color-lightGreen: lightgreen;
-    --color-white: white;
-    --color-black: black;
+
+--primary-color: #297C4F;
+--secondary-color: #D3E7BB;
+--text-color: #3D424A;
+--bk-color:#f2ebf5;
+--bk-menu: #FFFFFF;
+--active-color: #e7efc7;
+--error-color: rgb(201, 10, 10);
 }
 
+
+body {
+    font-family: "Open Sans", sans-serif;
+    max-width: 960px;
+    margin: 0 auto;
+    font-size: 1.3rem;
+    background-color: var(--bk-color);
+}
+
+h1{
+    color: var(--primary-color);
+    font-size: 3rem;   
+}
+
+header, 
+footer { 
+    background-color: var(--secondary-color);  
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    color: var(--text-color);
+    padding: .3rem; 
+    justify-content: center;
+}
+
+header {
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+header img {
+    margin: 1.2rem;
+    border-radius: 10%;
+}
+
+#menu {
+	display: block;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	background-color: var(--bk-menu);
+	color: var(--primary-color);
+}
+
+#menu::before {
+	content: "≡";
+}
+
+nav {
+    background-color: var(--primary-color);
+    margin: 0 auto;
+    color: var(--bk-menu);   
+}
+
+.navigation {
+	list-style: none;
+	margin: 0 auto;
+	max-width: 760px;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 1rem 0 1rem 0;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    color: var(--bk-menu);
+    text-decoration: none;  
+}
+
+
+.active {
+	color: #edf5cc;
+}
+
+section ul{
+    list-style-type: none;
+    text-align: left;
+}
+
+nav a:hover{
+    text-decoration: overline;
+}
+   
+h2{
+    border-bottom: solid var(--primary-color);
+    border-bottom-width: 2px;
+    margin: 0 auto; 
+    color: var(--text-color); 
+    padding: 1rem;  
+}
 main, h2 {
     color: var(--color-black);
+}
+
+fieldset {
+    margin: 1rem;
+    border-radius: 2%;
 }
 
 label, input{
@@ -21,43 +143,93 @@ label, input{
 }
 
 .errorMessage {
-    color: --var(--color-red);
+    color: var(--error-color);
     display: none;
 }
 
 input:required{
-    border-left: 6px --var(--color-red); ;
-    color: var(--color-darkred);
-    background-color: var(--color-coral);
+    border-left: 6px var(--text-color); ;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
 }
 
 input:required:valid{
-    border-left: 6px solid var(--color-green);
-    color: var(--color-darkGreen);
-    background-color: var(--color-lightGreen);
-}
-
-input:focus {
-    border: 2px solid var(--color-blue); 
-    outline: none; 
+    border-left: 6px solid var(--primary-color);
+    
+   
 }
 
 .submitBtn{
-    margin: 1.5rem 2rem;
-    padding: .5rem;
+    background-color: var(--primary-color);
+    color: var(--bk-menu);
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 20%;
 }
 
-input[type="submit"]:hover {
-    background-color: var(--color-blue);
-    color: var(--color-white);
-    transform: scale(1.25);
-    transition: transfrom 0.3s ease;
-}
 
-input:placeholder-shown {
-    background-color: #eef; 
-}
+
 
 #rangevalue{
     margin: 1rem;
 }
+
+
+footer {
+    width: 100%;
+    margin-top: auto;
+    text-align: center;
+    padding: .3rem;
+}
+
+footer p {
+    color: var(--text-color);
+}
+
+footer img {
+    width: 10%;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+@media only screen and (min-width : 480px) {
+
+    .navigation {
+	    display: flex;
+	}
+	
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+	}
+
+    .navigation a {
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    main{
+        grid-template-columns: auto auto;
+    }
+
+    form{
+        width: 50%;
+        height: auto;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        margin: .7rem;
+        padding: 1rem;
+    }
+
+}
+
+
+
+
+
+
