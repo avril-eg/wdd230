@@ -9,62 +9,23 @@ async function getLinks() {
 
 getLinks();
 
-function displayLinks(lessons) {
+function displayLinks(lessons){
+    
+
     lessons.forEach(lesson => {
-        const li = document.createElement("li");
-        li.innerHTML = `${lessons.lesson}:`
-        lesson.links.forEach(link => {
-            li.innerHTML += ` <a href="${link.url}">${link.title}</a> |`
-        })
-        li.innerHTML = li.innerHTML.slice(0, -1);
-        
-        linksList.appendChild(li);
+        let li = document.createElement("li");
+        li.textContent = `${lessons.lesson}`;
+        lesson.links.forEach((link, i) =>{
+            let a = document.createElement('a');
+            a.setAttribute("href", link.url);
+            if (i === lesson.links.length - 1){
+                a.textContent = `${link.title}`;
+            }else{
+                a.textContent = `${link.title} | `;
+            }
+            li.appendChild(a); 
+        })  
+        // add li element to the ul element
+        linksList.appendChild(li);      
     });
-}
-
-
-
-
-  
-
-  
-    
-  
-
-  }
-  
-  getLinks();
-
-  const displayProphets = (prophets) => {
-    prophets.forEach(prophet => {
-        // Create elements to add to the div.cards element
-        let card = document.createElement("section");
-        let fullName = document.createElement("h2");
-        let birthInfo = document.createElement("p");
-        let portrait = document.createElement("img");
-        
-        fullName.textContent = `${prophet.name} ${prophet.lastname}`;
-        birthInfo.innerHTML = `Date of Birth: ${prophet.birthdate} <br>Place of Birth: ${prophet.birthplace}`;
-        
-        portrait.setAttribute("src", prophet.imageurl);
-        portrait.setAttribute("alt", `Portrait of ${prophet.name} ${prophet.lastname}`);
-        portrait.setAttribute("loading", "lazy");
-        portrait.setAttribute("width", "340");
-        portrait.setAttribute("heigth", "440");
-
-        card.appendChild(fullName);
-        card.appendChild(birthInfo);
-        card.appendChild(portrait);
-
-        cards.appendChild(card);
-    });
-}
-
-
-
-
-  
-
-  
-    
-  
+}}
