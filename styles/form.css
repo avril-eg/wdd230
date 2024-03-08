@@ -5,8 +5,6 @@
 --text-color: #3D424A;
 --bk-color:#f2ebf5;
 --bk-menu: #FFFFFF;
---active-color: #e7efc7;
---error-color: rgb(201, 10, 10);
 }
 
 
@@ -17,6 +15,7 @@ body {
     font-size: 1.3rem;
     background-color: var(--bk-color);
 }
+
 
 h1{
     color: var(--primary-color);
@@ -111,11 +110,6 @@ nav a {
 	color: #edf5cc;
 }
 
-section ul{
-    list-style-type: none;
-    text-align: left;
-}
-
 nav a:hover{
     text-decoration: overline;
 }
@@ -131,43 +125,66 @@ main, h2 {
     color: var(--color-black);
 }
 
+form{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
 fieldset {
     margin: 1rem;
-    border-radius: 2%;
+    border: 1px solid  var(--text-color);
+    border-radius: 5%;
+    padding: 1rem;
+}
+
+legend{
+    padding: .7rem;
+    font-weight: bold;
 }
 
 label, input{
     display: block;
-    margin: .5rem;
-    padding: .75rem .25rem;
-}
-
-.errorMessage {
-    color: var(--error-color);
-    display: none;
-}
-
-input:required{
-    border-left: 6px var(--text-color); ;
-    color: var(--text-color);
-    background-color: var(--secondary-color);
+    margin: .7rem;
+    padding: 1rem .5rem;
 }
 
 input:required:valid{
-    border-left: 6px solid var(--primary-color);
-    
-   
+    border-left: 6px solid var(--primary-color); 
 }
 
-.submitBtn{
-    background-color: var(--primary-color);
+#r {
+	width: 300px;
+	margin-bottom: 0;
+}
+#rangevalue {
+	font-size: 2rem;
+	color: var(--primary-color);
+}
+
+#rangevalues {
+	display: flex;
+    justify-content: space-between;
+	margin: 0 0 .7rem 2rem;
+    width: 300px;
+    color: var(--text-color);
+}
+
+
+button{
     color: var(--bk-menu);
-    margin: 1rem;
+    font-weight: bold;
+    width: 100%;
+    max-width: 250px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    border-radius: 2.5rem;
     padding: 1rem;
-    border-radius: 20%;
+    margin: 0 auto;
 }
-
-
 
 
 #rangevalue{
@@ -217,13 +234,8 @@ footer img {
     }
 
     form{
-        width: 50%;
-        height: auto;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        margin: .7rem;
-        padding: 1rem;
+        width: 60%;  
+      
     }
 
 }

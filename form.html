@@ -42,30 +42,27 @@
     </nav>
 
     <main>
-        <h2>User Information</h2>
-        <form action="record.html" method="get">
+        <h2>Sign Up</h2>
+        
+        <form method="get" action="record.html">
             <fieldset>
-                <label for="userName" title="Use must enter your user name">User Name
-                    <input type="text" id="userName" name="userName" required></label>
+                <legend>User Information</legend>
+                <label>User Name:*<input type="text" id="userName" name="userName" required></label>
 
-                <label for="password">Password
-                    <input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8,}"
-                        title="Your unique username must be 8-20 characters long." required></label>
+                <label>Password:*<input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8,}"
+                        title="Your password must be 8-20 characters long." required></label>
 
-                <label for="password">Reenter Password
-                    <input type="password" id="password2" name="password2" title="Your passwords must match the first one."
+                <label id="confirmation">Reenter Password:*<input type="password" id="password2" name="password2" title="Your passwords must match."
                         required></label>
 
-                <!-- Error message placeholder -->
-                <div id="passwordError" class="errorMessage">Passwords do not match.</div>
-
-                <label for="email">Email
-                    <input type="email" id="email" name="email" placeholder="someone@byui.edu"
+                <label>Email:*<input type="email" id="email" name="email" placeholder="someone@byui.edu"
                         title="Please enter a valid BYU-Idaho address" pattern="[a-zA-Z0-9_.\-]+@byui.edu"
                         required></label>
+
+                <legend>Page Rate</legend>        
                 <div id="rangevalue"></div>
-                <label for="r">Range
-                    <input type="range" id="r" name="r" min="1" max="10" value="1" step="1" list="rangevalues"></label>
+                <label>Range:<input type="range" id="r" name="r" min="1" max="10" value="1" step="1" list="rangevalues"></label>
+               
                 <datalist id="rangevalues">
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -78,10 +75,11 @@
                     <option value="9">9</option>
                     <option value="10">10</option>
                 </datalist>
-
             </fieldset>
-            <input type="submit" value="Provide Feedback" class="submitBtn">
+
+            <button type="submit" value="Sign Up" class="submitBtn">Sign Up</button>
         </form>
+   
     </main>
 
 
