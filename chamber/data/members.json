@@ -1,17 +1,42 @@
 {
     "members": [
         {
-            "company": "",
-            "address": "",
-            "city": "",
-            "state": "",
-            "zip": "",
-            "phone": "",
-            "email": "",
-            "website": "",
+            "company": "Grupo Gaservicio",
+            "address": "Blvd. Luis Encinas J. 262, Valle Hermoso",
+            "city": "Hermosillo",
+            "state": "Sonora",
+            "zip": "83209",
+            "phone": "662 216 4762",
+            "email": " clientes@gaservicio.com",
+            "website": "http://www.gaservicio.com.mx",
             "logo": "",
-            "membership": "",
-            "category": ""
+            "membership": ""            
+        },
+        {
+            "company": "Grupo Diaz",
+            "address": "Blvd. Luis Encinas J. 345-G, Olivares",
+            "city": "Hermosillo",
+            "state": "Sonora",
+            "zip": "83180",
+            "phone": "662 109 0420, 662 208 1000",
+            "email": "info@energiaelectrica.com.mx",
+            "website": "https://www.grupodiaz.com.mx",
+            "logo": "",
+            "membership": ""
+          
+        },
+        {
+            "company": "MAPCO Materiales",
+            "address": "www.mapco.com.mx",
+            "city": "Hermosillo",
+            "state": "Sonora",
+            "zip": "83210",
+            "phone": "662 218 6633",
+            "email": "",
+            "website": "www.mapco.com.mx",
+            "logo": "",
+            "membership": ""
+           
         },
         {
             "company": "",
@@ -23,8 +48,8 @@
             "email": "",
             "website": "",
             "logo": "",
-            "membership": "",
-            "category": ""
+            "membership": ""
+            
         },
         {
             "company": "",
@@ -36,8 +61,8 @@
             "email": "",
             "website": "",
             "logo": "",
-            "membership": "",
-            "category": ""
+            "membership": ""
+            
         },
         {
             "company": "",
@@ -49,8 +74,8 @@
             "email": "",
             "website": "",
             "logo": "",
-            "membership": "",
-            "category": ""
+            "membership": ""
+            
         },
         {
             "company": "",
@@ -62,34 +87,7 @@
             "email": "",
             "website": "",
             "logo": "",
-            "membership": "",
-            "category": ""
-        },
-        {
-            "company": "",
-            "address": "",
-            "city": "",
-            "state": "",
-            "zip": "",
-            "phone": "",
-            "email": "",
-            "website": "",
-            "logo": "",
-            "membership": "",
-            "category": ""
-        },
-        {
-            "company": "",
-            "address": "",
-            "city": "",
-            "state": "",
-            "zip": "",
-            "phone": "",
-            "email": "",
-            "website": "",
-            "logo": "",
-            "membership": "",
-            "category": ""
+            "membership": ""
         }
         
     ]
