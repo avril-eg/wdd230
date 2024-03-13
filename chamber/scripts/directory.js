@@ -1,60 +1,74 @@
-const url = "https://avril-eg.github.io/wdd230/chamber/data/members.json";
-const cards = document.querySelector("#members");
+const url = "https://avril-eg.github.io/wdd230/";
+const dataUrl = "https://avril-eg.github.io/wdd230/chamber/data/members.json";
 
-const gridBtn = document.querySelector("#gridBtn");
-const listBtn = document.querySelector("#listBtn");
 
 
 async function getMembers() {
-    const response = await fetch(url);
-    const data = await response.json();
-    displayMembers(data.members);
+    try {
+        const response = await fetch(dataUrl);
+        if (response.ok) {
+            const data = await response.json();
+            //console.log(data);
+            //displayMembers(data.members);
+        } else ;{
+            throw Error(await response.text())
+        } 
+    } catch (error) {
+        console.log(error);
+        throw error;
+    }
 }
-
 getMembers();
 
 const displayMembers = (members) => {
+    const cards =document.querySelector("#members");
     
     members.forEach((member) => {
         let card = document.createElement('section');
-        let cardText = document.createElement('div')
-        let name = document.createElement('p');
-        let adress = document.createElement('p')
-        let phone = document.createElement('p')
-        let website = document.createElement('a')
+        card.setAttribute('class', 'member');
+        let companyName = document.createElement('h3');
+        companyName.textContent = member.company;
+        let address = document.createElement('p');
+        address.textContent = member.address;
+        let phone = document.createElement('p');
+        phone.textContent = member.phone;
+        let website = document.createElement('a');
+        website.setAttribute("href", `https://${member.website}`);
+        website.textContent = member.website;
+
         let image = document.createElement('img');
-        name.textContent = `${member.name}`;
         image.setAttribute('src', member.image);
-        image.setAttribute('alt', `${member.name}'s card`);
+        image.setAttribute('alt', `${member.company.toLowerCase()}'-image`);
         image.setAttribute('loading', 'lazy');
-        image.setAttribute('width', 452);
-        image.setAttribute('heigth', 266);
-        adress.textContent = `${member.adress}`
-        phone.textContent = `${member.phone}`
-        website.textContent = `${member.website}`
-        website.setAttribute('href', member.website)
+        image.setAttribute('width', '400');
+        image.setAttribute('heigth', 'auto');
 
-  card.appendChild(image);
-        cardText.appendChild(name);
-        cardText.appendChild(adress);
-        cardText.appendChild(phone)
-        cardText.appendChild(website);
-        card.appendChild(cardText);
-        cards.appendChild(card);        
+
+        card.appendChild(image);
+        card.appendChild(companyName);
+        card.appendChild(address);
+        card.appendChild(phone)
+        card.appendChild(website);
+        
+        cards.appendChild(card);
     });
-}
+};
 
-getBusinessData(url);
+const gridBtn = document.querySelector("#gridBtn");
+const listBtn = document.querySelector("#listBtn");
+const display = document.querySelector("article");
 
 gridBtn.addEventListener("click", () => {
-	cards.classList.add("grid");
-	cards.classList.remove("list");
+	display.classList.add("grid");
+	display.classList.remove("list");
 });
 
-listBtn.addEventListener("click", () => {
-	cards.classList.remove("grid");
-	cards.classList.add("list");
-});
+listBtn.addEventListener("click", showList);
+
+    function showList() {
+        display.classList.add("list");
+        display.classList.remove("grid");
+    }
 
 
 
