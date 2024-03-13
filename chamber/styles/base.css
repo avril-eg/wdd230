@@ -282,6 +282,22 @@ footer p{
 }
 #directory h2 {
     text-align: center;
+    text-decoration: none;
     font-size: 2rem;
     margin: 0 0 1rem 0;
+}
+div #view {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+#view button {
+    padding: .7rem 1rem;
+    border-radius: 5px;
+    background-color: #d13133;
+    font-weight: bold;
+    color: #EFEFEF;
+    cursor: pointer;
+
 }
