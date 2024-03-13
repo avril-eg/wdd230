@@ -4,19 +4,10 @@ const dataUrl = "https://avril-eg.github.io/wdd230/chamber/data/members.json";
 
 
 async function getMembers() {
-    try {
-        const response = await fetch(dataUrl);
-        if (response.ok) {
-            const data = await response.json();
-            //console.log(data);
-            //displayMembers(data.members);
-        } else ;{
-            throw Error(await response.text())
-        } 
-    } catch (error) {
-        console.log(error);
-        throw error;
-    }
+    const response = await fetch(dataUrl);
+    const data = await response.json();
+   
+    displayMembers(data.members);
 }
 getMembers();
 
@@ -29,7 +20,9 @@ const displayMembers = (members) => {
         let companyName = document.createElement('h3');
         companyName.textContent = member.company;
         let address = document.createElement('p');
+        let address2 = document.createElement("p");
         address.textContent = member.address;
+        address2.textContent =  `${member.city}, ${member.state} ${member.zip}`;
         let phone = document.createElement('p');
         phone.textContent = member.phone;
         let website = document.createElement('a');
@@ -37,7 +30,7 @@ const displayMembers = (members) => {
         website.textContent = member.website;
 
         let image = document.createElement('img');
-        image.setAttribute('src', member.image);
+        image.setAttribute('src', member.logo);
         image.setAttribute('alt', `${member.company.toLowerCase()}'-image`);
         image.setAttribute('loading', 'lazy');
         image.setAttribute('width', '400');
@@ -54,8 +47,8 @@ const displayMembers = (members) => {
     });
 };
 
-const gridBtn = document.querySelector("#gridBtn");
-const listBtn = document.querySelector("#listBtn");
+const gridBtn = document.querySelector("#grid");
+const listBtn = document.querySelector("#list");
 const display = document.querySelector("article");
 
 gridBtn.addEventListener("click", () => {

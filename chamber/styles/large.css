@@ -101,6 +101,10 @@
   #memberships {
     grid-column: 2/3;
   }
+
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+}
     
    
 }
