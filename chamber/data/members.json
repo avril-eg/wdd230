@@ -9,7 +9,7 @@
             "phone": "compras@arrieta.mx",
             "email": "662 213-2265",
             "website": "https://arrieta.mx/",
-            "logo": "https://avril-eg.github.io/wdd230/chamber/images/A-Negro.webp",
+            "logo": "https://avril-eg.github.io/wdd230/chamber/images/arrieta.webp",
             "membership": ""
             
         },
@@ -22,7 +22,7 @@
             "phone": "662 216 4762",
             "email": " clientes@gaservicio.com",
             "website": "http://www.gaservicio.com.mx",
-            "logo": "",
+            "logo": "https://avril-eg.github.io/wdd230/chamber/images/gaservicio.png",
             "membership": ""            
         },
         {
@@ -46,46 +46,46 @@
             "phone": "662 109 0420, 662 208 1000",
             "email": "info@energiaelectrica.com.mx",
             "website": "https://www.grupodiaz.com.mx",
-            "logo": "",
+            "logo": "https://avril-eg.github.io/wdd230/chamber/images/grupo-diaz.png",
             "membership": ""
           
         },
         {
             "company": "MAPCO Materiales",
-            "address": "www.mapco.com.mx",
+            "address": "Blvd. Garcia Morales S/N.",
             "city": "Hermosillo",
             "state": "Sonora",
             "zip": "83210",
             "phone": "662 218 6633",
             "email": "",
             "website": "www.mapco.com.mx",
-            "logo": "",
+            "logo": "https://avril-eg.github.io/wdd230/chamber/images/mapco.webp",
             "membership": ""
            
         },
         {
             "company": "Suspiros Pastelería",
-            "address": "",
-            "city": "",
-            "state": "",
-            "zip": "",
-            "phone": "",
-            "email": "",
-            "website": "",
-            "logo": "",
+            "address": "Colonia Villa Satélite",
+            "city": "Hermosillo",
+            "state": "Sonora",
+            "zip": "83200",
+            "phone": "800-787-7476",
+            "email": "atencionaclientes@suspirospastelerias.com",
+            "website": "https://www.suspirospastelerias.com/mx/en/tienda",
+            "logo": "https://avril-eg.github.io/wdd230/chamber/images/suspiros-red.png",
             "membership": ""
             
         },
         {
             "company": "Abarrey",
-            "address": "",
-            "city": "",
-            "state": "",
-            "zip": "",
-            "phone": "",
-            "email": "",
-            "website": "",
-            "logo": "",
+            "address": "Blvd. García Morales 785-A. Carretera a Kino km 7.5. Col, El llano",
+            "city": "Hermosillo",
+            "state": "Sonora",
+            "zip": "83240",
+            "phone": "662 261 5500",
+            "email": "contacto@abarrey.com",
+            "website": "https://www.abarrey.com/home.php",
+            "logo": "https://avril-eg.github.io/wdd230/chamber/images/logo-header.png",
             "membership": ""
             
         }
