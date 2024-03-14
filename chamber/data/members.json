@@ -1,6 +1,19 @@
 {
     "members": [
         {
+            "company": "Deportes Arrieta",
+            "address": "Benito Juárez Sur #71, Col. centro.",
+            "city": "Hermosillo",
+            "state": "Sonora",
+            "zip": "83000",
+            "phone": "compras@arrieta.mx",
+            "email": "662 213-2265",
+            "website": "https://arrieta.mx/",
+            "logo": "https://avril-eg.github.io/wdd230/chamber/images/A-Negro.webp",
+            "membership": ""
+            
+        },
+        {
             "company": "Grupo Gaservicio",
             "address": "Blvd. Luis Encinas J. 262, Valle Hermoso",
             "city": "Hermosillo",
@@ -11,6 +24,18 @@
             "website": "http://www.gaservicio.com.mx",
             "logo": "",
             "membership": ""            
+        },
+        {
+            "company": "Naranjeros",
+            "address": "Blvd. Héctor Espino 2ª, Col. Las Provincias.",
+            "city": "Hermosillo",
+            "state": "Sonora",
+            "zip": "83243",
+            "phone": "662 260 69 32 ",
+            "email": "contacto@naranjeros.com.mx",
+            "website": "https://naranjeros.com/",
+            "logo": "https://avril-eg.github.io/wdd230/chamber/images/naranjeros-logo.png",
+            "membership": ""
         },
         {
             "company": "Grupo Diaz",
@@ -63,32 +88,8 @@
             "logo": "",
             "membership": ""
             
-        },
-        {
-            "company": "Deportes Arrieta",
-            "address": "",
-            "city": "",
-            "state": "",
-            "zip": "",
-            "phone": "",
-            "email": "",
-            "website": "",
-            "logo": "",
-            "membership": ""
-            
-        },
-        {
-            "company": "Naranjeros",
-            "address": "",
-            "city": "",
-            "state": "",
-            "zip": "",
-            "phone": "",
-            "email": "",
-            "website": "",
-            "logo": "",
-            "membership": ""
         }
+       
         
     ]
 }

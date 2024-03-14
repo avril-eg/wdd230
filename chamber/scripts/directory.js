@@ -29,15 +29,15 @@ const displayMembers = (members) => {
         website.setAttribute("href", `https://${member.website}`);
         website.textContent = member.website;
 
-        let image = document.createElement('img');
-        image.setAttribute('src', member.logo);
-        image.setAttribute('alt', `${member.company.toLowerCase()}'-image`);
-        image.setAttribute('loading', 'lazy');
-        image.setAttribute('width', '400');
-        image.setAttribute('heigth', 'auto');
+        let logo = document.createElement('img');
+        logo.setAttribute('src', member.logo);
+        logo.setAttribute('alt', `${member.company}'-image`);
+        logo.setAttribute('loading', 'lazy');
+        logo.setAttribute('width', '400');
+        logo.setAttribute('heigth', 'auto');
 
 
-        card.appendChild(image);
+        card.appendChild(logo);
         card.appendChild(companyName);
         card.appendChild(address);
         card.appendChild(phone)
