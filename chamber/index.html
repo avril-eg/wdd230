@@ -25,12 +25,13 @@
 </head>
 
 <body>
- 
-        
-        <label id="checkbox" class="checkbox-label">
-            
-            <span class="ball"></span>
+  
+    <div class="dark-mode-btn">
+        <input type="checkbox" id="darkOption" class="checkbox" onclick="screenMode()" />
+        <label for="darkOption" class="toggle">
+            <span class="slider"></span>
         </label>
+    </div>
       
 
     <header>
@@ -68,7 +69,12 @@
             <button id="join">Join the Chamber</button>
             
         </div>
-      
+
+        <div id="banner" role="alert">
+            <p>Join us for the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.!</p>
+            <button type="button" id="closeBanner" aria-label="Close">x</button>
+        </div>
+
         <section class="event">
             <h2>Events</h2>          
             <h3 >Museo de la Penitenciaría de Sonora</h3>
@@ -79,18 +85,29 @@
         </section>
     
         <section class="weather">
-          
-            <h2>Weather</h2>
-               
-            <picture>
-                  <img src="images/cloudy.svg" width= "80" alt="Mostly Cloudy Weather">
-            </picture>
-            <div class="info">Hermosillo, Sonora</div>
-            <p>Temperature: <span id="temp">35</span> F</p>
-            <p>Wind Speed: <span id="speed">5</span> mph</p>
-            <p id="windchillValue"></p>
-        
-            </section>  
+            <h2>Local Weather</h2>
+            <div class="weather-info">
+                <article id="weather">
+                    <h3>Weather Right Now</h3>
+                    <p id="location"></p>
+                    <figure>
+                        <div class="temp-area">
+                        </div>
+                        <figcaption id="weather-description"></figcaption>
+                    </figure>
+                    <div class="alt-weather">
+                        <div class="weather-box">Feels Like:<span id="feels-like"></span></div>
+                        <div class="weather-box">Humidity:<span id="humidity"></span></div>
+                        <div class="weather-box">Wind:<span id="wind-speed"></span></div>
+                        <div class="weather-box">Wind Chill:<span id="wind-chill"></span></div>
+                    </div>
+                </article>
+                <article id="thre-day">
+                    <h3>Three Day Forecast</h3>
+                    <div id="forecast"></div>
+                </article>
+            </div>
+        </section>
 
                    
         <section class="spotlight">
@@ -146,6 +163,7 @@
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/banner.js"></script>
 
 </body>
 </html>

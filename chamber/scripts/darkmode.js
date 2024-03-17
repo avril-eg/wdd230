@@ -1,16 +1,10 @@
-const checkbox = document.getElementById("checkbox")
-checkbox.addEventListener("change", () => {
-  document.body.classList.toggle("dark")
-})
-const modeButton = document.querySelector("#checkbox");
-const main = document.querySelector("main");
+// Toggle Dark/Light Mode
+function screenMode() {
+  const element = document.body;
+  element.classList.toggle("dark-mode");
 
-modeButton.addEventListener("click", () => {
-  if (modeButton.checked) {
-    main.style.background = "#000";
-    main.style.color = "#fff";
-  } else {
-    main.style.background = "#eee";
-    main.style.color = "#000";
-  }
-});
+  const sections = document.querySelectorAll("main, div.info, div.spotlights, div.event, article.card, div.weather-info, div.form-wrapper, section.member div.form-wrapper");
+  sections.forEach((section) => {
+      section.classList.toggle("dark-mode");
+  });
+}
