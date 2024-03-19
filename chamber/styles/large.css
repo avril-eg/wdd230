@@ -48,8 +48,10 @@
         grid-column: 3/4;
     }
 
-    .spotlight {
-        
+  .spotlight {
+ 
+        grid-template-columns: repeat(4, 1fr);
+  
         border: none;
     }
 

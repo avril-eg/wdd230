@@ -4,6 +4,7 @@
     --accent1-color: #f97300; 
     --accent2-color: #10828c; 
     --text-color: #ffffff;
+    --shadow-color: #777;
 
     --heading-font: "Raleway", sans-serif;
     --paragraph-font: "Merriweather", serif;
@@ -60,14 +61,13 @@ input:checked + .toggle > .slider {
     align-self: flex-end;
 }
 
-
 header {
     display: flex;
     justify-content: space-between;
     padding: 1rem .5rem;
     background-color: var(--secondary-color);
     color: var(--accent1-color);
-    box-shadow: 0 10px 10px 0 #777;
+    box-shadow: 0 10px 10px 0 var(--shadow-color);
     align-items: center;
 }
 
@@ -129,12 +129,12 @@ nav {
 nav a {
     display: block;
     text-align: right;
-    color: var(--accent2-color);
+    color: var(--secondary-color);
     text-decoration: none;  
 }
 
 .active {
-	color: var(--primary-color);
+	color: var(--text-color);
 }
 
 main {
@@ -168,6 +168,9 @@ main {
     max-width: 100%;
 }
 
+#banner p {
+    color: var(--text-color);
+}
 
 section{
     margin: .5rem;
@@ -213,19 +216,20 @@ p {
 
 
 .spotlight{
-        grid-column: span 2;
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        gap: 1rem;
-        padding: 0px 20px;
-        background-color: #ebecd8;
-        padding: 10px;
-        text-align: center; 
-        box-shadow: 5px 5px 5px rgb(112, 112, 112);
-    
-
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border-width: 1px;
+    border-color: #cbd5e1;
+    max-width: 24rem;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
+
+.spotlight.dark-mode {
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.7);
+    background-color: #1e293b;
+}
+
 
 .hover:hover{
     box-shadow: 0 0 50px #333;
