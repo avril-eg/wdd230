@@ -1,18 +1,16 @@
-function initBanner() {
     const banner = document.getElementById("banner");
-    const closeBannerBtn = document.getElementById("closeBanner");
+    const weekDay = new Date().getDay();
 
-    // Check if today is Monday, Tuesday, or Wednesday
-    const today = new Date();
-    const dayOfWeek = today.getDay();
-    const isBannerVisible = dayOfWeek >= 1 && dayOfWeek <= 3;
+    if (weekDay == 1 || weekDay == 2 || weekDay == 3){
+        const button = document.createElement('button');
+        button.textContent = '❌';
+        banner.appendChild(button);
+        button.addEventListener('click', () =>{
+        banner.classList.add('closed-banner')
+        })
+    }
+    else{
+        banner.setAttribute('style', 'display: none');
+    }
 
-    // Set initial visibility
-    banner.classList.toggle("banner", isBannerVisible);
-    banner.classList.toggle("banner-hide", !isBannerVisible);
-
-    // Close the banner when the close button is clicked
-    closeBannerBtn.addEventListener("click", function () {
-    banner.classList.add("banner-hide");
-    });
-}
+    

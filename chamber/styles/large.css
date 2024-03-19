@@ -37,13 +37,12 @@
     .hero {
         grid-column: 1/4;
         height: auto;
-        max-width: 900px;
+       max-width: 100%;
     }
 
     #banner {
         display: grid;
         grid-column: 1/4;
-        padding: 2rem;
         font-size: 2rem;
     }
 

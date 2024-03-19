@@ -173,8 +173,7 @@ main {
     justify-content: center;
     background-color: var(--secondary-color);
     color: var(--text-color-secondary);
-    padding: 1rem;
-    
+    padding: .3rem;
     text-align: center;
 }
 
@@ -187,7 +186,10 @@ main {
     font-size: 1.4rem;
 }
 
-
+button {
+    background-color: transparent;
+    border: none;
+}
 
 section{
     margin: .5rem;
@@ -329,13 +331,3 @@ justify-content: center;
 }
 
 
-
-#closeBanner {
-    background: none;
-    color: var(--text-color-secondary);
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    font-size: x-large;
-    /* margin-top: 5px; */
-}
