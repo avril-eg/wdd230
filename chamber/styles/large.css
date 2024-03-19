@@ -1,16 +1,26 @@
 @media only screen and (min-width : 480px) {
+   h1 {
+    font-size: 1.7rem;
    
-    .navigation {
+   }
+    
+   nav{
+    padding: 1rem;
+   }
+
+  .navigation {
 	    display: flex;
-	}
+	 }
 	
-    .navigation li {
+  .navigation li {
         display: block;
         flex: 1 1 100%;
-	}
+	 }
 
-    .navigation a {
+  .navigation a {
         text-align: center;
+        font-size: 1.5rem;
+        font-weight: bold;
     }
 
     #menu {
