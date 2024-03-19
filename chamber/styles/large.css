@@ -40,6 +40,14 @@
         max-width: 900px;
     }
 
+    #banner {
+        display: grid;
+        grid-column: 1/4;
+        padding: 2rem;
+        font-size: 2rem;
+    }
+
+
     .event {
         grid-column: 1/3;
     }

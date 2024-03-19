@@ -168,9 +168,26 @@ main {
     max-width: 100%;
 }
 
+#banner {
+    display: flex;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    color: var(--text-color-secondary);
+    padding: 1rem;
+    
+    text-align: center;
+}
+
+#banner-hide {
+    display: none;
+}
+
 #banner p {
     color: var(--text-color);
+    font-size: 1.4rem;
 }
+
+
 
 section{
     margin: .5rem;
@@ -311,23 +328,7 @@ justify-content: center;
 
 }
 
-#banner {
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--secondary-color);
-    color: var(--text-color-secondary);
-    padding: 30px;
-    margin-top: 2rem;
-    text-align: center;
-}
-#banner-hide {
-    display: none;
-}
 
-#banner p {
-    font-size: 1.4rem;
-    margin: 0;
-}
 
 #closeBanner {
     background: none;
