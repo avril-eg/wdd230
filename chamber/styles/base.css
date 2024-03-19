@@ -73,7 +73,7 @@ header {
 
 header img {
     padding: 1rem;
-     max-width: 100%;
+    max-width: 100%;
   
 }
 h1 {
@@ -81,7 +81,7 @@ h1 {
 }  
 
 .social{
-
+ padding: .5rem;
 }
 
 #menu {
