@@ -1,5 +1,5 @@
 
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=29.0667&lon=-110.9667&units=imperial&appid=9d751f54ea82f937a432e8b6080709aa';
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=32.5103&lon=-114.9233&units=imperial&appid=9d751f54ea82f937a432e8b6080709aa';
 
 async function apiFetch() {
     try {
@@ -18,13 +18,10 @@ async function apiFetch() {
 apiFetch();
 
 function displayResults(data) {
-    const location =    document.querySelector("#location");
     const currentTemp = document.querySelector("#current-temp");
     const weatherIcon = document.querySelector("#weather-icon");
     const captionDesc = document.querySelector("#weather-description");
     
-
-    location.innerHTML = data.name;
     // Format temperature to show zero decimal points
     const formattedTemp = data.main.temp.toFixed(0);
     // Display current temperature
@@ -37,6 +34,6 @@ function displayResults(data) {
         let desc = weatherEvent.description;
         weatherIcon.setAttribute("src", iconsrc);
         weatherIcon.setAttribute("alt", desc);
-        captionDesc.innerHTML = `${desc}`;
+        captionDesc.innerHTML= `${desc}`;
     });
 }
