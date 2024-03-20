@@ -157,9 +157,11 @@ main {
     right: 2rem;
     font-size: 2rem;
     padding: 1rem;
-    opacity: .8;
     border-radius: .5rem;
     z-index: 1;
+    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+    font-weight: bold;
 }
 
 .hero img {
