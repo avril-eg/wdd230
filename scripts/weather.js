@@ -1,32 +1,42 @@
-const currentTemp = document.querySelector("#current-temp");
-const weatherIcon = document.querySelector("#weather-icon");
-const caption = document.querySelector("#weather-description");
 
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=29.0667&lon=-110.9667&units=imperial&appid=9d751f54ea82f937a432e8b6080709aa';
 
-const url = "https://api.openweathermap.org/data/2.5/weather?lat=29.172619116779728&lon=-111.14866147487989&appid=a682a4d8efb27d168b538433ff7508e5&units=imperial";
-
-
-async function apiFetch(){
-    try{
+async function apiFetch() {
+    try {
         const response = await fetch(url);
-        if (response.ok){
+        if (response.ok) {
             const data = await response.json();
             console.log(data);
             displayResults(data);
-        } else{
-            throw Error(await response.text());
+        } else {
+            throw new Error(await response.text());
         }
-    } catch (error){
-        console.log(error);
+    } catch (error) {
+        console.error(error);
     }
 }
-function displayResults(data){
-    currentTemp.innerHTML = `${data.main.temp}&deg;F`;
-    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-    let desc = data.weather[0].caption;
-    weatherIcon.setAttribute("src", iconsrc);
-    weatherIcon.setAttribute("alt", data.weather[0].main );
-    captionDesc.textContent = `${desc}`;
-}
-
 apiFetch();
+
+function displayResults(data) {
+    const location =    document.querySelector("#location");
+    const currentTemp = document.querySelector("#current-temp");
+    const weatherIcon = document.querySelector("#weather-icon");
+    const captionDesc = document.querySelector("#weather-description");
+    
+
+    location.innerHTML = data.name;
+    // Format temperature to show zero decimal points
+    const formattedTemp = data.main.temp.toFixed(0);
+    // Display current temperature
+    currentTemp.innerHTML = `${formattedTemp}&deg;F`;
+
+
+    // Display weather icon and description
+    data.weather.forEach((weatherEvent) => {
+        const iconsrc = `https://openweathermap.org/img/wn/${weatherEvent.icon}@2x.png`;
+        let desc = weatherEvent.description;
+        weatherIcon.setAttribute("src", iconsrc);
+        weatherIcon.setAttribute("alt", desc);
+        captionDesc.innerHTML = `${desc}`;
+    });
+}
