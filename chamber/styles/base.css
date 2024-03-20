@@ -246,6 +246,7 @@ p {
 }
 .spotlight1, .spotlight2, .spotlight3 {
     background-color: var(--secondary-color);
+    border-radius: 1rem;
    
 }
 
