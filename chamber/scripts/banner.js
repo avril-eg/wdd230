@@ -1,21 +1,21 @@
-    const banner = document.querySelector(".banner");
-    const weekDay = new Date().getDay();
+function initBanner() {
+    const banner = document.getElementById("banner");
+    const bannerBtn = document.getElementById("closeBanner");
 
-if (weekDay == 1 || weekDay == 2 || weekDay == 3){
-    const button = document.createElement('button');
-    button.textContent = 'X';
-    const invitation = document.createElement('div');
-    const title = document.createElement('h2');
-    title.textContent = `Join us for the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.!`;
-    banner.appendChild(button);
-    invitation.appendChild(title);
-    banner.appendChild(invitation);
-    button.addEventListener('click', () =>{
-        banner.classList.add('closed-banner')
-    })
-}
-else{
-    banner.setAttribute('style', 'display: none');
+    // Check if today is Monday, Tuesday, or Wednesday
+    var today = new Date();
+    var dayOfWeek = today.getDay();
+    // var dayOfWeek = 1; // for testing purposes
+    var bannerVisible = dayOfWeek >= 1 && dayOfWeek <= 3;
+
+    // Set initial visibility
+    banner.classList.toggle("banner", bannerVisible);
+    banner.classList.toggle("banner-hide", !bannerVisible);
+
+    // Close the banner when the close button is clicked
+    bannerBtn.addEventListener("click", function () {
+        banner.classList.add("banner-hide");
+    });
 }
 
 

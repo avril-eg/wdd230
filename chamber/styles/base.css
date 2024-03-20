@@ -169,7 +169,7 @@ main {
     max-width: 100%;
 }
 
-.banner {
+#banner {
     display: flex;
     justify-content: center;
     background-color: var(--secondary-color);
@@ -178,10 +178,9 @@ main {
     text-align: center;
 }
 
-.banner h2 {
+#banner p {
     color: var(--text-color);
     font-size: 1.4rem;
-    text-decoration: none;
 }
 
 button {
