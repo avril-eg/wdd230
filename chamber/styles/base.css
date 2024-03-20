@@ -147,17 +147,16 @@ main {
     height: auto;
     padding: 0%;
     position: relative;
-    opacity: 0.8;
     color: #767575;
     }
 
 #join {
     position: absolute;
-    top: 1.5rem;
-    right: 2rem;
+    top: 5rem;
+    right: 4rem;
     font-size: 2rem;
-    padding: 1rem;
-    border-radius: .5rem;
+    padding: 1.2rem;
+    border-radius: 2.3rem;
     z-index: 1;
     background-color: var(--accent1-color);
     color: var(--secondary-color);
@@ -170,7 +169,7 @@ main {
     max-width: 100%;
 }
 
-#banner {
+.banner {
     display: flex;
     justify-content: center;
     background-color: var(--secondary-color);
@@ -179,13 +178,10 @@ main {
     text-align: center;
 }
 
-#banner-hide {
-    display: none;
-}
-
-#banner p {
+.banner h2 {
     color: var(--text-color);
     font-size: 1.4rem;
+    text-decoration: none;
 }
 
 button {

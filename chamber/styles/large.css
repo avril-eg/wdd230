@@ -40,7 +40,7 @@
        max-width: 100%;
     }
 
-    #banner {
+    .banner {
         display: grid;
         grid-column: 1/4;
         font-size: 2rem;
@@ -54,7 +54,7 @@
     .weather {
         grid-column: 3/4;
     }
-    
+
   section.spots {
     display: grid;
     grid-column: 1/4;
