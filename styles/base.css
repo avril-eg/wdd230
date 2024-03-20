@@ -86,12 +86,6 @@ nav {
     content: "X";
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 1rem 0 1rem 0;
-}
-
 nav a {
     display: block;
     text-align: center;
