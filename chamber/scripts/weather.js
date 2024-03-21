@@ -40,11 +40,30 @@ function displayResults(data) {
         let desc = weatherEvent.description;
         weatherIcon.setAttribute("src", iconsrc);
         weatherIcon.setAttribute("alt", desc);
-        weatherIcon.setAttribute("width", "30");
-        weatherIcon.setAttribute("height", "30");
         captionDesc.innerHTML= `${desc}`;
     });
 }
 
+//Three Day Forecast
+
+
+
+const forecastUrl = "https://api.openweathermap.org/data/2.5/forecast?lat=29.0667&lon=-110.9667&units=imperial&appid=9d751f54ea82f937a432e8b6080709aa";
+
+
+async function apiFetch(){
+    try{
+        const response = await fetch(url);
+        if (response.ok){
+            const data = await response.json();
+            //console.log(data);
+            displayResults(data);
+        } else{
+            throw Error(await response.text());
+        }
+    } catch (error){
+       // console.log(error);
+    }
+}
 
 

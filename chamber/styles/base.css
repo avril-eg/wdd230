@@ -183,9 +183,11 @@ main {
     font-size: 1.4rem;
 }
 
-button {
+#banner button {
     background-color: transparent;
     border: none;
+    color: var(--text-color);
+    font-style: bold;
 }
 
 section{
@@ -331,4 +333,19 @@ justify-content: center;
     color: #EFEFEF;
     cursor: pointer;
 
+}
+
+.weather {
+    padding: 50px 50px;
+    background-color: lightgrey;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+}
+
+img#weather-icon {
+    width: 70px;
+    height: auto;
+}
+#weather-info.dark-mode {
+    background-color: #4b5563;
 }
