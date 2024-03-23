@@ -21,6 +21,7 @@ body {
     font-size: 1rem;
     font-weight: 400;
     background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 
@@ -155,7 +156,8 @@ main {
     top: 5rem;
     right: 4rem;
     font-size: 2rem;
-    padding: .7rem 1rem;
+    padding: 1rem 1.5rem;
+    border: none;
     border-radius: 30px;
     z-index: 1;
     background-color: var(--accent1-color);
@@ -173,8 +175,6 @@ main {
     display: flex;
     justify-content: center;
     background-color: var(--secondary-color);
-    color: var(--text-color-secondary);
-    padding: .3rem;
     text-align: center;
 }
 
@@ -196,7 +196,6 @@ section{
 	box-shadow: 0 2px 15px var(--shadow-color);
 	background-color:var(--primary-color);
     border-radius: 10px;
-
 }
 
 h2 {
@@ -216,7 +215,6 @@ h3 {
     font-size: 1.3rem;
 	color: var(--accent1-color);
     text-align: center;   
-
 }
 
 h4 {
@@ -227,9 +225,11 @@ h4 {
 
 p {
     color: var(--secondary-color);
-    padding: 1rem;
    }
 
+ .news-event {
+    background-color: var(--accent2-color);
+}
 
 .spots{
     padding: 1.5rem;
@@ -275,7 +275,7 @@ form fieldset{
 }
 
 form legend{
-    color: #d13133;
+    color: var(--accent1-color);
     margin: 0 1rem;
     padding: 0 .5rem;
 }
@@ -285,8 +285,8 @@ label {
     padding: .5rem;
 }
  #submit{
-    background-color: #d13133;
-    color: #FFFFFF;
+    background-color: var(--accent1-color);
+    color: var(--text-color);
     border-radius: 10px;
     padding: .75rem 1.5rem;
     margin: 0 0 2rem 2%;
@@ -346,20 +346,38 @@ justify-content: center;
 .weather {
     background-color: var(--light-shadow-color);
     text-align:center;
-    box-shadow: 0 4px 8px var(--shadow-color); 
+    box-shadow: 0 4px 8px var(--shadow-color);
 }
 
 img#weather-icon {
     width: 70px;
     height: auto;
 }
+
+.weather figcaption {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+#forecast1, #forecast2, #forecast3 {
+    border-bottom: 1px solid var(--secondary-color);
+    padding: .3rem;
+    
+}
+#dayofweek1, #dayofweek2, #dayofweek3 {
+    font-weight: 700;
+}
+
 #weather-info.dark-mode {
-    background-color: #4b5563;
+    background-color: var(--shadow-color);
 }
 
 #three-day p{
     color: var(--accent2-color);
 }
+
 #membership {
     margin: .5rem;
     padding: .3rem;

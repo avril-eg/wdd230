@@ -52,7 +52,14 @@
    }
    
    .weather {
+   
        grid-column: 3/4;
+   }
+
+   .news-event {
+   
+    grid-column: 3/4;
+    order: 2;
    }
 
  section.spots {
