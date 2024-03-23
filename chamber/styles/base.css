@@ -200,7 +200,6 @@ section{
 
 h2 {
     font-size: 1.5rem;
-    text-decoration: underline;
     color: var(--accent2-color);
 
 }
@@ -259,6 +258,9 @@ p {
     box-shadow: 0 0 50px #333;
 }
 
+#discover-main {
+    background-color: var(--primary-color);
+}
 .join-form{
     display:block;
     margin: .5rem;
