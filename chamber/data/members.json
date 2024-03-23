@@ -10,7 +10,7 @@
             "email": "662 213-2265",
             "website": "https://arrieta.mx/",
             "logo": "https://avril-eg.github.io/wdd230/chamber/images/arrieta.webp",
-            "membership": ""
+            "membership": "Gold"
             
         },
         {
@@ -23,7 +23,7 @@
             "email": " clientes@gaservicio.com",
             "website": "http://www.gaservicio.com.mx",
             "logo": "https://avril-eg.github.io/wdd230/chamber/images/gaservicio.png",
-            "membership": ""            
+            "membership": "Silver"            
         },
         {
             "company": "Naranjeros",
@@ -35,7 +35,7 @@
             "email": "contacto@naranjeros.com.mx",
             "website": "https://naranjeros.com/",
             "logo": "https://avril-eg.github.io/wdd230/chamber/images/naranjeros-logo.png",
-            "membership": ""
+            "membership": "Gold"
         },
         {
             "company": "Grupo Diaz",
@@ -47,7 +47,7 @@
             "email": "info@energiaelectrica.com.mx",
             "website": "https://www.grupodiaz.com.mx",
             "logo": "https://avril-eg.github.io/wdd230/chamber/images/grupo-diaz.png",
-            "membership": ""
+            "membership": "Silver"
           
         },
         {
@@ -60,7 +60,7 @@
             "email": "",
             "website": "www.mapco.com.mx",
             "logo": "https://avril-eg.github.io/wdd230/chamber/images/mapco.webp",
-            "membership": ""
+            "membership": "Silver"
            
         },
         {
