@@ -1,69 +1,42 @@
 
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=32.5103&lon=-114.9233&units=imperial&appid=9d751f54ea82f937a432e8b6080709aa';
+const forecast = "https://api.openweathermap.org/data/2.5/forecast?lat=32.5103&lon=-114.9233&units=imperial&appid=9d751f54ea82f937a432e8b6080709aa";
 
 async function apiFetch() {
     try {
-        const response = await fetch(url);
+        const response = await fetch(forecast);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
-            displayResults(data);
+            //console.log(data);
+            displayForecast(data);
         } else {
-            throw new Error(await response.text());
+            throw Error(await response.text());
         }
-    } catch (error) {
-        console.error(error);
+    }
+    catch (error) {
+        console.log(error);
     }
 }
-apiFetch();
 
-function displayResults(data) {
-    const currentTemp = document.querySelector("#current-temp");
-    const weatherIcon = document.querySelector("#weather-icon");
-    const captionDesc = document.querySelector("#weather-description");
-    const feelsLike = document.querySelector("#feels-like");
-    const windSpeed = document.querySelector("#wind-speed");
-    const humidity = document.querySelector("#humidity");
-    
-    // Format temperature to show zero decimal points
-    const formattedTemp = data.main.temp.toFixed(0);
-    // Display Results
-    currentTemp.innerHTML = `${formattedTemp}&deg;F`;
-    feelsLike.innerHTML = `${data.main.feels_like.toFixed(0)}&deg;F`;
-    windSpeed.innerHTML = `${data.wind.speed.toFixed(0)}mph`;
-    humidity.innerHTML = `${data.main.humidity}%`;
+function capEachWord(description) {
+    return description
+        .split(' ')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+        .join(' ');
+}
 
-
-    // Display weather icon and description
-    data.weather.forEach((weatherEvent) => {
-        const iconsrc = `https://openweathermap.org/img/wn/${weatherEvent.icon}@2x.png`;
-        let desc = weatherEvent.description;
-        weatherIcon.setAttribute("src", iconsrc);
-        weatherIcon.setAttribute("alt", desc);
-        captionDesc.innerHTML= `${desc}`;
+function displayForecast(data) {
+    const fiveDayForecast = data.list.filter(x => x.dt_txt.includes('15:00:00'));
+    console.log(fiveDayForecast);
+    let day = 0;
+    const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    // Limiting to the first 3 entries for a 3-day forecast
+    const threeDayForecast = fiveDayForecast.slice(0, 3);
+    threeDayForecast.forEach(forecast => {
+        const d = new Date(forecast.dt_txt);
+        document.getElementById(`dayofweek${day + 1}`).textContent = weekdays[d.getDay()];
+        document.getElementById(`forecast${day + 1}`).textContent = `${Math.round(forecast.main.temp_max)}°F`;
+        day++;
     });
 }
 
-//Three Day Forecast
-
-
-
-const forecastUrl = "https://api.openweathermap.org/data/2.5/forecast?lat=29.0667&lon=-110.9667&units=imperial&appid=9d751f54ea82f937a432e8b6080709aa";
-
-
-async function apiFetch(){
-    try{
-        const response = await fetch(url);
-        if (response.ok){
-            const data = await response.json();
-            //console.log(data);
-            displayResults(data);
-        } else{
-            throw Error(await response.text());
-        }
-    } catch (error){
-       // console.log(error);
-    }
-}
-
-
+apiFetch()
