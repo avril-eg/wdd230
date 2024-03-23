@@ -207,9 +207,8 @@ h2 {
 section img {
     width:100%;
     height: auto;
-   
     margin: auto;
-    padding: .7rem;
+
 }
 
 h3 {
@@ -315,12 +314,19 @@ footer p{
     margin: 2rem;
     position: relative;
 }
+
 #directory h2 {
     text-align: center;
     text-decoration: none;
     font-size: 2rem;
     margin: 0 0 1rem 0;
 }
+
+.member {
+    background-color: var(--accent2-color);
+    border-radius: 15px;
+}
+
 div #view {
 display: flex;
 align-items: center;
@@ -329,10 +335,10 @@ justify-content: center;
 
 #view button {
     padding: .7rem 1rem;
-    border-radius: 5px;
-    background-color: #d13133;
+    border-radius: 15px;
+    background-color: var(--accent1-color);
     font-weight: bold;
-    color: #EFEFEF;
+    color: var(--secondary-color);
     cursor: pointer;
 
 }
@@ -350,4 +356,9 @@ img#weather-icon {
 }
 #weather-info.dark-mode {
     background-color: #4b5563;
+}
+
+#membership {
+    margin: .5rem;
+    padding: .3rem;
 }
