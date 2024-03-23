@@ -6,6 +6,7 @@
     --text-color: #ffffff;
     --shadow-color: #777;
     --light-shadow-color: #d6d5d5c2;
+    --accent1-color-transparent: #f9740059;
 
     --heading-font: "Raleway", sans-serif;
     --paragraph-font: "Merriweather", serif;
@@ -227,9 +228,6 @@ p {
     color: var(--secondary-color);
    }
 
- .news-event {
-    background-color: var(--accent2-color);
-}
 
 .spots{
     padding: 1.5rem;
@@ -284,7 +282,8 @@ label {
     margin: .5rem;
     padding: .5rem;
 }
- #submit{
+
+#submit{
     background-color: var(--accent1-color);
     color: var(--text-color);
     border-radius: 10px;
@@ -360,13 +359,30 @@ img#weather-icon {
     text-transform: uppercase;
 }
 
+.alt-weather{
+    padding: .7rem 0 1.7rem 0;
+}
+
+#three-day {
+    padding: .7rem 0;
+    color: var(--secondary-color);
+    font-size: 1rem;
+    background-color: var(--accent1-color-transparent);
+    border-radius: 15px;
+}
+
+#three-day h3{
+    color: var(--accent2-color);
+    padding: 0;
+}
 
 #forecast1, #forecast2, #forecast3 {
     border-bottom: 1px solid var(--secondary-color);
-    padding: .3rem;
+    padding: .5rem 0;
     
 }
 #dayofweek1, #dayofweek2, #dayofweek3 {
+    padding: .5rem 0;
     font-weight: 700;
 }
 
@@ -374,9 +390,6 @@ img#weather-icon {
     background-color: var(--shadow-color);
 }
 
-#three-day p{
-    color: var(--accent2-color);
-}
 
 #membership {
     margin: .5rem;

@@ -52,20 +52,13 @@
    }
    
    .weather {
-   
-       grid-column: 3/4;
+        grid-column: 3/4;
    }
 
-   .news-event {
-   
-    grid-column: 3/4;
-    order: 2;
+   section.spots {
+        display: grid;
+        grid-column: 1/4;
    }
-
- section.spots {
-   display: grid;
-   grid-column: 1/4;
- }
  .spotlight1 {
        grid-column: 1/2;
        margin: .7rem;
