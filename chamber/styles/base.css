@@ -137,7 +137,7 @@ nav a {
 }
 
 .active {
-	color: var(--text-color);
+	text-decoration: underline;
 }
 
 main {
@@ -199,7 +199,7 @@ section{
 
 h2 {
     font-size: 1.7rem;
-    color: var(--accent2-color);
+    color: var(--secondary-color);
     text-align: center;
 
 }
@@ -210,14 +210,11 @@ section img {
     height: auto;
     margin: 0 auto;
     align-items: center;
-
-
 }
-
 
 h3 {
     font-size: 1.3rem;
-	color: var(--accent1-color);
+	color: var(--accent2-color);
     text-align: center;   
 }
 
@@ -237,6 +234,10 @@ p {
     border-radius: 1rem;
     background-color: var(--accent2-color);
     box-shadow: 0 1px 3px 0 var(--shadow-color);
+}
+.spots h3{
+    font-size: 1.5rem;
+    color: var(--accent1-color);
 }
 
 .spots p {
@@ -375,7 +376,7 @@ img#weather-icon {
 }
 
 #three-day h3{
-    color: var(--accent2-color);
+    color: var(--secondary-color);
     padding: 0;
 }
 
