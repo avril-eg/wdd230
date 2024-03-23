@@ -192,8 +192,6 @@ main {
 }
 
 section{
-    margin: .7rem;
-	padding: 1rem;
 	box-shadow: 0 2px 15px var(--shadow-color);
 	background-color:var(--primary-color);
     border-radius: 10px;
@@ -202,15 +200,20 @@ section{
 h2 {
     font-size: 1.7rem;
     color: var(--accent2-color);
+    text-align: center;
 
 }
 
 section img {
-    width:100%;
+    display: flex;
+    width:90%;
     height: auto;
-    margin: auto;
+    margin: 0 auto;
+    align-items: center;
+
 
 }
+
 
 h3 {
     font-size: 1.3rem;
@@ -247,7 +250,7 @@ p {
 
 .spots.dark-mode {
     box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.7);
-    background-color: #1e293b;
+    background-color: var(--primary-color);
 }
 
 
