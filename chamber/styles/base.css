@@ -5,6 +5,7 @@
     --accent2-color: #10828c; 
     --text-color: #ffffff;
     --shadow-color: #777;
+    --light-shadow-color: #d6d5d5c2;
 
     --heading-font: "Raleway", sans-serif;
     --paragraph-font: "Merriweather", serif;
@@ -147,16 +148,15 @@ main {
     height: auto;
     padding: 0%;
     position: relative;
-    color: #767575;
     }
 
-#join {
+#join-btn {
     position: absolute;
     top: 5rem;
     right: 4rem;
     font-size: 2rem;
-    padding: 1.2rem;
-    border-radius: 2.3rem;
+    padding: .7rem 1rem;
+    border-radius: 30px;
     z-index: 1;
     background-color: var(--accent1-color);
     color: var(--secondary-color);
@@ -191,8 +191,8 @@ main {
 }
 
 section{
-    margin: .5rem;
-	padding: .5rem;
+    margin: .7rem;
+	padding: 1rem;
 	box-shadow: 0 2px 15px var(--shadow-color);
 	background-color:var(--primary-color);
     border-radius: 10px;
@@ -200,7 +200,7 @@ section{
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: var(--accent2-color);
 
 }
@@ -213,21 +213,20 @@ section img {
 }
 
 h3 {
-    padding: .5rem;
-	color: var(--accent1-color);   
-    justify-content: center;
-    margin: 0;
-    padding: 1rem;
+    font-size: 1.3rem;
+	color: var(--accent1-color);
+    text-align: center;   
+
 }
 
 h4 {
-    color: #767575;
+    font-size: 1rem;
+    color: var(--secondary-color);
     text-align: center;
-    padding: 1rem;
 }
 
 p {
-    color: #4b4747;
+    color: var(--secondary-color);
     padding: 1rem;
    }
 
@@ -345,10 +344,9 @@ justify-content: center;
 }
 
 .weather {
-    padding: 50px 50px;
-    background-color: lightgrey;
-    
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+    background-color: var(--light-shadow-color);
+    text-align:center;
+    box-shadow: 0 4px 8px var(--shadow-color); 
 }
 
 img#weather-icon {
@@ -359,6 +357,9 @@ img#weather-icon {
     background-color: #4b5563;
 }
 
+#three-day p{
+    color: var(--accent2-color);
+}
 #membership {
     margin: .5rem;
     padding: .3rem;
