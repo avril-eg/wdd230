@@ -23,7 +23,7 @@
             "email": " clientes@gaservicio.com",
             "website": "http://www.gaservicio.com.mx",
             "logo": "https://avril-eg.github.io/wdd230/chamber/images/gaservicio.png",
-            "membership": "Silver"            
+            "membership": "Bronze"            
         },
         {
             "company": "Naranjeros",
@@ -73,7 +73,7 @@
             "email": "atencionaclientes@suspirospastelerias.com",
             "website": "https://www.suspirospastelerias.com/mx/en/tienda",
             "logo": "https://avril-eg.github.io/wdd230/chamber/images/suspiros-red.png",
-            "membership": ""
+            "membership": "Golden"
             
         },
         {
@@ -86,7 +86,7 @@
             "email": "contacto@abarrey.com",
             "website": "https://www.abarrey.com/home.php",
             "logo": "https://avril-eg.github.io/wdd230/chamber/images/logo-header.png",
-            "membership": ""
+            "membership": "Silver"
             
         }
        
