@@ -25,9 +25,9 @@ function displaySpotlight(members) {
        let status = member.membership === "Silver" ? "silver" : "gold";
 
         spotlight.innerHTML = `
-        <h3 class="card-header ${status}">${member.membership} Member</h3>
+        <h4 class="card-header ${status}">${member.membership} Member</h4>
         <div class="card-body">
-        <img src="${member.logo}" alt="${member.company.toLowerCase()}-logo" loading="lazy" width=75 height=auto>
+        <img src="${member.logo}" alt="${member.company.toLowerCase()}-logo" loading="lazy">
         <div class="contact-info">
             <address>
                 ${member.address}

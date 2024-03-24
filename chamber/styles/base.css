@@ -248,6 +248,18 @@ p {
    
 }
 
+.card-body {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    border-radius: 10px;
+    color: var(--text-color);
+}
+
+.card-body img{
+    max-width: 20%;
+    padding: .5rem;
+}
+
 .spots.dark-mode {
     box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.7);
     background-color: var(--primary-color);
