@@ -53,10 +53,12 @@
    
    .weather {
         grid-column: 3/4;
+
    }
 
-   section.spots {
-        display: flex;
+   div.spotlights {
+        grid-template-columns: repeat(4, 1fr);
+
    }
 
    footer p {
