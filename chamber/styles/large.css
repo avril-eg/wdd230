@@ -82,7 +82,6 @@
      }
    
      .discover-section {
-      background-color: var(--accent2-color);
        grid-column: 1/2;
    
      }
