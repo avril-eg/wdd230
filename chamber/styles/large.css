@@ -55,10 +55,6 @@
 
    }
 
-   div.spotlights {
-        grid-template-columns: repeat(4, 1fr);
-
-   }
 
    footer p {
        display: flex;
