@@ -69,7 +69,7 @@
        
      }
    
-     .discover-section {
+    .discover-section {
        grid-column: 1/2;
    
      }
@@ -98,7 +98,7 @@
     margin: 10px;
 }
    
- }
+ 
 
  #info {
    grid-column: 1/2;
@@ -113,4 +113,4 @@
    grid-template-columns: repeat(4, 1fr);
 }
    
-  
+}
