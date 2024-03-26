@@ -47,23 +47,22 @@ const displayMembers = (members) => {
     });
 };
 
-const gridBtn = document.querySelector("#grid");
-const listBtn = document.querySelector("#list");
-const display = document.querySelector("article");
+// Grid and List toggles
 
-gridBtn.addEventListener("click", () => {
-	display.classList.add("grid");
-	display.classList.remove("list");
+const gridbutton = document.querySelector("#gridBtn");
+const listbutton = document.querySelector("#listBtn");
+const display = document.querySelector("#members");
+
+gridbutton.addEventListener("click", () => {
+    // example using arrow function
+    display.classList.add("grid");
+    display.classList.remove("list");
 });
 
-listBtn.addEventListener("click", showList);
+listbutton.addEventListener("click", showList); // example using defined function
 
-    function showList() {
-        display.classList.add("list");
-        display.classList.remove("grid");
-    }
-
-
-
-
+function showList() {
+    display.classList.add("list");
+    display.classList.remove("grid");
+}
 
