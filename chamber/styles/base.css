@@ -346,7 +346,7 @@ form legend{
 
 label {
     margin: .5rem;
-    padding: .5rem;
+    padding: .7rem;
 }
 
 #submit{
@@ -471,8 +471,24 @@ img#weather-icon {
     background-color: var(--shadow-color);
 }
 
-
-#membership {
-    margin: .5rem;
+.join-form input{
+    margin: .3rem;
     padding: .3rem;
 }
+
+#memberships section{
+    margin: .5rem;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+#memberships section h2, h3{
+    color: var(--accent1-color);
+}
+
+#memberships section li{
+    list-style-type: square;
+}
+
+
