@@ -24,6 +24,11 @@
 </head>
 <body>
 
+    <div id="banner" role="alert">
+        <p>high temperature temp-max for the current day</p>
+        <button type="button" id="closeBanner" aria-label="Close">x</button>
+    </div>
+
     <header>
         <img src="" width="150" alt="">
         <h1>~Scoots~ Motor Scooter Rental Company</h1>
@@ -51,17 +56,56 @@
    
 
     <main>
-        A call to action to make a rental reservation.
-Readily available navigation and contact information.
-Summary information about all the types of rentals.
-Social media links (a general link is OK)
+        <button id="rental-btn" onclick="window.location.href ='rentals.html'">Learn More!</button>
+
+        <p>A call to action to make a rental reservation. <br>
+            Readily available navigation and contact information.<br>
+            Summary information about all the types of rentals.</p>
+            
+<section class="weather">
+            <h2>Weather Right Now</h2>
+                <article id="weather">
+                    <h3>Hermosillo, Sonora, México</h3>
+        
+                <figure>
+                    <img src="#" alt="#" id="weather-icon">
+                    <span id="current-temp"></span>
+                     <figcaption id="weather-description"></figcaption>
+                </figure>
+
+                <div class="alt-weather">
+                    <div class="weather-box"><strong>Feels Like: </strong><span id="feels-like"></span></div>
+                    <div class="weather-box"><strong>Humidity: </strong><span id="humidity"></span></div>
+                    <div class="weather-box"><strong>Wind: </strong><span id="wind-speed"></span></div>
+                    <div class="weather-box"><strong>Wind Chill: </strong><span id="wind-chill"></span></div>
+                </div>
+                </article>
+
+                <article id="three-day">
+                    <h3>Three Day Forecast</h3>
+                    <div id="forecast">
+                        <div id="dayofweek1"></div>
+                        <div id="forecast1"></div>
+                        <div id="dayofweek2"></div>
+                        <div id="forecast2"></div>
+                        <div id="dayofweek3"></div>
+                        <div id="forecast3"></div>
+                    </div>
+                </article>
+        </section>
+        
 Weather information from the free version of openweathermap.org. Here is the minimum information to include on the page:
 ✔️ The current temperature
 ✔️ The current humidity
 ✔️ The next day's forecasted temperature at 15:00 (3:00pm).
 ✔️ All the weather data points provided including the main (which is the title, e.g., "Clouds"), the description, and the associated weather icon.
-Include a closeable message at the very top of the page that provides the high temperature temp-max for the current day.
-    </main>
+
+
+
+    
+
+
+</main>
 
     <footer>
 
