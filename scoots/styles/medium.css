@@ -1,0 +1,14 @@
+@media (min-width: 640px) {
+
+    nav{
+        padding: 16px 50px 30px 50px;
+    }
+
+    .list{
+        display: flex;
+    }
+    
+    li {
+        margin-left: 20px;
+      }
+  }
