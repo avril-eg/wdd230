@@ -24,44 +24,46 @@
 </head>
 <body>
 
-    <div id="banner" role="alert">
-        <p>high temperature temp-max for the current day</p>
-        <button type="button" id="closeBanner" aria-label="Close">x</button>
-    </div>
+    
 
     <header>
-        <h1>~Scoots~ Motor Scooter Rental Company</h1>
 
-        <div>
-            <nav>
-                <a id="menu" href="#"></a>
-                <ul class="navigation">
+        <a id="menu" href="#"></a>
+        <nav class="navbar">
+            <div class="logo"><a href="#">Scoots</a></div>
+                <ul class="links">
                     <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="rentals.html">Rentals</a></li>
                     <li><a href="reservations.html">Reservations</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
+            </nav>
 
-                <button class="search">Search</button>
-                <button class="menu">Menu</button>
-            </nav> 
+        
+          
 
             <img src="" width="150" alt="">    
         </div>
+        <!--<h1>~Scoots~ Motor Scooter Rental Company</h1>
 
 
         <div class="social">
             <a href="https://www.facebook.com/"><img src="" alt="Facebook" width="40"></a> 
             <a href="https://www.instagram.com/"><img src="" alt="Instagram" width="40"></a>
             <a href="https://www.tiktok.com/"><img src="" alt="TikTok" width="40"></a>
-        </div>
+        </div>-->
     </header>
 
    
 
     <main>
-        <button id="rental-btn" onclick="window.location.href ='rentals.html'">Learn More!</button>
 
+
+        <button id="rental-btn" onclick="window.location.href ='rentals.html'">Learn More!</button>
+        <div id="banner" role="alert">
+            <p>high temperature temp-max for the current day</p>
+            <button type="button" id="closeBanner" aria-label="Close">x</button>
+        </div>
         <p>A call to action to make a rental reservation. <br>
             Readily available navigation and contact information.<br>
             Summary information about all the types of rentals.</p>
@@ -117,7 +119,7 @@ Weather information from the free version of openweathermap.org. Here is the min
         <p id="lastModified"></p>
     </footer>
 
-    
+    <script src="scripts/hamburger.js"></script>
 
 </body>
 </html>

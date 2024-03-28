@@ -1,14 +1,10 @@
 @media (min-width: 640px) {
 
-    nav{
-        padding: 16px 50px 30px 50px;
-    }
+ .navbar .links{
+    display: none;
+ }
 
-    .list{
-        display: flex;
-    }
+ .navbar .toggle_btn{
     
-    li {
-        margin-left: 20px;
-      }
+ }
   }
