@@ -7,7 +7,19 @@
     nav{
         padding: 1.5rem;
     }
-   
+    nav ul li::after{
+        content: '';
+        width: 0%;
+        height: 3px;
+        background: orange;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+      }
+      
+      nav ul li:hover::after{
+        width: 100%;
+      }
   
     .navigation {
         display: flex;
@@ -29,7 +41,7 @@
         font-weight: bold;
     }
 
-
+     
    
 
     }

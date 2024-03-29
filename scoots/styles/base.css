@@ -53,12 +53,14 @@ header img {
   font-size: 2rem;
   font-weight:700;
   padding: .5rem 1.5rem;
-  color: var(--accent2-color);
+  color: orange;
 }
 
 #menu::before {
 content: "≡";
 }
+
+
 
 .navigation {
 list-style: none;
@@ -91,6 +93,8 @@ padding: 1.3rem;
   padding: .3rem;
 }
 
+
+
 .show li {
   display: block;
 }
@@ -99,7 +103,6 @@ padding: 1.3rem;
   content: "X";
 }
 
-
-.active {
-text-decoration: underline;
+a.active{
+    color: orange;
 }
