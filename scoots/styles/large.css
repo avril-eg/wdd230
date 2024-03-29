@@ -1,0 +1,35 @@
+@media only screen and (min-width : 992px){
+  
+    #menu{
+        display: none;
+    }
+
+    nav{
+        padding: 1.5rem;
+    }
+   
+  
+    .navigation {
+        display: flex;
+        justify-content: flex-end;
+        border: none;
+        top: .3rem;
+        right: 0;
+    }
+
+    .navigation li {
+        display: block;
+        margin: 0 1rem;
+      
+    }
+
+    .navigation a {
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+
+   
+
+    }
