@@ -135,6 +135,7 @@ a.active{
   background: url(../images/moto-playa.jpg) no-repeat;
   background-size: cover;
   background-position: center;
+
 }
 
 .content{
@@ -145,14 +146,27 @@ a.active{
 
 .content h1{
   font-size: 7rem;
-  color: #fff;
+  color: #5ab191;
   text-shadow: 2px 2px 4px black;
   margin: .3rem;
 }
 
 .content p{
   font-size: 4rem;
-  color: #702283;
+  color: #fdb44b;
   text-shadow: 2px 2px 3px black
+}
+
+.btn{
+  height: 3.5rem;
+  width: 15rem;
+  margin: 1.5rem;
+  background-color: #702283;
+  outline: none;
+  border: .2rem solid #702283;
+  color: #ffffff;
+  border-radius: 25px;
+  font-size:2rem;
+  font-weight: bold;
 }
 
