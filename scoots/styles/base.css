@@ -170,3 +170,47 @@ a.active{
   font-weight: bold;
 }
 
+.rentals-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    color: #fdb44b;
+}
+
+/* Cards */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin: 0 auto 20px auto;
+}
+.card {
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 375px;
+}
+.card:nth-child(2) {
+  width: 450px;
+}
+
+.card h3 {
+  font-size: 1.1em;
+  font-weight: 700;
+  margin: 10px 0;
+}
+.card p {
+  font-size: 0.85em;
+  margin: 5px 0;
+}
+.card img {
+  width: 300px;
+  height: auto;
+}
+.card-info {
+  padding: 0 0 10px;
+}
