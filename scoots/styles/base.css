@@ -222,7 +222,7 @@ footer section {
   color: black;
   padding: 1rem;
 }
-.footer-title {
+.f-title {
   display: flex;
   flex-direction: row;
   align-items: center;
