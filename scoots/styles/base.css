@@ -28,31 +28,28 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 5rem;
+  padding: .5rem 5rem;
   background-color: #fff;
   box-shadow: 0 .1rem .3rem var(--shadow-color);
   position: fixed;
   top: 0; 
   left: 0;
   z-index: 1000;
-  padding: 1rem 4rem;
   width: 100%;    
 }
 
 header img {
-  padding: 1rem;
   max-width: 100%;
-
 }
 
 #menu {
   position: fixed;
-  top: 1rem;
+  top: 2rem;
   right: 0;
   align-items: center;
   font-size: 2rem;
   font-weight:700;
-  padding: .5rem 1.5rem;
+  padding: 1rem 1.5rem;
   color: #702283;
   
 }
@@ -75,6 +72,7 @@ padding: 1.3rem;
 .navigation ul{
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-flow: column;
   background-color: #fff;
   list-style: none;
