@@ -146,14 +146,12 @@ main {
   background-color: var(--bg2-color);
 }
 .hero-section {
-  
+  display: flex;
 }
 
 .hero-info {
-  display: flex;
   align-content: center;
   justify-content: center;
-  
   
 }
 
@@ -162,33 +160,37 @@ main {
   font-size: 4rem;
   color: var(--accent1-color);
   text-shadow: 0 .1rem .3rem var(--shadow-color);
-  margin: .5rem;
+  line-height: .5rem;
 
 }
 
-.hero-info p {
-  margin-top: 0.75rem;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  color: var(--accent2-color);
+.hero-info h2 {
+  font-size: 1.2rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+  color: var(--text-color);
 }
 
 .hero-image {
-  height: 100vh;
+  
 }
 
 
 
-.btn{
+a.btn{
+  display: flex;
   height: 3.5rem;
   width: 15rem;
   margin: 1.5rem;
-  background-color: var(--text2-color);
+  background-color: var(--text-color);
   outline: none;
   color: #ffffff;
   border-radius: 25px;
   font-size:2rem;
   font-weight: bold;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
 
