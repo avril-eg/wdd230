@@ -148,15 +148,19 @@ main {
 .hero-section {
   display: flex;
   flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
   
 }
 
 .hero-info {
-  
+  position: absolute;
+  top: 2rem;
   text-align: center;
   align-content: center;
-  justify-content: center;
-  
+  background-color: rgba(255, 255, 255, 0.704);
+  padding: 1rem;
 }
 
 
@@ -173,13 +177,12 @@ main {
   line-height: 1rem;
   text-transform: uppercase;
   color: var(--text-color);
+  
 }
 
-.hero-image {
-  object-fit: cover;
-  width: 100%;
-  background-position: center;
-  background-size: cover;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 a.btn{
