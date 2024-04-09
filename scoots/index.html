@@ -31,7 +31,7 @@
         <div class="logo">
             <a href="https://avril-eg.github.io/wdd230/scoots/index.html"><img src="images/scoots-logo.svg" alt="Scoots - Logo" width="200" heigth="100" ></a>
         </div>
-        
+
             <a id="menu" href="#"></a>
             <nav>
                 <ul class="navigation">
@@ -49,15 +49,29 @@
     </article>
 
     <main>
-        <section class="hero">
-        <div class="content">
-                <h1>Scoots Motor Rental</h1>
-                <p>The best in town!</p>
-                <button class="btn">Learn More</button>
-            
-            </div>
-        </section>
 
+        <div class="hero-section">
+            <div class="hero-info">
+                <section>
+                    <h1> Scoots Motor Rental</h1>
+                    <h2>The best in town!</h2>
+                    <p>Scooter, ATV & Jeep Rentals Cozumel, Mexico</p>
+                </section>
+            </div>
+            <picture>
+                <source srcset="images/hero-chamber-small.webp" media="(max-width: 450px)">
+                <source srcset="images/hero-chamber-medium.webp" media="(max-width: 960px)">
+                <source srcset="images/hero-chamber-large.webp" media="(max-width: 1250px)">
+                <img src="images/hero-chamber-large.webp" alt="Paisaje Desértico">
+            </picture>
+
+            <a class="btn" href="./rentals.html">Learn More</a>
+        
+        </div>
+        
+        <div class="weather-container"></div>
+
+       
         <section class="rentals-info">
             <h2>Choose Your Ride</h2>
             <div class="card-container">

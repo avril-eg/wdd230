@@ -25,7 +25,7 @@ body{
   font-family: var(--heading-font);
 }
 
-
+/* Header and Navigation */
 header {
   display: flex;
   align-items: center;
@@ -141,6 +141,50 @@ a.active{
 }
 
 /*----Main Section-----*/
+
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-info {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 1280px;
+}
+
+.hero-info section {
+  text-align: left;
+}
+
+.hero-info section h2 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 2.5rem;
+  color: #111827;
+}
+
+.hero-info span {
+  color: #4f46e5;
+}
+.hero-info p {
+  margin-top: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #6b7280;
+}
+
+.hero-image {
+  object-fit: cover;
+  width: 100%;
+  /* max-height: 700px; */
+  background-position: center;
+  background-size: cover;
+}
+
+
 .hero{
   min-height: 100vh;
   display: flex;
