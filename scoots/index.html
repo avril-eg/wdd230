@@ -25,6 +25,7 @@
     <title>Scoots - Rental Company</title>
 </head>
 <body>
+  
 
     <header>
         <a href="index.html" class="logo"><img src="images/scoots-logo.svg" alt="Scoots - Logo" width="200" heigth="100" ></a>
@@ -40,9 +41,10 @@
             </nav>                     
     </header>
 
-    <div id="high-temp-banner">High Temp: <span id="high-temp"></span>°F <button
-        onclick="closeMessage()">❌</button>
-    </div>
+    <article id="banner" class="" role="alert">
+        <h2>Todays high temperature will be: <span class="tempHigh"></span> &deg;F</h2>
+        <button type="button" id="closeBanner" aria-label="Close">x</button>
+    </article>
 
     <main>
         <section class="hero">
@@ -146,6 +148,7 @@
 
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/getdates.js"></script>
+    <script src="scripts/weather.js"></script>
 
 </body>
 </html>

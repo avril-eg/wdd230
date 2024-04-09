@@ -29,9 +29,9 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: .5rem 5rem;
-  background-color: #fff;
+  background-color: #fafafa;
   box-shadow: 0 .1rem .3rem var(--shadow-color);
-  position: fixed;
+ 
   top: 0; 
   left: 0;
   z-index: 1000;
@@ -107,21 +107,38 @@ a.active{
     color: #702283;
 }
 
-#high-temp-banner {
-  background-color: var(--turq-light);
-  color: black;
-  padding: 5px 0;
+/* Banner on home page */
+.banner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #7a9eaf;
+  color: var(--text-color-header);
+  padding: 15px;
+  z-index: 1000;
+}
+.banner-show {
+  display: flex;
+}
+.banner-hide {
+  display: none;
+}
+.banner h2 {
   text-align: center;
-  font-size: 16px;
-  font-weight: 700;
+  font-size: 1.2rem;
+  margin: 0;
 }
 
-#high-temp-message button {
-  margin-left: 15px;
-  background-color: white;
-  border: 1px solid black;
-  width: 2rem;
-  height: 2rem;
+#closeBanner {
+  background: none;
+  color: var(--text-color-header);
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+#closeBanner:hover {
+  color: var(--text-color-secondary);
 }
 
 /*----Main Section-----*/
@@ -216,7 +233,7 @@ a.active{
 footer section {
   margin: 0 auto;
   max-width: 100%;
-  background-color: #5ab191;
+  background-color: #fafafa;
   color: black;
   padding: 1rem;
 }
