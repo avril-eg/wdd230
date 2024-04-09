@@ -4,6 +4,7 @@
   --accent1-color: #BE2706; 
   --accent2-color: #048998;
   --bg-color: #ED7A60;
+  --bg2-color: #f8f4ec;
   --text-color: #3d3f3f;
   --text2-color: #1D1C1C;
   --shadow-color: #777;
@@ -61,7 +62,6 @@ content: "≡";
 
 .navigation {
 list-style: none;
-position: fixed;
 top: 5.3rem;
 left: 0;
 width: 100%;
@@ -142,91 +142,58 @@ a.active{
 
 /*----Main Section-----*/
 
-.hero-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+main {
+  background-color: var(--bg2-color);
+}
+.hero-section {
+  
 }
 
 .hero-info {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  max-width: 1280px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  
+  
 }
 
-.hero-info section {
-  text-align: left;
+
+ h1 {
+  font-size: 4rem;
+  color: var(--accent1-color);
+  text-shadow: 0 .1rem .3rem var(--shadow-color);
+  margin: .5rem;
+
 }
 
-.hero-info section h2 {
-  font-size: 2.25rem;
-  font-weight: 800;
-  letter-spacing: -0.025em;
-  line-height: 2.5rem;
-  color: #111827;
-}
-
-.hero-info span {
-  color: #4f46e5;
-}
 .hero-info p {
   margin-top: 0.75rem;
   font-size: 1rem;
   line-height: 1.5rem;
-  color: #6b7280;
+  color: var(--accent2-color);
 }
 
 .hero-image {
-  object-fit: cover;
-  width: 100%;
-  /* max-height: 700px; */
-  background-position: center;
-  background-size: cover;
+  height: 100vh;
 }
 
 
-.hero{
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: url(../images/moto-playa.jpg) no-repeat;
-  background-size: cover;
-  background-position: center;
-
-}
-
-.content{
-  text-align: center;
-  padding: .3rem;
-
-}
-
-.content h1{
-  font-size: 7rem;
-  color: #5ab191;
-  text-shadow: 2px 2px 4px black;
-  margin: .3rem;
-}
-
-.content p{
-  font-size: 4rem;
-  color: #fdb44b;
-  text-shadow: 2px 2px 3px black
-}
 
 .btn{
   height: 3.5rem;
   width: 15rem;
   margin: 1.5rem;
-  background-color: #702283;
+  background-color: var(--text2-color);
   outline: none;
-  border: .2rem solid #702283;
   color: #ffffff;
   border-radius: 25px;
   font-size:2rem;
   font-weight: bold;
 }
+
+
+
+
 
 .rentals-info {
     display: flex;

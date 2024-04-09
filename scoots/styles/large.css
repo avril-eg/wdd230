@@ -43,10 +43,23 @@
 
     .hero-section {
         display: grid;
-        grid-template-rows: repeat(2, minmax(0, 1fr));
-        grid-auto-flow: column;
-        gap: 1rem;
+        grid-template-columns: 40% 60%;
+        gap: 25px;
+        padding: .5rem 3rem;
+        place-content: center;
+        
       }
    
+    .hero-info {
+        grid-column: 1/2;
+        text-align: left;
+        
+      }
+
+      .hero-image {
+        grid-column: 2/3;
+      
+
 
     }
+}
