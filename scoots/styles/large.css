@@ -11,7 +11,7 @@
         content: '';
         width: 0%;
         height: 3px;
-        background: #702283;
+        background: var(--accent1-color);
         display: block;
         margin: auto;
         transition: 0.5s;
