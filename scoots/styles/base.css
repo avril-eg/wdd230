@@ -30,13 +30,10 @@ body{
 header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: .5rem 5rem;
+  justify-content: space-between ;
+  padding: .5rem 1.5rem;
   background-color: var(--secondary-color);
   box-shadow: 0 .1rem .3rem var(--shadow-color);
-  top: 0; 
-  left: 0;
-  z-index: 1000;
   width: 100%;    
 }
 
@@ -45,10 +42,9 @@ header img {
 }
 
 #menu {
-  position: fixed;
   top: 2rem;
   right: 0;
-  align-items: center;
+  align-self: center;
   font-size: 2rem;
   font-weight:700;
   padding: 1rem 1.5rem;
@@ -109,33 +105,36 @@ a.active{
 /* Banner on home page */
 .banner {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   background-color: var(--bg-color);
   color: var(--text2-color);
   padding: 15px;
-  z-index: 1000;
 }
+
 .banner-show {
   display: flex;
 }
+
 .banner-hide {
   display: none;
 }
+
 .banner h2 {
   text-align: center;
-  font-size: 1.2rem;
-  margin: 0;
+  font-size: 1.5rem;
 }
 
 #closeBanner {
   background: none;
   color: var(--text2-color);
   border: none;
-  padding: 5px 10px;
+  padding: .5rem;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
 }
+
 #closeBanner:hover {
   color: var(--text-color);
 }
@@ -145,11 +144,16 @@ a.active{
 main {
   background-color: var(--bg2-color);
 }
+
 .hero-section {
   display: flex;
+  flex-direction: column;
+  
 }
 
 .hero-info {
+  
+  text-align: center;
   align-content: center;
   justify-content: center;
   
@@ -157,7 +161,7 @@ main {
 
 
  h1 {
-  font-size: 4rem;
+  font-size: 2.5rem;
   color: var(--text-color);
   text-shadow: 0 .1rem .3rem var(--shadow-color);
   line-height: .5rem;
@@ -172,16 +176,18 @@ main {
 }
 
 .hero-image {
-  
+  object-fit: cover;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
 }
-
-
 
 a.btn{
   display: flex;
+  flex-wrap: wrap;
   height: 3.5rem;
-  width: 15rem;
-  margin: 1.5rem;
+  width: 12rem;
+  margin: 1.5rem auto;
   background-color: var(--accent1-color);
   outline: none;
   color: var(--secondary-color);

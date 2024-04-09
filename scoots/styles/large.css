@@ -54,8 +54,12 @@
         grid-column: 1/2;
         text-align: left;
         justify-content: center;
-    align-content: center;
+        align-content: center;
         
+      }
+
+      h1 {
+        font-size: 4rem;
       }
 
       .hero-image {
