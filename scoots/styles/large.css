@@ -43,11 +43,8 @@
 
     .hero-section {
         display: grid;
-        grid-template-columns: 40% 60%;
         gap: 25px;
-        padding: .5rem 3rem;
-        place-content: center;
-        
+        padding: .5rem 1rem;        
       }
    
     section.hero-info {
@@ -62,10 +59,5 @@
         font-size: 4rem;
       }
 
-      .hero-image {
-        grid-column: 2/3;
-      
-
-
-    }
+    
 }

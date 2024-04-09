@@ -1,7 +1,28 @@
 @media (min-width: 768px) {
-
+.hero-section {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 15px;
+    padding: .3rem 1rem;
+    place-content: center;
+        
+    }
+.hero-info {
+        position: relative;
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+        padding: 1rem;
+        background-color: transparent;
+      }
 h1{
-    font-size: 3rem;
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
+
+.hero-image {
+    grid-column: 2/3;
+
 }
 }
 
