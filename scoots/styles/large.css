@@ -63,8 +63,7 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(195px, 1fr));
         grid-column: 2/12;
-        row-gap: 1rem;
-        margin-top: 1rem;
-        padding-bottom: 1.5rem;
+        margin: .5rem;
+        padding: .5rem;
     }
 }

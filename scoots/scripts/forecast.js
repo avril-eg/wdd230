@@ -1,7 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    const url = "https://api.openweathermap.org/data/2.5/weather?lat=20.42&lon=86.9223&units=imperial&appid=9d751f54ea82f937a432e8b6080709aa";
-    const urlForecast = 'https://api.openweathermap.org/data/2.5/forecast?lat=20.42&lon=86.9223&units=imperial&appid=9d751f54ea82f937a432e8b6080709aa';
+    const apiKey = "9d751f54ea82f937a432e8b6080709aa";
+
+    // Cozumel, Mexico
+    const lat = 20.512992206946528;
+    const lon = -86.93069161251013;
+
+    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
+    const urlForecast = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
 
     const weatherContainer = document.querySelector('#weather');
 
@@ -40,7 +46,7 @@ async function forecastApiFetch() {
         return str.replace(/\b\w/g, (char) => char.toUpperCase());
     }
 
-    function createWeatherCard(data, weekday) {
+    function createCard(data, weekday) {
         console.log('Current Data', data)
         const card = document.createElement('section');
         card.classList.add('forecast-card');
@@ -76,35 +82,31 @@ async function forecastApiFetch() {
         return card;
     }
 
-    function createBanner(data1){
+    function weatherBanner(data1){
     
-        const bannerContainer = document.querySelector('#banner');
-
-        // Create Button
-        const button = document.createElement('button');
-        button.id = 'closeBanner';
-        button.textContent = '✖';
-
+       const closeBannerBtn = document.getElementById("closeBanner");
+        
+        // Set initial visibility
+        const isBannerVisible = true;
+        banner.classList.toggle("banner", isBannerVisible);
+        banner.classList.toggle("banner-hide", !isBannerVisible);
+        
+        // Close the banner when the close button is clicked
+        closeBannerBtn.addEventListener("click", function () {
+            banner.classList.add("banner-hide");
+        });
+      
         // Create High Temp Text
-        const bannerContent = document.createElement('p');
-        bannerContent.textContent = `Todays high temperature is: ${data1.main.temp_max.toFixed(0)}°F `;
+        const bannerContent = document.querySelector('.tempHigh');
+        bannerContent.textContent = `${data1.main.temp_max.toFixed(0)} `;
             
-    // Append the button to the paragraph
-    bannerContent.appendChild(button);
-
-    // Add click event listener to the button
-    button.addEventListener('click', () => {
-        bannerContainer.style.display = 'none'; // Assuming you want to hide the entire banner
-    });
-
-    // Append the paragraph to the banner container
-    bannerContainer.appendChild(bannerContent);
+    
 }
     async function displayResults() {
         const data1 = await apiFetch();
         const data2 = await forecastApiFetch();
         
-        createBanner(data1);
+        weatherBanner(data1);
         // Clear the container before adding new cards
         weatherContainer.innerHTML = '';
 
@@ -117,7 +119,7 @@ async function forecastApiFetch() {
             let weekday = '';
             if (i == 0){
                  weekday = 'Today';
-                weatherCard = createWeatherCard(data1, weekday);
+                weatherCard = createCard(data1, weekday);
                  
             }
             else{
@@ -125,7 +127,7 @@ async function forecastApiFetch() {
                  const index = data2.list.findIndex(item => item.dt_txt.includes('15:00'));
                  const adjustedIndex = index + 8 * i;
 
-                 weatherCard = createWeatherCard(data2.list[adjustedIndex], weekday);
+                 weatherCard = createCard(data2.list[adjustedIndex], weekday);
             }
             weatherContainer.appendChild(weatherCard);
         }
