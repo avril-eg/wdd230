@@ -1,5 +1,5 @@
 @media (min-width: 768px) {
-.hero-section {
+.hero-section, .rentals {
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 15px;
@@ -7,7 +7,7 @@
     place-content: center;
         
     }
-.hero-info {
+.hero-info, .rentals-text {
         position: relative;
         text-align: center;
         align-content: center;

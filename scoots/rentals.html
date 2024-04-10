@@ -9,7 +9,7 @@
     <meta property="og:title" content="WDD 230 - SCOOTS Rental Company Project">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://avril-eg.github.io/wdd230/scoots/">
-    <meta property="og:image" content="https://avril-eg.github.io/wdd230/images/avril_eg.webp">
+    <meta property="og:image" content="https://avril-eg.github.io/wdd230/scoots/images/hero-moto.webp">
 
 
     <link rel="stylesheet" href="styles/normalize.css">
@@ -26,20 +26,220 @@
 <body>
 
     <header>
-        <a href="index.html" class="logo"><img src="" alt="Scoots - Logo"></a>
+        <div class="logo">
+            <a href="https://avril-eg.github.io/wdd230/scoots/index.html"><img src="images/scoots-logo.svg" alt="Scoots - Logo" width="200" heigth="100" ></a>
+        </div>
 
             <a id="menu" href="#"></a>
             <nav>
                 <ul class="navigation">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="rentals.html" class="active">Rentals</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="rentals.html">Rentals</a></li>
                     <li><a href="reservations.html">Reservations</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </nav>                     
     </header>
-    The prices displayed on the site must be obtained from a JSON data source of your own making.
-Store this .json file in a data 📁 folder in this project folder.
-Incorporate a data table in your HTML structure to display some portion of this information.
+
+    <main>
+        <div class="rentals">
+            <div class="rentals-text">
+                <section>
+                    <h2>Rentals</h2>
+                    <p>Are you ready for the adventure?</p>
+                </section>
+            </div>
+
+            <picture class="hero-image">
+                <img src="images/man-with-map.webp" alt="Man traveling with map">
+            </picture>
+        
+        </div>
+
+        <section class="rental-benefits">
+            <div>
+                <h2>Why Scoots Rentals?</h2>
+                <ul>
+                    <li>Unlimited mileage</li>
+                    <li>Liability insurance is included</li>
+                    <li>Free delivery to Cozumel hotels or Airbnb's for 2+ day rentals</li>
+                    <li>Rentals may be returned to either physical location</li>
+                    <li>Reservations or Same-day Walk-Ins</li>
+                    <li>Easy payment options</li>
+                </ul>
+            </div>
+        </section>
+        <section class="rental-rides-info">
+            <h2 class="separator">Choose your scooter</h2>
+            <div class="card-container">
+                <article class="card">
+                    <img src="./images/rentals/honda-metro-cream.webp" alt="honda-metro" width="300" height="auto" loading="lazy" />
+                    <div class="card-body">
+                        <h3>Honda Metropolitan</h3>
+                        <p>
+                            Experience the freedom and convenience of exploring your vacation destination on a Honda Metropolitan scooter. With
+                            exceptional fuel efficiency, easy maneuverability, and a touch of adventure, the Metropolitan is perfect for
+                            navigating bustling streets and discovering hidden gems.
+                        </p>
+                    </div>
+                    <a class="btn btn-reserve" href="./reservations.html">Reserve me today!</a>
+                </article>
+                <article class="card">
+                    <img src="./images/rentals/honda-dio-black1.webp" alt="honda-dio" width="300" height="auto" loading="lazy" />
+                    <div class="card-body">
+                        <h3>Honda Dio</h3>
+                        <p>
+                            Embark on your vacation adventures with the Honda Dio scooter, offering a perfect blend of style, agility, and
+                            reliability. Explore with ease as you zip through city streets, enjoy exceptional fuel efficiency, and embrace the
+                            thrill of discovery on two wheels.
+                        </p>
+                    </div>
+                    <a class="btn btn-reserve" href="./reservations.html">Reserve me today!</a>
+                </article>
+                <article class="card">
+                    <img src="./images/rentals/honda-pcx150-white.webp" alt="honda-pcx" width="300" height="auto" loading="lazy" />
+                    <div class="card-body">
+                        <h3>Honda PCX150</h3>
+                        <p>
+                            Unleash the power of exploration with the Honda PCX150 scooter, combining sleek design, advanced technology, and
+                            impressive performance. Effortlessly navigate urban landscapes, enjoy long rides with excellent fuel economy, and
+                            elevate your vacation experience with the comfort and convenience of the PCX150.
+                        </p>
+                    </div>
+                    <a class="btn btn-reserve" href="./reservations.html">Reserve me today!</a>
+                </article>
+            </div>
+        </section>
+        <section class="rental-rides-info">
+            <h2 class="separator">Choose your vehicle</h2>
+            <div class="card-container">
+                <article class="card">
+                    <img src="./images/rentals/honda-pioneer-green-4.webp" alt="honda-pioneer" width="300" height="auto" loading="lazy" />
+                    <div class="card-body">
+                        <h3>Honda Pioneer ATV</h3>
+                        <p>
+                            Take your vacation to the next level with the Honda Pioneer ATV, designed for off-road adventures and rugged terrain.
+                            Experience unmatched versatility, reliability, and power as you explore trails, mountains, and remote destinations
+                            with ease.
+                        </p>
+                    </div>
+                    <a class="btn btn-reserve" href="./reservations.html">Reserve me today!</a>
+                </article>
+                <article class="card">
+                    <img src="./images/rentals/wrangler-red-2.webp" alt="jeep-wrangler-2-door" width="300" height="auto" loading="lazy" />
+                    <div class="card-body">
+                        <h3>Jeep Wrangler - 2 door</h3>
+                        <p>
+                            Embrace the thrill of exploration on an unforgettable vacation journey with the iconic Jeep Wrangler 2-Door.
+                            Experience rugged capability, open-air freedom, and off-road prowess as you conquer diverse terrain with confidence.
+                            Unleash your adventurous spirit and create lasting memories in the legendary Jeep Wrangler.
+                        </p>
+                    </div>
+                    <a class="btn btn-reserve" href="./reservations.html">Reserve me today!</a>
+                </article>
+                <article class="card">
+                    <img src="./images/rentals/wrangler-yellow-4.webp" alt="jeep-wrangler-4-door" width="300" height="auto" loading="lazy" />
+                    <div class="card-body">
+                        <h3>Jeep Wrangler - 4 door</h3>
+                        <p>
+                            Maximize your vacation adventures with the spacious and versatile Jeep Wrangler 4-Door. Whether conquering rugged
+                            trails or cruising scenic highways, enjoy the perfect blend of comfort, capability, and iconic style. Elevate your
+                            travel experience and embrace the freedom to explore with the Jeep Wrangler 4-Door.
+                        </p>
+                    </div>
+                    <a class="btn btn-reserve" href="./reservations.html">Reserve me today!</a>
+                </article>
+            </div>
+        </section>
+        <div class="pricing">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="6" scope="colgroup">Scoots Rental Pricing</th>
+                    </tr>
+                    <tr>
+                        <th colspan="2" scope="col"></th>
+                        <th colspan="2" scope="col">Reservation</th>
+                        <th colspan="2" scope="col">Walk-In</th>
+                    </tr>
+                    <tr>
+                        <th scope="col">Rental Type</th>
+                        <th scope="col">Max.<br />Persons</th>
+                        <th scope="col">Half Day<br />(3 hrs)</th>
+                        <th scope="col">Full Day</th>
+                        <th scope="col">Half Day<br />(3 hrs)</th>
+                        <th scope="col">Full Day</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <article class="reservations-banner banner-one">
+            <div>
+                <h2 class="">Choose an Hourly or Multi-Day Rental</h2>
+                <p>
+                    Whether you are in Cozumel for 2 hours or 7 days, you can get an option to choose an hourly or daily rental option so you can
+                    enjoy the flexibility of exploring the island however you want.
+                </p>
+                <a class="btn btn-primary" href="./reservations.html">Reservations</a>
+            </div>
+            <img src="./images/heros/scooter_rental_cozumel.webp" alt="scooter rental guy" width="400" height="auto" loading="lazy" />
+        </article>
+    </main>
+    <footer>
+        <section>
+            <div class="f-title">
+                <img src="images/scoots-logo.svg" alt="Scoots Logo" width="220" height="110" />
+                <h2>Scoots Rentals</h2>
+            </div>
+            <div class="address-block">
+                <h3>Contact</h3>
+                <div class="address">
+                    <address>
+                        <h4>Scoots @ Playa del Carmen-Cozumel</h4>
+                        <div>
+                            <span class="label" aria-hidden="true">
+                                <img src="images/svg/map-icon.svg" alt="map icon" />
+                            </span>
+                            <span>
+                                <p>5 Ave N Entre Calle 2</p>
+                                <p>77600 Cozumel, Q.R. Mexico</p>
+                            </span>
+                        </div>
+
+                        <a href="tel:+525558691234" target="_self">
+                            <span class="label" aria-hidden="true">
+                                <img src="images/svg/phone-icon.svg" alt="phone icon" />
+                            </span>
+                            <span class="value" aria-label="Click here to call 808-652-7407">+52 555 869 1234</span>
+                        </a>
+                    </address>
+
+                    <address>
+                        <h4>Scoots @ Puerta Maya</h4>
+                        <div>
+                            <span class="label" aria-hidden="true"><img src="images/svg/map-icon.svg" alt="map icon" /> </span>
+                            <span>
+                                <p>5 Ave N Entre Calle 2</p>
+                                <p>77600 Cozumel, Q.R. Mexico</p>
+                            </span>
+                        </div>
+                        <a href="tel:+525559695678">
+                            <span class="label" aria-hidden="true"><img src="images/svg/phone-icon.svg" alt="phone icon" /> </span>
+                            <span class="value" aria-label="Click here to call 808-652-7407">+52 555 969 5678</span>
+                        </a>
+                    </address>
+                </div>
+            </div>
+         
+     
+<div class="credits"><p> &copy; <span id="copyrightyear"></span><p>| SCOOTS ~ Rental Company | Cozumel, Quintana Roo, México |</p>
+        <p>| Avril Escalante |</p>
+        <p id="lastModified"></p></div>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/rentals.js"></script>
 </body>
 </html>

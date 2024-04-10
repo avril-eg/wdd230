@@ -145,7 +145,7 @@ main {
   background-color: var(--bg2-color);
 }
 
-.hero-section {
+.hero-section, .rentals {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -154,7 +154,7 @@ main {
   
 }
 
-.hero-info {
+.hero-info, .rentals-text {
   position: absolute;
   top: 2rem;
   text-align: center;
@@ -312,4 +312,118 @@ footer section {
   margin-top: auto;
   text-align: center;
   padding: .3rem;
+}
+
+/*----Rentals----*/
+
+.rentals-text {
+  position: absolute;
+  top: 2rem;
+  text-align: center;
+  align-content: center;
+  background-color: rgba(255, 255, 255, 0.704);
+  padding: 1rem;
+}
+
+/* Pricing Table */
+.pricing {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+  color: var(--text-color-header);
+  order: 2;
+}
+
+table {
+  margin: 10px auto;
+  border: thin solid var(--border);
+  box-shadow: 0 0 10px var(--shadow);
+  border-collapse: collapse;
+  font-size: 0.75rem;
+}
+
+caption {
+  padding: 10px;
+  caption-side: bottom;
+  color: var(--back);
+  font-size: 0.85rem;
+}
+
+thead tr:first-child th {
+  background-color: var(--back);
+  color: var(--text-color-header);
+  font-size: 1.3rem;
+  padding: 15px;
+}
+thead tr:nth-child(2) th:first-child {
+  background-color: var(--back);
+  color: var(--forelight);
+  padding: 15px;
+}
+
+th,
+td {
+  padding: 7px 15px;
+  border: 1px solid var(--borderlight);
+}
+
+th {
+  background-color: var(--back2);
+  padding: 15px;
+}
+
+td {
+  text-align: center;
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--zebra);
+}
+
+tbody tr td:first-child {
+  font-weight: bold;
+}
+
+.rental-benefits {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px 25px;
+  color: var(--text-color-header);
+  background-color: var(--accent2-color);
+}
+.rental-benefits h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin: 5px 0;
+}
+.rental-benefits ul,
+.agreement ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+.rental-benefits li,
+.agreement li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  line-height: 1.6;
+  gap: 10px;
+}
+.rental-benefits li::before,
+.agreement li::before {
+  content: "";
+  display: inline-block;
+  width: 0.875rem;
+  height: 0.875rem;
+  background-image: url("../images/svg/circle-check.svg");
+  background-size: cover;
+}
+.check-svg {
+  width: 0.875rem;
+  height: 0.875rem;
+  color: var(--accent3-color);
 }
