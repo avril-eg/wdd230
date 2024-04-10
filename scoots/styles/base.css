@@ -460,7 +460,8 @@ tbody tr td:first-child {
 .contact-area h3 {
   color: var(--accent1-color);
   text-align: left;
-  padding: .3rem;
+  margin: .5rem;
+  padding: .5rem;
   text-transform: uppercase;
 }
 
@@ -473,10 +474,19 @@ tbody tr td:first-child {
   font-size: 1.8rem;
 }
 
-address {
+.hours {
   padding: .7rem;
-  font-size: 1.2rem;
+  margin: .5rem;
+}
 
+.address-block {
+  padding: .7rem;
+  margin: .5rem;
+  font-size: 1.2rem;
+}
+
+iframe {
+  margin: .5rem;
 }
 
 fieldset {
