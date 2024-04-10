@@ -33,7 +33,7 @@ header {
   justify-content: space-between ;
   padding: .5rem 1.5rem;
   background-color: var(--secondary-color);
-  box-shadow: 0 .1rem .3rem var(--shadow-color);
+
   width: 100%;    
 }
 
@@ -142,7 +142,7 @@ a.active{
 /*----Main Section-----*/
 
 main {
-  background-color: var(--bg2-color);
+  background-color: var(--secondary-color);
 }
 
 .hero-section, .rentals {
