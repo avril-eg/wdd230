@@ -154,7 +154,7 @@ main {
   
 }
 
-.hero-info, .rentals-text {
+.hero-info, .rentals-text, .contact-text {
   position: absolute;
   top: 2rem;
   text-align: center;
@@ -185,7 +185,7 @@ img {
   height: auto;
 }
 
-a.btn{
+.btn{
   display: flex;
   flex-wrap: wrap;
   height: 3.5rem;
@@ -426,4 +426,58 @@ tbody tr td:first-child {
   width: 0.875rem;
   height: 0.875rem;
   color: var(--accent3-color);
+}
+
+/*----Contact----*/
+
+.contact-text {
+  position: absolute;
+  top: 7rem;
+  right: 0;
+  text-align: center;
+  align-content: flex-end;
+  background-color: rgba(255, 255, 255, 0.302);
+  padding: .5rem;
+}
+
+.contact-area {
+  background-color: var(--primary-color);
+  color: var(--text2-color);
+  font-size: 1.5rem;
+  text-align: center;  
+  padding: .3rem;
+  
+}
+
+.form {
+  margin: 1rem;
+}
+
+.contact-area h3 {
+  color: var(--accent1-color);
+  text-align: left;
+  padding: .3rem;
+  text-transform: uppercase;
+}
+
+.hours {
+  background-color: var(--secondary-color);
+}
+
+fieldset {
+  margin: .3rem 0;
+  background-color: var(--secondary-color);
+  border: 1px solid var(--accent1-color);
+  border-radius: 15px;
+}
+
+
+fieldset label.top {
+  display: block;
+  padding-top: .5rem;
+  color: var(--accent1-color);
+  text-align: left;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 100%;  
 }
