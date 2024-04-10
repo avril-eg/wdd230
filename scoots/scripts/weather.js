@@ -1,5 +1,3 @@
-// https://openweathermap.org/current
-// https://openweathermap.org/weathermap
 
 const apiKey = "9d751f54ea82f937a432e8b6080709aa";
 
@@ -7,7 +5,7 @@ const apiKey = "9d751f54ea82f937a432e8b6080709aa";
 const lat = 20.512992206946528;
 const lon = -86.93069161251013;
 
-const urlOpenWeather = `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&units=imperial&exclude={hourly,minutely,alerts}&appid=${apiKey}`;
+const url = `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&units=imperial&exclude={hourly,minutely,alerts}&appid=${apiKey}`;
 
 async function apiFetchOpenWeather(url) {
     try {
@@ -23,7 +21,7 @@ async function apiFetchOpenWeather(url) {
         console.error(error);
     }
 }
-apiFetchOpenWeather(urlOpenWeather);
+apiFetchOpenWeather(url);
 
 function displayOneCallResults(data) {
     console.log(data);

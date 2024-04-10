@@ -1,8 +1,8 @@
 :root {
-  --primary-color: #346357; 
+  --primary-color: #8ED2C9; 
   --secondary-color: #EEEEF1;
   --accent1-color: #BE2706; 
-  --accent2-color: #048998;
+  --accent2-color: #00AAA0;
   --bg-color: #ED7A60;
   --bg2-color: #f8f4ec;
   --text-color: #3d3f3f;
@@ -102,7 +102,7 @@ a.active{
     color: var(--accent1-color);
 }
 
-/* Banner on home page */
+/*----Banner on home page----*/
 .banner {
   display: flex;
   justify-content: center;
@@ -169,8 +169,8 @@ main {
   color: var(--text-color);
   text-shadow: 0 .1rem .3rem var(--shadow-color);
   line-height: .5rem;
-
 }
+
 
 .hero-info h2 {
   font-size: 1.2rem;
@@ -202,6 +202,92 @@ a.btn{
   align-items: center;
 }
 
+/*-----Weather-----*/
+.weather-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  background-color: var(--primary-color);
+  color: var(--text-color-header);
+  padding: 1rem;
+}
+
+h2 {
+  color: var(--accent1-color);
+  font-size: 2rem;
+  text-align: center;
+  padding: .5rem;
+  margin: .5rem;
+}
+
+/* Weather */
+#weather {
+  display: inline-block;
+}
+
+#weather img {
+  height: 4rem;
+  width: auto;
+}
+
+.forecast-card p{
+text-align: center;
+}
+.forecast-card {
+  color: #0D3B66;
+  background: #e9d58b9d;
+  padding-block: 20px;
+  border-radius: 8px;
+  margin-block: .5rem;
+  width: 18rem;    
+  border: 3px solid #0D3B66;
+  margin-inline: auto;
+  
+}
+
+.weather {
+  display: flex;
+  justify-content: center;
+  margin: 0 15px;
+  padding: 5px 20px;
+  gap: 15px;
+}
+
+.weatherGroup span,
+.futureWeatherGroup span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.weatherGroup img {
+  width: 30px;
+  height: 30px;
+}
+.temp-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tempDiv span {
+  text-transform: lowercase;
+  font-size: 0.65rem;
+}
+.temp-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-weight: 600;
+}
+.temp-group span:first-child {
+  color: var(--accent5-color);
+}
+.temp-group span:last-child {
+  color: var(--accent5-color);
+}
 
 
 
@@ -220,8 +306,9 @@ a.btn{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 50px;
+  gap: 30px;
   margin: 0 auto 20px auto;
+  background-color: var(--bg2-color);
 }
 .card {
   padding: 10px;
@@ -229,7 +316,12 @@ a.btn{
   box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
   text-align: center;
   width: 375px;
+  color: var(--text-color);
+  font-size: 1.5rem;
+  background-color: var(--accent2-color);
+  
 }
+
 .card:nth-child(2) {
   width: 450px;
 }
@@ -238,6 +330,7 @@ a.btn{
   font-size: 1.1em;
   font-weight: 700;
   margin: 10px 0;
+  
 }
 .card p {
   font-size: 0.85em;
