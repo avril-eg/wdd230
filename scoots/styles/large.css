@@ -59,6 +59,11 @@
         font-size: 4rem;
       }
 
+      .address-block footer {
+        margin: 1rem auto;
+        align-content: center;
+      }
+
       #weather {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(195px, 1fr));

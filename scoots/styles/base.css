@@ -292,7 +292,7 @@ h2 {
 footer section {
   margin: 0 auto;
   max-width: 100%;
-  background-color: #fafafa;
+  background-color: var(--secondary-color);
   color: black;
   padding: 1rem;
 }
@@ -301,6 +301,10 @@ footer section {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+
+h4 {
+  color: var(--accent1-color);
 }
 
 .address-block {
@@ -460,11 +464,19 @@ tbody tr td:first-child {
   text-transform: uppercase;
 }
 
-.hours {
+.visit {
   margin: .5rem;
   background-color: var(--secondary-color);
   border: 1px solid var(--accent1-color);
   border-radius: 15px;
+  padding: .5rem;
+  font-size: 1.8rem;
+}
+
+address {
+  padding: .7rem;
+  font-size: 1.2rem;
+
 }
 
 fieldset {
