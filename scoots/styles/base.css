@@ -243,7 +243,7 @@ h2 {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    color: #fdb44b;
+    color: var(--accent1-color);
 }
 
 /* Cards */
@@ -339,7 +339,8 @@ h4 {
 }
 
 table {
-  margin: 10px auto;
+  margin: 2rem auto;
+  background-color: var(--secondary-color);
   border: thin solid var(--accent1-color);
   box-shadow: 0 0 10px var(--shadow-color);
   border-collapse: collapse;
@@ -347,33 +348,33 @@ table {
 }
 
 caption {
-  padding: 10px;
+  padding: .3rem;
   caption-side: bottom;
   color: var(--text-color);
-  font-size: 0.85rem;
+  font-size: 1rem;
 }
 
 thead tr:first-child th {
-  background-color: var(--bg-color);
-  color: var(--text-color-header);
-  font-size: 1.3rem;
-  padding: 15px;
+  background-color: var(--accent1-color);
+  color: var(--secondary-color);
+  font-size: 1.7rem;
+  padding: 1rem;
 }
 thead tr:nth-child(2) th:first-child {
-  background-color: var(--back);
-  color: var(--forelight);
-  padding: 15px;
+  background-color: var(--bg-color);
+  color: var(--text2-color);
+  padding: .3rem;
 }
 
 th,
 td {
-  padding: 7px 15px;
-  border: 1px solid var(--borderlight);
+  padding: .7rem 1rem;
+  border: 1px solid var(--accent1-color);
 }
 
 th {
-  background-color: var(--back2);
-  padding: 15px;
+  background-color: var(--bg-color);
+  padding: .7rem;
 }
 
 td {
@@ -381,7 +382,7 @@ td {
 }
 
 tbody tr:nth-child(even) {
-  background-color: var(--zebra);
+  background-color: var(--bg-color);
 }
 
 tbody tr td:first-child {
@@ -394,42 +395,31 @@ tbody tr td:first-child {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  padding: 20px 25px;
-  color: var(--text-color-header);
+  padding: 1rem 1.3rem;
+  color: var(--text2-color);
   background-color: var(--accent2-color);
 }
 .rental-benefits h2 {
   font-size: 1.5em;
-  font-weight: 600;
-  margin: 5px 0;
+  font-weight: bold;
+  margin: .3rem 0;
 }
 .rental-benefits ul,
 .agreement ul {
   display: flex;
   flex-direction: column;
   padding: 0;
+  list-style: square;
+  
 }
 .rental-benefits li,
 .agreement li {
   display: flex;
   align-items: center;
-  list-style: none;
   line-height: 1.6;
   gap: 10px;
-}
-.rental-benefits li::before,
-.agreement li::before {
-  content: "";
-  display: inline-block;
-  width: 0.875rem;
-  height: 0.875rem;
-  background-image: url("../images/svg/circle-check.svg");
-  background-size: cover;
-}
-.check-svg {
-  width: 0.875rem;
-  height: 0.875rem;
-  color: var(--accent3-color);
+  list-style-type: square;
+  
 }
 
 /*----Contact----*/
@@ -455,6 +445,12 @@ tbody tr td:first-child {
 
 .form {
   margin: 1rem;
+}
+
+legend {
+  color: var(--text2-color);
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .contact-area h3 {
@@ -510,34 +506,29 @@ fieldset label.top {
 
 /*----Reservations----*/
 
+p.reservations {
+  color: var(--accent1-color);
+  font-size: 1.3rem;
+  font-weight: bold;
+}
 
 .reservations-area {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    padding: 20px 30px;
+    padding: .7rem 1rem;
+    background-color: var(--primary-color);
     color: var(--text-color-header);
 }
 
 .reservations-area h3 {
     font-size: 1.5em;
-    font-weight: 600;
-    margin: 25px 0;
+    font-weight: bold;
+    margin: 2rem 0;
     text-align: center;
+    text-transform: uppercase;
+    text-decoration-line: underline;
 }
-
-.contact-body {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-}
-
-.reservations-area .reservations-body {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-}
-
 
 .reservations-info {
     display: flex;
@@ -555,11 +546,6 @@ fieldset label.top {
     align-items: center;
     order: 1;
 }
-.agreement h2 {
-    text-align: center;
-    margin-bottom: 5px;
-}
-
 
 .reservations-form {
     display: flex;
