@@ -107,19 +107,18 @@
                     <form method="get" action="#">
                         <fieldset>
                             <legend>Vehicle Registration Information</legend>
-                            <label class="top">Pickup Date*<input type="date" id="start-date" name="start-date" required /></label>
-                            <label class="top">Return Date*<input type="date" id="end-date" name="end-date" required /></label>
-                            <label class="top"
-                                >Pickup Location*
-                                <select id="location" class="" name="location" required>
-                                    <option value="">Select One</option>
-                                    <option value="honda-metro">Playa del Carmen-Cozumel</option>
-                                    <option value="honda-dio">Puerta Maya</option>
+                            <label class="top">Pickup Date*<input type="date" id="start-date" name="start-date" required></label>
+                            <label class="top">Return Date*<input type="date" id="end-date" name="end-date" required></label>
+                            <label class="top">Pickup Location* 
+                                <select id="location" class="" name="location" required> 
+                                <option value="">Select One</option>
+                                <option value="honda-metro">Playa del Carmen-Cozumel</option>
+                                <option value="honda-dio">Puerta Maya</option>
                                 </select>
                             </label>
                             <div>Rental Length</div>
-                            <label class="rad"><input type="radio" name="period" value="half-day" required /> Half Day</label>
-                            <label class="rad"><input type="radio" name="period" value="full-day" required /> Full Day</label>
+                            <label class="rad"><input type="radio" name="period" value="half-day" required> Half Day</label>
+                            <label class="rad"><input type="radio" name="period" value="full-day" required> Full Day</label>
                             <label class="top"
                                 >Choose a Vehicle:
                                 <select id="vehicle" class="" name="vehicle" required>
@@ -143,9 +142,8 @@
                                     <option value="5">5</option>
                                 </select>
                             </label>
-                            <label for="insurance" class="sbs"
-                                ><input type="checkbox" id="insurance" name="insurance" value="yes" /> Add Vehicle Insurance</label
-                            >
+                            <label for="insurance" class="sbs">
+                                <input type="checkbox" id="insurance" name="insurance" value="yes" /> Add Vehicle Insurance</label  >
                             <label for="agreement" class="sbs"
                                 ><input type="checkbox" id="agreement" name="agreement" value="yes" required /> I have Read the Rental
                                 Agreement</label
@@ -195,6 +193,36 @@
         </section>
     </main>
 
+    <footer>
+        <div class="f-title">
+            <img src="images/scoots-logo.svg" alt="Scoots Logo" width="220" height="110">
+        </div>
+        
+        <div class="address-block">
+            <h3>Contact</h3>
+            <div class="address">
+                <h4>Playa del Carmen-Cozumel</h4>
+                <div>
+                    <p>Calle 2 Nte 100, Centro</p>
+                    <p>77600 Cozumel, Q.R. Mexico</p>
+                    <p>Tel: (998) 881-5000</p>
+                </div>
+
+                <h4>Puerta Maya</h4>
+                <div>
+                    <p>Calle 11 Sur 900, Independencia</p>
+                    <p>77664 Cozumel, Q.R. Mexico</p> 
+                    <p>Tel: (998) 881-5010</p>
+                </div>
+
+            </div>
+        </div>
+         
+     
+        <div class="credits"><p> &copy; <span id="copyrightyear"></span><p>| SCOOTS ~ Rental Company | Cozumel, Quintana Roo, México |</p>
+        <p>| Avril Escalante |</p>
+        <p id="lastModified"></p></div>
+    </footer>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/rentals.js"></script>
