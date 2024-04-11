@@ -289,22 +289,24 @@ h2 {
   padding: 0 0 10px;
 }
 
-footer section {
+footer {
+  display: flex;
   margin: 0 auto;
   max-width: 100%;
   background-color: var(--secondary-color);
-  color: black;
+  color: var(--text2-color);
   padding: 1rem;
-}
-.f-title {
-  display: flex;
-  flex-direction: row;
   align-items: center;
+  flex-direction: column;
+  align-content: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
+
 
 h4 {
   color: var(--accent1-color);
+  padding: .7rem 0;
 }
 
 .address-block {
@@ -479,6 +481,7 @@ legend {
   padding: .7rem;
   margin: .5rem;
   font-size: 1.2rem;
+
 }
 
 iframe {
@@ -486,7 +489,7 @@ iframe {
 }
 
 fieldset {
-  margin: .3rem 0;
+  margin: 1.7rem 0;
   background-color: var(--secondary-color);
   border: 1px solid var(--accent1-color);
   border-radius: 15px;
