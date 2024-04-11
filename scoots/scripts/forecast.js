@@ -107,14 +107,14 @@ async function forecastApiFetch() {
         const data2 = await forecastApiFetch();
         
         weatherBanner(data1);
-        // Clear the container before adding new cards
+        // Clear container
         weatherContainer.innerHTML = '';
 
-        // Get current day of the week
+        // Get current day
         const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
         const today = new Date().getDay();
         
-        // Loop through forecast data and create a card for each day
+        // Forecast loop 
         for (let i = 0; i < 5; i++) {
             let weekday = '';
             if (i == 0){
@@ -123,7 +123,7 @@ async function forecastApiFetch() {
                  
             }
             else{
-                 weekday = weekdays[(today + i) % 7]; // Adding i to get the next days
+                 weekday = weekdays[(today + i) % 7]; 
                  const index = data2.list.findIndex(item => item.dt_txt.includes('15:00'));
                  const adjustedIndex = index + 8 * i;
 
