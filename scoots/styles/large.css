@@ -75,6 +75,7 @@
         grid-template-columns: 2/3;
       }
 
+
       #weather {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(195px, 1fr));

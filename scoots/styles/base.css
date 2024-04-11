@@ -313,11 +313,16 @@ h4 {
   margin-bottom: 1em;
 }
 
+.social {
+  margin: .7rem auto;
+}
+
 .credits{
   width: 100%;
   margin-top: auto;
   text-align: center;
   padding: .3rem;
+  font-weight: bold;
 }
 
 /*----Rentals----*/
