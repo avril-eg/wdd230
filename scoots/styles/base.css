@@ -334,14 +334,14 @@ h4 {
   display: flex;
   justify-content: center;
   padding: 0 20px;
-  color: var(--text-color-header);
+  color: var(--text2-color);
   order: 2;
 }
 
 table {
   margin: 10px auto;
-  border: thin solid var(--border);
-  box-shadow: 0 0 10px var(--shadow);
+  border: thin solid var(--accent1-color);
+  box-shadow: 0 0 10px var(--shadow-color);
   border-collapse: collapse;
   font-size: 0.75rem;
 }
@@ -349,12 +349,12 @@ table {
 caption {
   padding: 10px;
   caption-side: bottom;
-  color: var(--back);
+  color: var(--text-color);
   font-size: 0.85rem;
 }
 
 thead tr:first-child th {
-  background-color: var(--back);
+  background-color: var(--bg-color);
   color: var(--text-color-header);
   font-size: 1.3rem;
   padding: 15px;
@@ -506,4 +506,67 @@ fieldset label.top {
   font-size: 1.3rem;
   font-weight: bold;
   width: 100%;  
+}
+
+/*----Reservations----*/
+
+
+.reservations-area {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 20px 30px;
+    color: var(--text-color-header);
+}
+
+.reservations-area h3 {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 25px 0;
+    text-align: center;
+}
+
+.contact-body {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.reservations-area .reservations-body {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+
+.reservations-info {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 20px;
+    order: 1;
+    width: 100%;
+    max-width: 800px;
+}
+.agreement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    order: 1;
+}
+.agreement h2 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+
+.reservations-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    order: 2;
+    width: 100%;
+    max-width: 600px;
 }
