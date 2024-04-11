@@ -240,7 +240,6 @@ h2 {
   justify-content: center;
   gap: 30px;
   margin: 0 auto 20px auto;
-  background-color: var(--bg2-color);
 }
 .card {
   padding: 10px;
@@ -250,7 +249,7 @@ h2 {
   width: 375px;
   color: var(--text-color);
   font-size: 1.5rem;
-  background-color: var(--accent2-color);
+  background-color: var(--primary-color);
   
 }
 
@@ -322,6 +321,10 @@ h4 {
   align-items: center;
   margin: 0 auto;
   color: var(--accent1-color);
+}
+
+div.choose-day  {
+  background-color: var(--secondary-color);
 }
 
 /*----Pricing Table---- */
