@@ -85,9 +85,10 @@
     }
 
     .contact-text {
-      top: 16rem;
+      top: 18rem;
       padding: 1rem;
       font-size: 5rem;
+      margin: 0 5rem;
     }
 
     .contact-area {
